@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+
+    <!--FONT AWASOME-->
+    <script src="https://kit.fontawesome.com/a6f44a68f2.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="public/assets/css/main.css" type="text/css" />
+    <link rel="stylesheet" href="public/assets/css/fonts.css" type="text/css" />
+    <title>Persona</title>
+</head>
+<body>
+
+    <header class="header-0">
+        <div class="header-col-widgets">
+            <div class="widgets-texts">
+                <p class="widgets-actual-text widgets-actual-text-active">PERSONAS</p>
+                <p class="widgets-actual-text">EMPRESAS</p>
+            </div>
+            <div class="widgets-appearance">
+                <div class="widget-appearance-row">
+                    <span><i class="fas fa-info-circle"></i></span>
+                    <p>Alto contraste</p>
+                    <div class="switch-button switch-button-on"><div></div></div>
+                </div>
+
+                <div class="widget-appearance-row">
+                    <span><i class="fas fa-info-circle"></i></span>
+                    <p>Tamaño de letra</p>
+                    <button class="widget-button" id="minus-btn"><i class="fas fa-minus-circle"></i></button>
+                    <div class="widget-value" id="size-value">A</div>
+                    <button class="widget-button" id="plus-btn"><i class="fas fa-plus-circle"></i></button>
+                </div>
+
+                <div class="widget-appearance-row">
+                    <p>Español</p>
+                    <button class="widget-select"><i class="fas fa-caret-down"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <header class="header">
+        <div class="header-col-logo">
+            <img src="public/assets/img/logo-sura.svg" />
+            <div class="header-nav-1">
+                <div class="nav-1-link">Preguntas frecuentes</div>
+                <div class="nav-1-link">Escríbenos</div>
+                <div class="nav-1-link">
+                    <div class="colombia"></div>Colombia <span><i class="fas fa-caret-down"></i></span>
+                </div>
+                <button id="iniciar-sesion-btn">INICIAR SESIÓN</button>
+                <button id="buscador-btn" class="buscador-btn-lupa">
+                    <i class="fas fa-search"></i>
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <header class="header-2">
+        <div class="header-col-title">
+            <span>SEGUROS</span>
+            <div class="header-nav-2">
+                <p class="nav-2-link nav-2-link-active">INICIO</p>
+                <p class="nav-2-link">NUESTROS PRODUCTOS</p>
+                <p class="nav-2-link">ASISTENCIA EN SINIESTROS</p>
+                <p class="nav-2-link">OTROS SERVICIOS</p>
+            </div>
+        </div>
+    </header>
+    <div class="body-container">
+        <div class="slideshow">
+            <div class="slideshow-wrapper">
+                <div class="slideshow-wrap">
+                    <div class="slideshow-img">
+                        <img src="public/assets/img/slideshow/img1.jpg" />
+                    </div>
+                    <div class="slideshow-content">
+                        <h2 class="slideshow-title">Lorem ipsum dolor sit, <br />consectetur</h2>
+                        <a class="slideshow-link">CONÓCELO AQUÍ</a>
+                    </div>
+                </div>
+            </div>
+            <button id="slideshow-prev-btn"></button>
+            <button id="slideshow-next-btn"></button>
+            <div class="slideshow-pagination">
+                <div class="slideshow-paginator">
+                    <div class="slideshow-page slideshow-page-active"></div>
+                    <div class="slideshow-page"></div>
+                    <div class="slideshow-page"></div>
+                </div>
+            </div>
+        </div>
+        <div class="opciones-un-click">
+            <p>OPCIONES A UN CLIC</p>
+            <div class="opciones-un-clic-nav">
+                <p class="nav-3-link"><span></span>PAGO EXPRESS</p>
+                <p class="nav-3-link"><span></span>SOLICITA CLAVE</p>
+                <p class="nav-3-link"><span></span>DIRECTORIO MÉDICO</p>
+                <p class="nav-3-link"><span></span>GESTIÓN DE TUS PRODUCTOS</p>
+                <p class="nav-3-link"><span></span>SERVICIOS PARA TU BIENESTAR</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="public/assets/js/main.js"></script>
+</body>
+</html>
