@@ -819,7 +819,7 @@ body,html{
     display: block;
     box-sizing: border-box;
 }
-    <p>OPCIONES A UN CLIC</p>
+    /*<p>OPCIONES A UN CLIC</p>
     <div class="opciones-un-clic-nav">
         <p class="nav-3-link"><span></span>PAGO EXPRESS</p>
         <p class="nav-3-link"><span></span>SOLICITA CLAVE</p>
