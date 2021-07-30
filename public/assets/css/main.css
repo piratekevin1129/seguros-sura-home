@@ -772,7 +772,7 @@ body,html{
     box-sizing: border-box;
     height: auto;
 
-    bottom: 80px;
+    bottom: 120px;
     left: 50%;
     left: calc(50% - (1200px / 2));
     left: -moz-calc(50% - (1200px / 2));
@@ -811,20 +811,298 @@ body,html{
     width: 20px;
 }
 
+/********BOTONERA ABAJO DEL SLIDESHOW***********/
+
 .opciones-un-click{
     position: relative;
     width: 1200px;
+    height: 80px;
     margin: 0px auto;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    margin-top: -80px;
+}
+.opciones-un-click-title{
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 20px;
+}
+.opciones-un-click-title span{
+    position: relative;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+
+    width: 170px;
+    font-family: 'Barlow-Bold';
+    font-size: 18px;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: normal;
+    line-height: normal;
+}
+.opciones-un-click-title::after,
+.opciones-un-click-title::before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    width: calc(((100% - 170px) / 2) - 15px);
+    width: -moz-calc(((100% - 170px) / 2) - 15px);
+    height: 2px;
+    background-color: #FFFFFF;
+    top: 50%;
+    top: calc(50% - 1px);
+    top: -moz-calc(50% - 1px);
+    border-radius: 1px;
+}
+.opciones-un-click-title::after{
+    left: 0px;
+}
+.opciones-un-click-title::before{
+    right: 0px;
+}
+
+.opciones-un-clic-nav{
+    position: relative;
+    width: auto;
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+    height: 30px;
+    justify-content: center;
+}
+.nav-3-link{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px 16px;
+    width: auto;
+    height: auto;
+    border-right: 1px solid #FFFFFF;
+}
+.opciones-un-clic-nav .nav-3-link:last-child{
+    border-right: none;
+}
+.nav-3-link p{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Barlow-Bold';
+    font-size: 16px;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: normal;
+    line-height: normal;
+}
+.nav-3-link span{
+    display: flex;
+    width: 16px;
+    height: 16px;
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 7px;
+}
+.nav-3-link span i{
+    color: #FFFFFF;
+    font-size: 15px;
+}
+
+.nav-3-link:hover p{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/********************INFORMATE COVID**********************/
+
+.informate-covid-container{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+
+    background: linear-gradient(to right, #0033A0 0%, #0033A0 42%, #FFFFFF 42%, #FFFFFF 100%);
+    background: -webkit-linear-gradient(to right, #0033A0 0%, #0033A0 42%, #FFFFFF 42%, #FFFFFF 100%);
+    background: -o-linear-gradient(to right, #0033A0 0%, #0033A0 42%, #FFFFFF 42%, #FFFFFF 100%);
+}
+.informate-covid-row{
+    position: relative;
+    width: 1200px;
+    margin: 0px auto;
+    padding: 40px 15px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.informate-covid-title{
+    position: relative;
+    display: block;
+    width: auto;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+}
+.informate-covid-title h1{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 10px;
+    font-family: 'Barlow-Bold';
+    font-size: 36px;
+    color: #FFFFFF;
+    text-align: left;
+    font-weight: normal;
+    line-height: normal;
+}
+.informate-covid-title::after{
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 2px;
+    background-color: #00AEC7;
+    top: 0px;
+    left: 0px;
+}
+
+.informate-covid-noticias{
+    position: relative;
+    width: auto;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.informate-covid-noticia{
+    position: relative;
+    width: 255px;
+    margin: 0px;
     padding: 0px;
     display: block;
     box-sizing: border-box;
+    border: #ECF0F1 solid 1px;
+    background-color: #FFFFFF;
+    margin-right: 30px;
+
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.1);
+    transition: box-shadow 0.2s;
+    -webkit-transition: box-shadow 0.2s;
 }
-    /*<p>OPCIONES A UN CLIC</p>
-    <div class="opciones-un-clic-nav">
-        <p class="nav-3-link"><span></span>PAGO EXPRESS</p>
-        <p class="nav-3-link"><span></span>SOLICITA CLAVE</p>
-        <p class="nav-3-link"><span></span>DIRECTORIO MÉDICO</p>
-        <p class="nav-3-link"><span></span>GESTIÓN DE TUS PRODUCTOS</p>
-        <p class="nav-3-link"><span></span>SERVICIOS PARA TU BIENESTAR</p>
-    </div>
-</div>*/
+
+.informate-covid-noticia:hover{
+    box-shadow: 0px 2px 7px 1px rgba(0,0,0,0.2);
+}
+
+.informate-covid-noticias .informate-covid-noticia:last-child{
+    margin-right: 0px;
+}
+.informate-covid-noticia-img{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 226px;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+}
+
+.informate-covid-noticia-img img{
+    display: block;
+    width: 100%;
+    height: auto;
+
+    transition: filter 0.2s, -webkit-filter 0.2s, -o-filter 0.2s;
+    -webtki-transition: filter 0.2s, -webkit-filter 0.2s, -o-filter 0.2s;
+}
+.informate-covid-noticia-img img:hover{
+    filter: grayscale(70%);
+    -webkit-filter: grayscale(70%);
+    -o-filter: grayscale(70%);
+}
+.informate-covid-noticia-content{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.informate-covid-noticia-content h5,
+.informate-covid-noticia-content p{
+    margin: 0px;
+    padding: 0px;
+    font-size: 18px;
+    color: #53565A;
+    text-align: left;
+    font-weight: normal;
+    line-height: normal;
+}
+.informate-covid-noticia-content h5{
+    font-family: 'Barlow-Bold';
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.informate-covid-noticia-content p{
+    font-family: 'Barlow-Regular';
+    font-size: 16px;
+}
+.informate-covid-noticia-link{
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    padding: 8px;
+    border-radius: 20px;
+    font-family: 'Barlow-Bold';
+    font-size: 16px;
+    color: #0033A0;
+    font-weight: normal;
+    line-height: normal;
+    text-align: right;
+    box-sizing: border-box;
+    border: rgba(0,51,160,0) solid 1px;
+
+    transition: border 0.2s;
+    -webkit-transition: border 0.2s;
+}
+.informate-covid-noticia-link:hover{
+    cursor: pointer;
+    border: rgba(0,51,160,1) solid 1px;
+}
+.informate-covid-noticia-link span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 14px;
+    height: 14px;
+    margin-left: 8px;
+}
+.informate-covid-noticia-link span i{
+    color: #0033A0;
+    font-size: 14px;
+}
