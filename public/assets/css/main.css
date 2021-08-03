@@ -538,6 +538,9 @@ body,html{
     align-items: center;
     justify-content: center;
 }
+.body-texts-buttons a{
+    text-decoration: none;
+}
 
 .body-texts-button{
     outline: none;
@@ -555,6 +558,10 @@ body,html{
     line-height: normal;
     text-align: center;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
 
     transition: box-shadow 0.2s;
     -webkit-transition: box-shadow 0.2s;
@@ -1833,6 +1840,7 @@ body,html{
     text-align: left;
     font-weight: normal;
     line-height: normal;
+    margin-bottom: 20px;
 }
 .enterate-col > h1::after{
     content: "";
@@ -1844,32 +1852,45 @@ body,html{
     top: 100%;
     left: 10px;
 }
-            
+
 .enterate-wrapper{
     position: relative;
     width: 100%;
-    width: calc(100% * 1);
-    width: -moz-calc(100% * 1);
     height: auto;
     margin: 0px;
     padding: 0px;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.1);
+}
+#enterate-wrap{
+    position: relative;
+    width: 100%;
+    width: calc(100% * 2);
+    width: -moz-calc(100% * 2);
+    height: auto;
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    transition: left 1s;
+    -webkit-transition: left 1s;
 }
+
 .enterate-card{
     position: relative;
     width: 100%;
-    width: calc(100% / 1);
-    width: -moz-calc(100% / 1);
+    width: calc(100% / 2);
+    width: -moz-calc(100% / 2);
     margin: 0px;
     padding: 0px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-
-    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.1);
 }
 .enterate-card-img{
     position: relative;
@@ -2964,9 +2985,9 @@ body,html{
     -o-transform-origin: center 0%;
 }
 .seguros-sura-menu-on,.buscador-container-on{
-    transform: scale(1) translateY(0px);
-    -webkit-transform: scale(1) translateY(0px);
-    -o-transform: scale(1) translateY(0px);
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
     opacity: 1;
     visibility: visible;
 
@@ -2974,9 +2995,9 @@ body,html{
     -webkit-transition: transform 0.25s, -webkit-transform 0.25s, -o-transform 0.25s, opacity 0.25s, visibility 0s;
 }
 .seguros-sura-menu-off,.buscador-container-off{
-    transform: scale(1,0.8) translateY(20px);
-    -webkit-transform: scale(1,0.8) translateY(20px);
-    -o-transform: scale(1,0.8) translateY(20px);
+    transform: scale(1,0.5);
+    -webkit-transform: scale(1,0.5);
+    -o-transform: scale(1,0.5);
     opacity: 0;
     visibility: hidden;
 

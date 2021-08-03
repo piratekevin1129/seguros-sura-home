@@ -74,7 +74,7 @@ function nextSlideshow2(){
     }
 
     //pages
-    var pages = document.getElementById('slideshow-paginator').getElementsByTagName('div')
+    var pages = document.getElementById('capacidades-parati-pages').getElementsByTagName('div')
     for(var i = 0;i<pages.length;i++){
         pages[i].classList.remove('capacidades-parati-page-active')
     }
