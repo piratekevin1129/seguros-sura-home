@@ -74,7 +74,9 @@
             </div>
         </div>
     </header>
+
     <div class="body-container">
+        <!--slideshow-->
         <div class="slideshow">
             <div class="slideshow-wrapper">
                 <div class="slideshow-wrap">
@@ -97,6 +99,7 @@
                 </div>
             </div>
         </div>
+
         <div class="opciones-un-click">
             <p class="opciones-un-click-title"><span>OPCIONES A UN CLIC</span></p>
             <div class="opciones-un-clic-nav">
@@ -108,7 +111,7 @@
             </div>
         </div>
 
-        <!-------->
+        <!--informate sobre el covid-->
         <div class="informate-covid-container">
             <div class="informate-covid-row">
                 <div class="informate-covid-title">
@@ -150,7 +153,259 @@
                 </div>
             </div>
         </div>
+
+        <!--cotiza tu seguro en linea-->
+        <div class="cotiza-seguro-container">
+            <div class="cotiza-seguro-title"><h1>Cotiza tu seguro en linea</h1></div>
+
+            <div class="cotiza-seguro-col">
+                <div id="cotiza-seguro-wrap" class="cotiza-seguro-collapsed">
+                    <div class="cotiza-seguro-row">
+                        <p class="cotiza-seguro-label">Quiero cotizar un seguro de:</p>
+                        <div class="cotiza-seguro-select">
+                            <span>Selecciona</span>
+                            <select onfocus="focusSelect(this,'cotiza-seguro')" onblur="unfocusSelect(this,'cotiza-seguro')">
+                                <option>Selecciona</option>
+                                <option>opcion 1</option>
+                                <option>opcion 2</option>
+                                <option>opcion 3</option>
+                            </select>
+                        </div>
+                        <button id="cotiza-seguro-btn" status="collapsed" onclick="clickCotizaSeguro(this)">
+                            <span>¡Cotizalo aqui!</span>
+                            <span>Ocultar</span>
+                        </button>
+                    </div>
+
+                    <div class="cotiza-seguro-row2">
+                        <div class="cotiza-seguro-form">
+                            <div class="cotiza-seguro-form-group">
+                                <input type="text" class="cotiza-seguro-input" autocomplete="false" placeholder="Ingresa la placa" />
+                            </div>
+                            <div class="cotiza-seguro-form-group">
+                                <input type="text" class="cotiza-seguro-input" autocomplete="false" placeholder="Nombres" />
+                            </div>
+                            <div class="cotiza-seguro-form-group">
+                                <input type="text" class="cotiza-seguro-input" autocomplete="false" placeholder="Correo electrónico" />
+                            </div>
+                            <div class="cotiza-seguro-form-group">
+                                <input type="number" class="cotiza-seguro-input" autocomplete="false" placeholder="Celular" />
+                            </div>
+    
+                            <button class="cotiza-seguro-action">COTIZAR</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Capacidades para ti-->
+        <div class="capacidades-parati-container">
+            <div class="capacidades-parati-title"><h1>¿Ya conoces las capacidades que tenemos para ti?</h1></div>
+
+            <div id="capacidades-parati-slider">
+                <div id="capacidades-parati-slider-wrapper"><!--mascara-->
+                    <div id="capacidades-parati-slider-wrap"><!--slider-->
+                        <div class="capacidades-parati-row">
+                            <div class="capacidades-parati-card">
+                                <div class="capacidades-parati-card-img">
+                                    <img src="public/assets/img/capacidades-parati/1.png" />
+                                    <p>Movilidad</p>
+                                </div>
+                                <div class="capacidades-parati-card-content">
+                                    <div class="capacidades-parati-card-text"><p>Poder moverse libremente, <span>más allá de los vehículos que así lo permitan, es asegurarse de vivir</span>.</p></div>
+                                    <a class="capacidades-parati-card-link">CONOCER<i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="capacidades-parati-card">
+                                <div class="capacidades-parati-card-img">
+                                    <img src="public/assets/img/capacidades-parati/2.png" />
+                                    <p>Movilidad</p>
+                                </div>
+                                <div class="capacidades-parati-card-content">
+                                    <div class="capacidades-parati-card-text"><p>Todo lo que nos rodea. Sin embargo, más allá de considerarlo un recurso, poder relacionarnos de <span>manera armoniosa con el entorno nos asegura de vivir</span>.</p></div>
+                                    <a class="capacidades-parati-card-link">CONOCER<i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="capacidades-parati-card">
+                                <div class="capacidades-parati-card-img">
+                                    <img src="public/assets/img/capacidades-parati/3.png" />
+                                    <p>Movilidad</p>
+                                </div>
+                                <div class="capacidades-parati-card-content">
+                                    <div class="capacidades-parati-card-text"><p>Poder cambiar los hábitos que nos aseguran el bienestar físico, mental y emocional, <span>más allá de evitar la enfermedad, es asegurarse de vivir</span>.</p></div>
+                                    <a class="capacidades-parati-card-link">CONOCER<i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="capacidades-parati-row">
+                            <div class="capacidades-parati-card">
+                                <div class="capacidades-parati-card-img">
+                                    <img src="public/assets/img/capacidades-parati/1.png" />
+                                    <p>Movilidad</p>
+                                </div>
+                                <div class="capacidades-parati-card-content">
+                                    <div class="capacidades-parati-card-text"><p>Poder moverse libremente, <span>más allá de los vehículos que así lo permitan, es asegurarse de vivir</span>.</p></div>
+                                    <a class="capacidades-parati-card-link">CONOCER<i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="capacidades-parati-card">
+                                <div class="capacidades-parati-card-img">
+                                    <img src="public/assets/img/capacidades-parati/2.png" />
+                                    <p>Movilidad</p>
+                                </div>
+                                <div class="capacidades-parati-card-content">
+                                    <div class="capacidades-parati-card-text"><p>Todo lo que nos rodea. Sin embargo, más allá de considerarlo un recurso, poder relacionarnos de <span>manera armoniosa con el entorno nos asegura de vivir</span>.</p></div>
+                                    <a class="capacidades-parati-card-link">CONOCER<i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="capacidades-parati-card">
+                                <div class="capacidades-parati-card-img">
+                                    <img src="public/assets/img/capacidades-parati/3.png" />
+                                    <p>Movilidad</p>
+                                </div>
+                                <div class="capacidades-parati-card-content">
+                                    <div class="capacidades-parati-card-text"><p>Poder cambiar los hábitos que nos aseguran el bienestar físico, mental y emocional, <span>más allá de evitar la enfermedad, es asegurarse de vivir</span>.</p></div>
+                                    <a class="capacidades-parati-card-link">CONOCER<i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="capacidades-parati-paginator">
+                    <button id="capacidades-parati-paginator-prev"><i class="fas fa-angle-left"></i></button>
+                    <div id="capacidades-parati-pages">
+                        <div class="capacidades-parati-page capacidades-parati-page-active"></div>
+                        <div class="capacidades-parati-page"></div>
+                    </div>
+                    <button id="capacidades-parati-paginator-next"><i class="fas fa-angle-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!--Noticias 2-->
+        <div id="noticias2-container">
+            <div class="noticias2-box">
+                <div class="enterate-col">
+                    <h1>Entérate</h1>
+                    <div class="enterate-wrapper">
+                        <div class="enterate-card">
+                            <div class="enterate-card-img">
+                                <img src="public/assets/img/enterate/1.png" />
+                            </div>
+                            <div class="enterate-card-content">
+                                <div class="enterate-card-date"><i class="far fa-calendar-alt"></i><span>19 Noviembre 2020</span></div>
+                                <h3>Consulta el estado de tus reclamaciones en línea</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit amet.</p>
+                                <a class="enterate-card-link">IR <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="enterate-paginator">
+                        <button id="enterate-paginator-prev"><i class="fas fa-angle-left"></i></button>
+                        <div id="enterate-pages">
+                            <div class="enterate-page capacidades-parati-page-active"></div>
+                            <div class="enterate-page"></div>
+                        </div>
+                        <button id="enterate-paginator-next"><i class="fas fa-angle-right"></i></button>
+                    </div>
+                </div>
+
+                <div class="novedades-col">
+                    <div class="novedades-title">
+                        <h1>Novedades</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="novedades-row">
+                        <div class="novedad-content">
+                            <div class="novedad-img">
+                                <img src="public/assets/img/novedades/1.png" />
+                            </div>
+                            <div class="novedad-box">
+                                <div class="novedad-text">
+                                    <p>SURA extiende sus servicios de salud a Bello y Tunja</p>
+                                    <h6 class="novedad-text-tag">#Salud</h6>
+                                </div>
+                                <button class="novedad-leer-btn">LEER</button>
+                            </div>
+                        </div>
+                        <div class="novedad-content">
+                            <div class="novedad-img">
+                                <img src="public/assets/img/novedades/1.png" />
+                            </div>
+                            <div class="novedad-box">
+                                <div class="novedad-text">
+                                    <p>Seguros SURA Colombia crea herramienta gratuita en comportamiento financiero…</p>
+                                    <h6 class="novedad-text-tag">#Competitividad</h6>
+                                </div>
+                                <button class="novedad-leer-btn">LEER</button>
+                            </div>
+                        </div>
+                        <div class="novedad-content">
+                            <div class="novedad-img">
+                                <img src="public/assets/img/novedades/1.png" />
+                            </div>
+                            <div class="novedad-box">
+                                <div class="novedad-text">
+                                    <p>Suramericana lanza su primer libro de megatendencias y comparte con las empresas</p>
+                                    <h6 class="novedad-text-tag">#Competitividad</h6>
+                                </div>
+                                <button class="novedad-leer-btn">LEER</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="novedad-ver-todas-btn">VER TODAS</button>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Beneficios seguros sura-->
+        <div class="beneficios-container">
+            <div class="beneficios-row">
+                <div class="beneficios-title">
+                    <h1>Beneficios <br />Seguros SURA</h1>
+                    <p>Disfruta de programas en vivo, contenidos, actividades y descuentos con aliados. ¡Asegúrate de vivir los mejores momentos!</p>
+                </div>
+                <div class="beneficios-noticias">
+                    <div class="beneficios-noticia">
+                        <div class="beneficios-noticia-img">
+                            <img src="public/assets/img/beneficios/1.jpg" />
+                        </div>
+                        <div class="beneficios-noticia-info">
+                            <p class="beneficios-noticia-title">PLATAFORMA <br />DE BIENESTAR</p>
+                            <a class="beneficios-noticia-link">VER<i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="beneficios-noticia">
+                        <div class="beneficios-noticia-img">
+                            <img src="public/assets/img/beneficios/1.jpg" />
+                        </div>
+                        <div class="beneficios-noticia-info">
+                            <p class="beneficios-noticia-title">EMPRESA <br />SURA</p>
+                            <a class="beneficios-noticia-link">VER<i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="beneficios-noticia">
+                        <div class="beneficios-noticia-img">
+                            <img src="public/assets/img/beneficios/1.jpg" />
+                        </div>
+                        <div class="beneficios-noticia-info">
+                            <p class="beneficios-noticia-title">TODOS MIS <br />DESCUENTOS</p>
+                            <a class="beneficios-noticia-link">VER<i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <br />
+    <br />
 
     
     
