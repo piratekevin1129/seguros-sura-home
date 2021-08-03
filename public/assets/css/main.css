@@ -2417,7 +2417,7 @@ body,html{
     box-sizing: border-box;
 }
 .enlaces-interes-col1{
-    background-image: url(../img/enlaces-interes-back.png);
+    background-image: url(../../images/new-home/enlaces-interes-back.png);
     background-repeat: no-repeat;
     background-position: 0px center;
     background-color: #f0f0f0;
@@ -3043,7 +3043,7 @@ body,html{
     background-size: 20px;
     background-position: 0px center;
     background-repeat: no-repeat;
-    background-image: url(../img/menu-right-icon.svg);
+    background-image: url(../../images/new-home/menu-right-icon.svg);
     left: 0px;
     margin-bottom: 15px;
 
