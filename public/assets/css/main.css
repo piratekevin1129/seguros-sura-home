@@ -1533,6 +1533,9 @@ body,html{
     flex-wrap: wrap;
     margin: 0px;
     padding: 0px;
+
+    transition: left 1s;
+    -webkit-transition: left 1s;
 }
 .capacidades-parati-row{
     position: relative;
