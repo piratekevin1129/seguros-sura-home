@@ -2397,6 +2397,8 @@ body input[type=number] {
     flex-direction: row;
     justify-content: center;
     align-items: stretch;
+    height: auto;
+    min-height: 305px;
 }
 
 .enlaces-interes-col1,.enlaces-interes-col2{
@@ -2409,7 +2411,7 @@ body input[type=number] {
     background-image: url(../img/enlaces-interes-back.png);
     background-repeat: no-repeat;
     background-position: 0px center;
-    background-color: #FFFFFF;
+    background-color: #f0f0f0;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -2419,7 +2421,7 @@ body input[type=number] {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding: 0px 50px;
+    padding: 0px 40px;
 }
 .enlaces-interes-row1{
     position: relative;
@@ -2432,7 +2434,8 @@ body input[type=number] {
     display: block;
     margin: 0px;
     padding: 10px 0px;
-    box-sizing: border-box;
+    padding-right: 40px;
+    box-sizing: border-box;    
 
     font-family: 'Barlow-Bold';
     font-size: 28px;
@@ -2440,6 +2443,7 @@ body input[type=number] {
     font-weight: normal;
     line-height: normal;
     text-align: left;
+    margin-bottom: 10px;
 }
 .enlaces-interes-row1 h1::after{
     content: "";
@@ -2467,41 +2471,72 @@ body input[type=number] {
 }
 .enlaces-interes-list p{
     position: relative;
-    display: block;
-    width: auto;
-    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 26px;
     white-space: nowrap;
     box-sizing: border-box;
-    margin: 8px 0px;
-    padding: 5px 25px;
+    margin: 7px 0px;
+    padding: 0px 24px;
     border-radius: 13px 0px 0px 13px;
-    background-color: #FFFFFF;
+    background-color: rgba(0,174,199,0);
 
-    transition: background-color 0.2s;
-    -webkit-transition: background-color 0.2s;
+    font-family: 'Barlow-Regular';
+    font-size: 16px;
+    color: #0033A0;
+    font-weight: normal;
+    line-height: normal;
+    text-align: left;
+
+    transition: background-color 0.2s, color 0.2s;
+    -webkit-transition: background-color 0.2s, color 0.2s;
 }
 .enlaces-interes-list p::after{
     content: "";
     position: absolute;
-    width: 6px;
-    height: 6px;
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
     background-color: #0033A0;
     top: 50%;
-    top: calc(50% - 3px);
-    top: -moz-calc(50% - 3px);
-    left: 12.5px;
-    left: calc(12.5px - 3px);
-    left: -moz-calc(12.5px - 3px);
+    top: calc(50% - 4px);
+    top: -moz-calc(50% - 4px);
+    left: 12px;
+    left: calc(12px - 4px);
+    left: -moz-calc(12px - 4px);
 
     transition: background-color 0.2s;
     -webkit-transition: background-color 0.2s;
 }
 .enlaces-interes-list p:hover{
-    background-color: #00AEC7;
+    cursor: pointer;
+    color: #FFFFFF;
+    background-color: rgba(0,174,199,1);
 }
 .enlaces-interes-list p:hover::after{
     background-color: #FFFFFF;
+}
+
+.enlaces-interes-list p:first-child{
+    margin-top: 0px;
+}
+.enlaces-interes-list p:last-child{
+    margin-bottom: 0px;
+}
+.enlaces-interes-list::before{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    height: calc(100% - 26px);
+    height: -moz-calc(100% - 26px);
+    left: 12px;
+    left: calc(12px - 1px);
+    left: -moz-calc(12px - 1px);
+    top: 13px;
+    background-color: #0033A0;
 }
 
 .enlaces-interes-row2{
@@ -2537,7 +2572,7 @@ body input[type=number] {
 
     width: auto;
     height: 42px;
-    margin: 0px auto;
+    margin: 0px;
     padding: 0px 30px;
 
     background-color: rgba(0,174,199,1);
