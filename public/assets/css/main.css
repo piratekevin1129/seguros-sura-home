@@ -842,7 +842,7 @@ body,html{
 /********BOTONERA ABAJO DEL SLIDESHOW***********/
 
 .opciones-un-click{
-    position: relative;
+    position: absolute;
     width: 1200px;
     height: 80px;
     margin: 0px auto;
@@ -852,7 +852,11 @@ body,html{
     align-items: center;
     justify-content: flex-start;
     box-sizing: border-box;
-    margin-top: -80px;
+    margin-top: 0px;
+    bottom: 0px;
+    left: 50%;
+    left: calc(50% - (1200px / 2));
+    left: -moz-calc(50% - (1200px / 2));
 }
 .opciones-un-click-title{
     position: relative;
