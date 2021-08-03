@@ -99,6 +99,42 @@ function prevSlideshow2(){
     event.preventDefault()
 }
 
+///////////////////SLIDESHOW ENTERATE//////////////////
+function nextSlideshow3(){
+    var actual_page = $('#enterate-wrap').attr('page')
+    var total_pages = document.getElementById('enterate-wrap').getElementsByClassName('enterate-card').length
+
+    if(actual_page<(total_pages-1)){
+        $('#enterate-wrap').attr('style','left:-'+(parseInt(actual_page)+1)+'00%')
+        $('#enterate-wrap').attr('page',(parseInt(actual_page)+1))
+    }
+
+    //pages
+    var pages = document.getElementById('enterate-pages').getElementsByTagName('div')
+    for(var i = 0;i<pages.length;i++){
+        pages[i].classList.remove('enterate-page-active')
+    }
+    pages[parseInt(actual_page)+1].classList.add('enterate-page-active')
+
+    event.preventDefault()
+}
+function prevSlideshow3(){
+    var actual_page = $('#enterate-wrap').attr('page')
+
+    if(actual_page>0){
+        $('#enterate-wrap').attr('page',(parseInt(actual_page)-1))
+        $('#enterate-wrap').attr('style','left:-'+(parseInt(actual_page)-1)+'00%')
+    }
+
+    //pages
+    var pages = document.getElementById('enterate-pages').getElementsByTagName('div')
+    for(var i = 0;i<pages.length;i++){
+        pages[i].classList.remove('enterate-page-active')
+    }
+    pages[parseInt(actual_page)-1].classList.add('enterate-page-active')
+    event.preventDefault()
+}
+
 function overMenuSeguros(){
     $('#seguros-sura-menu').attr('class', 'seguros-sura-menu-on')
 }
