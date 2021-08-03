@@ -57,10 +57,17 @@
                             <div class="colombia"></div>Colombia <span><i class="fas fa-caret-down"></i></span>
                         </div>
                         <button id="iniciar-sesion-btn">INICIAR SESIÓN</button>
-                        <button id="buscador-btn" class="buscador-btn-lupa">
+                        <button id="buscador-btn" class="buscador-btn-lupa" onclick="clickBuscador()" status="closed">
                             <i class="fas fa-search"></i>
                             <i class="fas fa-times"></i>
                         </button>
+                    </div>
+                </div>
+                <div id="buscador-container" class="buscador-container-off">
+                    <h3 class="buscador-container-title">Buscador</h3>
+                    <div class="buscador-container-form">
+                        <input type="text" class="buscador-container-input" autocomplete="off" placeholder="Escribe aqui lo que estas buscando" />
+                        <button class="buscador-container-btn"><i class="fas fa-search"></i></button>
                     </div>
                 </div>
             </header>
