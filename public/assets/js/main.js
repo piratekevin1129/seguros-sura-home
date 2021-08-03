@@ -25,3 +25,22 @@ function clickCotizaSeguro(btn){
         $('#cotiza-seguro-btn').attr('status', 'collapsed')
     }
 }
+
+function nextSlideshow(){
+    var actual_page = $('#slideshow-wrapper').attr('page')
+    var total_pages = document.getElementById('slideshow-wrapper').getElementsByClassName('slideshow-wrap').length
+
+    if(actual_page<(total_pages-1)){
+        $('#slideshow-wrapper').attr('style','left:-'+(parseInt(actual_page)+1)+'00%')
+        $('#slideshow-wrapper').attr('page',(parseInt(actual_page)+1))
+    }
+}
+function prevSlideshow(){
+    var actual_page = $('#slideshow-wrapper').attr('page')
+
+    if(actual_page>0){
+        $('#slideshow-wrapper').attr('page',(parseInt(actual_page)-1))
+        $('#slideshow-wrapper').attr('style','left:-'+(parseInt(actual_page)-1)+'00%')
+    }
+}
+    

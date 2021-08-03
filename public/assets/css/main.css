@@ -583,23 +583,26 @@ body,html{
     padding: 0px;
     overflow: hidden;
 }
-.slideshow-wrapper{
+#slideshow-wrapper{
     position: relative;
     width: 100%;
-    width: calc(100% * 1);
-    width: -moz-calc(100% * 1);
+    width: calc(100% * 2);
+    width: -moz-calc(100% * 2);
     height: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0px;
     padding: 0px;
+
+    transition: left 1s;
+    -webkit-transition: left 1s;
 }
 .slideshow-wrap{
     position: relative;
     width: 100%;
-    width: calc(100% / 1);
-    width: -moz-calc(100% / 1);
+    width: calc(100% / 2);
+    width: -moz-calc(100% / 2);
     height: auto;
     margin: 0px;
     padding: 0px;

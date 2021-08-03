@@ -78,7 +78,7 @@
         <div class="body-container">
             <!--slideshow-->
             <div class="slideshow">
-                <div class="slideshow-wrapper">
+                <div id="slideshow-wrapper" page="0" style="left: 0%;">
                     <div class="slideshow-wrap">
                         <div class="slideshow-img">
                             <img src="public/assets/img/slideshow/img1.jpg" />
@@ -88,9 +88,18 @@
                             <a class="slideshow-link">CONÓCELO AQUÍ</a>
                         </div>
                     </div>
+                    <div class="slideshow-wrap">
+                        <div class="slideshow-img">
+                            <img src="public/assets/img/slideshow/img2.jpg" />
+                        </div>
+                        <div class="slideshow-content">
+                            <h2 class="slideshow-title">Lorem ipsum dolor sit, <br />consectetur</h2>
+                            <a class="slideshow-link">CONÓCELO AQUÍ</a>
+                        </div>
+                    </div>
                 </div>
-                <button id="slideshow-prev-btn"></button>
-                <button id="slideshow-next-btn"></button>
+                <button id="slideshow-prev-btn" onclick="prevSlideshow()"></button>
+                <button id="slideshow-next-btn" onclick="nextSlideshow()"></button>
                 <div class="slideshow-pagination">
                     <div class="slideshow-paginator">
                         <div class="slideshow-page slideshow-page-active"></div>
