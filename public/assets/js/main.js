@@ -27,6 +27,7 @@ function clickCotizaSeguro(event,btn){
     event.preventDefault()
 }
 
+///////////////////SLIDESHOW PRINCIPAL//////////////////
 function nextSlideshow(){
     var actual_page = $('#slideshow-wrapper').attr('page')
     var total_pages = document.getElementById('slideshow-wrapper').getElementsByClassName('slideshow-wrap').length
@@ -35,6 +36,13 @@ function nextSlideshow(){
         $('#slideshow-wrapper').attr('style','left:-'+(parseInt(actual_page)+1)+'00%')
         $('#slideshow-wrapper').attr('page',(parseInt(actual_page)+1))
     }
+
+    //pages
+    var pages = document.getElementById('slideshow-paginator').getElementsByTagName('div')
+    for(var i = 0;i<pages.length;i++){
+        pages[i].classList.remove('slideshow-page-active')
+    }
+    pages[parseInt(actual_page)+1].classList.add('slideshow-page-active')
     event.preventDefault()
 }
 function prevSlideshow(){
@@ -44,6 +52,50 @@ function prevSlideshow(){
         $('#slideshow-wrapper').attr('page',(parseInt(actual_page)-1))
         $('#slideshow-wrapper').attr('style','left:-'+(parseInt(actual_page)-1)+'00%')
     }
+
+    //pages
+    var pages = document.getElementById('slideshow-paginator').getElementsByTagName('div')
+    for(var i = 0;i<pages.length;i++){
+        pages[i].classList.remove('slideshow-page-active')
+    }
+    pages[parseInt(actual_page)-1].classList.add('slideshow-page-active')
+    event.preventDefault()
+    event.preventDefault()
+}
+
+///////////////////SLIDESHOW YA CONOCES LAS CAPACIDADES//////////////////
+function nextSlideshow2(){
+    var actual_page = $('#capacidades-parati-slider-wrap').attr('page')
+    var total_pages = document.getElementById('capacidades-parati-slider-wrap').getElementsByClassName('capacidades-parati-row').length
+
+    if(actual_page<(total_pages-1)){
+        $('#capacidades-parati-slider-wrap').attr('style','left:-'+(parseInt(actual_page)+1)+'00%')
+        $('#capacidades-parati-slider-wrap').attr('page',(parseInt(actual_page)+1))
+    }
+
+    //pages
+    var pages = document.getElementById('slideshow-paginator').getElementsByTagName('div')
+    for(var i = 0;i<pages.length;i++){
+        pages[i].classList.remove('capacidades-parati-page-active')
+    }
+    pages[parseInt(actual_page)+1].classList.add('capacidades-parati-page-active')
+
+    event.preventDefault()
+}
+function prevSlideshow2(){
+    var actual_page = $('#capacidades-parati-slider-wrap').attr('page')
+
+    if(actual_page>0){
+        $('#capacidades-parati-slider-wrap').attr('page',(parseInt(actual_page)-1))
+        $('#capacidades-parati-slider-wrap').attr('style','left:-'+(parseInt(actual_page)-1)+'00%')
+    }
+
+    //pages
+    var pages = document.getElementById('capacidades-parati-pages').getElementsByTagName('div')
+    for(var i = 0;i<pages.length;i++){
+        pages[i].classList.remove('capacidades-parati-page-active')
+    }
+    pages[parseInt(actual_page)-1].classList.add('capacidades-parati-page-active')
     event.preventDefault()
 }
 

@@ -165,9 +165,8 @@
                 <button id="slideshow-prev-btn" onclick="prevSlideshow()"></button>
                 <button id="slideshow-next-btn" onclick="nextSlideshow()"></button>
                 <div class="slideshow-pagination">
-                    <div class="slideshow-paginator">
+                    <div id="slideshow-paginator">
                         <div class="slideshow-page slideshow-page-active"></div>
-                        <div class="slideshow-page"></div>
                         <div class="slideshow-page"></div>
                     </div>
                 </div>
@@ -347,12 +346,12 @@
                     </div>
 
                     <div id="capacidades-parati-paginator">
-                        <button id="capacidades-parati-paginator-prev"><i class="fas fa-angle-left"></i></button>
+                        <button id="capacidades-parati-paginator-prev" onclick="prevSlideshow2()"><i class="fas fa-angle-left"></i></button>
                         <div id="capacidades-parati-pages">
                             <div class="capacidades-parati-page capacidades-parati-page-active"></div>
                             <div class="capacidades-parati-page"></div>
                         </div>
-                        <button id="capacidades-parati-paginator-next"><i class="fas fa-angle-right"></i></button>
+                        <button id="capacidades-parati-paginator-next" onclick="nextSlideshow2()"><i class="fas fa-angle-right"></i></button>
                     </div>
                 </div>
             </div>
