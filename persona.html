@@ -13,68 +13,125 @@
     <script src="https://kit.fontawesome.com/a6f44a68f2.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="public/assets/css/main.css" type="text/css" />
-    <link rel="stylesheet" href="public/assets/css/fonts.css" type="text/css" />
+    <link rel="stylesheet" href="public/assets/css/fonts-real.css" type="text/css" />
     <title>Persona</title>
 </head>
 <body>
     <div id="seguros-sura-home">
-        <header class="header-0">
-            <div class="header-col-widgets">
-                <div class="widgets-texts">
-                    <p class="widgets-actual-text widgets-actual-text-active">PERSONAS</p>
-                    <p class="widgets-actual-text">EMPRESAS</p>
+        <div class="header-container">
+            <header class="header-0">
+                <div class="header-col-widgets">
+                    <div class="widgets-texts">
+                        <p class="widgets-actual-text widgets-actual-text-active">PERSONAS</p>
+                        <p class="widgets-actual-text">EMPRESAS</p>
+                    </div>
+                    <div class="widgets-appearance">
+                        <div class="widget-appearance-row">
+                            <span><i class="fas fa-info-circle"></i></span>
+                            <p>Alto contraste</p>
+                            <div class="switch-button switch-button-on"><div></div></div>
+                        </div>
+
+                        <div class="widget-appearance-row">
+                            <span><i class="fas fa-info-circle"></i></span>
+                            <p>Tamaño de letra</p>
+                            <button class="widget-button" id="minus-btn"><i class="fas fa-minus-circle"></i></button>
+                            <div class="widget-value" id="size-value">A</div>
+                            <button class="widget-button" id="plus-btn"><i class="fas fa-plus-circle"></i></button>
+                        </div>
+
+                        <div class="widget-appearance-row">
+                            <p>Español</p>
+                            <button class="widget-select"><i class="fas fa-caret-down"></i></button>
+                        </div>
+                    </div>
                 </div>
-                <div class="widgets-appearance">
-                    <div class="widget-appearance-row">
-                        <span><i class="fas fa-info-circle"></i></span>
-                        <p>Alto contraste</p>
-                        <div class="switch-button switch-button-on"><div></div></div>
+            </header>
+            <header class="header">
+                <div class="header-col-logo">
+                    <img src="public/assets/img/logo-sura.svg" />
+                    <div class="header-nav-1">
+                        <div class="nav-1-link">Preguntas frecuentes</div>
+                        <div class="nav-1-link">Escríbenos</div>
+                        <div class="nav-1-link">
+                            <div class="colombia"></div>Colombia <span><i class="fas fa-caret-down"></i></span>
+                        </div>
+                        <button id="iniciar-sesion-btn">INICIAR SESIÓN</button>
+                        <button id="buscador-btn" class="buscador-btn-lupa">
+                            <i class="fas fa-search"></i>
+                            <i class="fas fa-times"></i>
+                        </button>
                     </div>
-
-                    <div class="widget-appearance-row">
-                        <span><i class="fas fa-info-circle"></i></span>
-                        <p>Tamaño de letra</p>
-                        <button class="widget-button" id="minus-btn"><i class="fas fa-minus-circle"></i></button>
-                        <div class="widget-value" id="size-value">A</div>
-                        <button class="widget-button" id="plus-btn"><i class="fas fa-plus-circle"></i></button>
+                </div>
+            </header>
+            <header class="header-2">
+                <div class="header-col-title">
+                    <span>SEGUROS</span>
+                    <div class="header-nav-2">
+                        <p class="nav-2-link nav-2-link-active" onmouseover="outMenuSeguros()">INICIO</p>
+                        <p class="nav-2-link" onmouseover="overMenuSeguros()">NUESTROS PRODUCTOS</p>
+                        <p class="nav-2-link" onmouseover="outMenuSeguros()">ASISTENCIA EN SINIESTROS</p>
+                        <p class="nav-2-link" onmouseover="outMenuSeguros()">OTROS SERVICIOS</p>
                     </div>
-
-                    <div class="widget-appearance-row">
-                        <p>Español</p>
-                        <button class="widget-select"><i class="fas fa-caret-down"></i></button>
+                </div>
+            </header>
+            <div id="seguros-sura-menu" class="seguros-sura-menu-off" onmouseleave="outMenuSeguros()">
+                <div class="seguros-sura-menu-content">
+                    <div class="seguros-sura-menu-col">
+                        <h5>Muévete</h5>
+                        <ul>
+                            <li>Seguro Obligatorio (SOAT)</li>
+                            <li>Seguros voluntarios</li>
+                            <li>Centros de servicio</li>
+                            <li>Plan muévete libre</li>
+                            <li>Seguro de viajes</li>
+                            <li>Seguro para Embarcaciones de Recreo</li>
+                            <li>Movilidad segura</li>
+                        </ul>
+                    </div>
+                    <div class="seguros-sura-menu-col">
+                        <h5>Se saludable</h5>
+                        <ul>
+                            <li>Seguro voluntario de salud</li>
+                            <li>Sedes salud SURA</li>
+                            <li>Directorio médico</li>
+                            <li>Servicios para tu bienestar</li>
+                            <li>Servicios en línea</li>
+                            <li>Plataforma de Bienestar</li>
+                        </ul>
+                    </div>
+                    <div class="seguros-sura-menu-col">
+                        <h5>Decide</h5>
+                        <ul>
+                            <li>Seguro de vida</li>
+                            <li>Seguro de exequias</li>
+                            <li>Seguro Accidentes personales</li>
+                            <li>Fondo de Ahorro</li>
+                            <li>Seguro de educación</li>
+                            <li>Seguro de pensión</li>
+                            <li>Seguro de renta vitalicia</li>
+                            <li>Plan elige</li>
+                            <li>Responsabilidad Civil familiar</li>
+                        </ul>
+                    </div>
+                    <div class="seguros-sura-menu-col">
+                        <h5>Habita</h5>
+                        <ul>
+                            <li>Seguro de hogar</li>
+                            <li>Seguro de arrendamiento</li>
+                            <li>Plan de inversión protegida</li>
+                        </ul>
+                    </div>
+                    <div class="seguros-sura-menu-col">
+                        <h5>Conéctate</h5>
+                        <ul>
+                            <li>Protección digital</li>
+                            <li>Centro de protección Digital</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </header>
-        <header class="header">
-            <div class="header-col-logo">
-                <img src="public/assets/img/logo-sura.svg" />
-                <div class="header-nav-1">
-                    <div class="nav-1-link">Preguntas frecuentes</div>
-                    <div class="nav-1-link">Escríbenos</div>
-                    <div class="nav-1-link">
-                        <div class="colombia"></div>Colombia <span><i class="fas fa-caret-down"></i></span>
-                    </div>
-                    <button id="iniciar-sesion-btn">INICIAR SESIÓN</button>
-                    <button id="buscador-btn" class="buscador-btn-lupa">
-                        <i class="fas fa-search"></i>
-                        <i class="fas fa-times"></i>
-                    </button>
-                </div>
-            </div>
-        </header>
-        <header class="header-2">
-            <div class="header-col-title">
-                <span>SEGUROS</span>
-                <div class="header-nav-2">
-                    <p class="nav-2-link nav-2-link-active">INICIO</p>
-                    <p class="nav-2-link">NUESTROS PRODUCTOS</p>
-                    <p class="nav-2-link">ASISTENCIA EN SINIESTROS</p>
-                    <p class="nav-2-link">OTROS SERVICIOS</p>
-                </div>
-            </div>
-        </header>
-
+        </div>
         <div class="body-container">
             <!--slideshow-->
             <div class="slideshow">
@@ -180,7 +237,7 @@
                                     <option>opcion 3</option>
                                 </select>
                             </div>
-                            <button id="cotiza-seguro-btn" status="collapsed" onclick="clickCotizaSeguro(this)">
+                            <button id="cotiza-seguro-btn" status="collapsed" onclick="clickCotizaSeguro(event,this)">
                                 <span>¡Cotizalo aqui!</span>
                                 <span>Ocultar</span>
                             </button>

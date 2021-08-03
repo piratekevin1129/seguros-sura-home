@@ -15,7 +15,7 @@ function unfocusSelect(select,clase){
     divparent.className = clase+'-select'
 }
 
-function clickCotizaSeguro(btn){
+function clickCotizaSeguro(event,btn){
     var status = $(btn).attr('status')
     if(status=='collapsed'){
         $('#cotiza-seguro-wrap').attr('class', 'cotiza-seguro-expanded')
@@ -24,6 +24,7 @@ function clickCotizaSeguro(btn){
         $('#cotiza-seguro-wrap').attr('class', 'cotiza-seguro-collapsed')
         $('#cotiza-seguro-btn').attr('status', 'collapsed')
     }
+    event.preventDefault()
 }
 
 function nextSlideshow(){
@@ -43,4 +44,11 @@ function prevSlideshow(){
         $('#slideshow-wrapper').attr('style','left:-'+(parseInt(actual_page)-1)+'00%')
     }
 }
-    
+
+function overMenuSeguros(){
+    $('#seguros-sura-menu').attr('class', 'seguros-sura-menu-on')
+}
+
+function outMenuSeguros(){
+    $('#seguros-sura-menu').attr('class', 'seguros-sura-menu-off')
+}
