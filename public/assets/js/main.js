@@ -28,12 +28,23 @@ function clickCotizaSeguro(event,btn){
 }
 
 ///////////////////SLIDESHOW PRINCIPAL//////////////////
+function setSlideshow(data){
+    //var pages = document.getElementById(data.wrapper).getElementsByClassName(data.wrap)
+    var pages = $("#"+data.wrapper+" ."+data.wrap)
+    document.getElementById(data.wrapper).style.width = 'calc(100% * '+pages.length+')'
+    document.getElementById(data.wrapper).style.width = '-moz-calc(100% * '+pages.length+')'
+    document.getElementById(data.wrapper).style.left = '0%'
+
+    $('#'+data.wrapper).attr('page','0')
+    $("#"+data.wrapper+" ."+data.wrap).attr('style','width:calc(100% / '+pages.length+'); width:-moz-calc(100% / '+pages.length+')');
+}
+
 function nextSlideshow(){
     var actual_page = $('#slideshow-wrapper').attr('page')
     var total_pages = document.getElementById('slideshow-wrapper').getElementsByClassName('slideshow-wrap').length
 
     if(actual_page<(total_pages-1)){
-        $('#slideshow-wrapper').attr('style','left:-'+(parseInt(actual_page)+1)+'00%')
+        document.getElementById('slideshow-wrapper').style.left = '-'+(parseInt(actual_page)+1)+'00%'
         $('#slideshow-wrapper').attr('page',(parseInt(actual_page)+1))
     }
 
@@ -50,7 +61,7 @@ function prevSlideshow(){
 
     if(actual_page>0){
         $('#slideshow-wrapper').attr('page',(parseInt(actual_page)-1))
-        $('#slideshow-wrapper').attr('style','left:-'+(parseInt(actual_page)-1)+'00%')
+        document.getElementById('slideshow-wrapper').style.left = '-'+(parseInt(actual_page)-1)+'00%'
     }
 
     //pages
@@ -69,7 +80,7 @@ function nextSlideshow2(){
     var total_pages = document.getElementById('capacidades-parati-slider-wrap').getElementsByClassName('capacidades-parati-row').length
 
     if(actual_page<(total_pages-1)){
-        $('#capacidades-parati-slider-wrap').attr('style','left:-'+(parseInt(actual_page)+1)+'00%')
+        document.getElementById('capacidades-parati-slider-wrap').style.left = '-'+(parseInt(actual_page)+1)+'00%'
         $('#capacidades-parati-slider-wrap').attr('page',(parseInt(actual_page)+1))
     }
 
@@ -87,7 +98,7 @@ function prevSlideshow2(){
 
     if(actual_page>0){
         $('#capacidades-parati-slider-wrap').attr('page',(parseInt(actual_page)-1))
-        $('#capacidades-parati-slider-wrap').attr('style','left:-'+(parseInt(actual_page)-1)+'00%')
+        document.getElementById('capacidades-parati-slider-wrap').style.left = '-'+(parseInt(actual_page)-1)+'00%'
     }
 
     //pages
@@ -105,7 +116,7 @@ function nextSlideshow3(){
     var total_pages = document.getElementById('enterate-wrap').getElementsByClassName('enterate-card').length
 
     if(actual_page<(total_pages-1)){
-        $('#enterate-wrap').attr('style','left:-'+(parseInt(actual_page)+1)+'00%')
+        document.getElementById('enterate-wrap').style.left = '-'+(parseInt(actual_page)+1)+'00%'
         $('#enterate-wrap').attr('page',(parseInt(actual_page)+1))
     }
 
@@ -123,7 +134,7 @@ function prevSlideshow3(){
 
     if(actual_page>0){
         $('#enterate-wrap').attr('page',(parseInt(actual_page)-1))
-        $('#enterate-wrap').attr('style','left:-'+(parseInt(actual_page)-1)+'00%')
+        document.getElementById('enterate-wrap').style.left = '-'+(parseInt(actual_page)-1)+'00%'
     }
 
     //pages
@@ -156,3 +167,9 @@ function clickBuscador(){
     }
     event.preventDefault()
 }
+
+$(document).ready(function() {
+    setSlideshow({wrapper:'slideshow-wrapper',wrap:'slideshow-wrap'})
+    setSlideshow({wrapper:'capacidades-parati-slider-wrap',wrap:'capacidades-parati-row'})
+    setSlideshow({wrapper:'enterate-wrap',wrap:'enterate-card'})
+});

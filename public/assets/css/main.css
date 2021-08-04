@@ -253,11 +253,15 @@ body,html{
     position: relative;
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: stretch;
     margin: 0px;
     padding: 0px;
     height: 100%;
     box-sizing: border-box;
+}
+.widgets-texts a{
+    display: block;
+    text-decoration: none;
 }
 .widgets-actual-text{
     position: relative;
@@ -593,8 +597,8 @@ body,html{
 #slideshow-wrapper{
     position: relative;
     width: 100%;
-    width: calc(100% * 2);
-    width: -moz-calc(100% * 2);
+    /*width: calc(100% * 2);
+    width: -moz-calc(100% * 2);*/
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -608,8 +612,8 @@ body,html{
 .slideshow-wrap{
     position: relative;
     width: 100%;
-    width: calc(100% / 2);
-    width: -moz-calc(100% / 2);
+    /*width: calc(100% / 2);
+    width: -moz-calc(100% / 2);*/
     height: auto;
     margin: 0px;
     padding: 0px;
@@ -1554,8 +1558,8 @@ body,html{
 #capacidades-parati-slider-wrap{
     position: relative;
     width: 100%;
-    width: calc(100% * 2);
-    width: -moz-calc(100% * 2);
+    /*width: calc(100% * 2);
+    width: -moz-calc(100% * 2);*/
     height: auto;
     display: flex;
     flex-wrap: wrap;
@@ -1571,8 +1575,8 @@ body,html{
     justify-content: center;
     align-items: stretch;
     width: 100%;
-    width: calc(100% / 2);
-    width: -moz-calc(100% / 2);
+    /*width: calc(100% / 2);
+    width: -moz-calc(100% / 2);*/
     height: auto;
     margin: 0px;
     padding: 0px;
@@ -1886,8 +1890,8 @@ body,html{
 #enterate-wrap{
     position: relative;
     width: 100%;
-    width: calc(100% * 2);
-    width: -moz-calc(100% * 2);
+    /*width: calc(100% * 2);
+    width: -moz-calc(100% * 2);*/
     height: auto;
 
     display: flex;
@@ -1897,23 +1901,27 @@ body,html{
     padding: 0px;
     box-sizing: border-box;
 
-    transition: left 1s;
-    -webkit-transition: left 1s;
+    transition: left 0.5s;
+    -webkit-transition: left 0.5s;
 }
 
 .enterate-card{
     position: relative;
     width: 100%;
-    width: calc(100% / 2);
-    width: -moz-calc(100% / 2);
+    /*width: calc(100% / 2);
+    width: -moz-calc(100% / 2);*/
     margin: 0px;
     padding: 0px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
 }
-.enterate-card-img{
+.enterate-card-img,
+.blog-sura-card-img{
     position: relative;
     width: 100%;
     height: 220px;
@@ -1921,14 +1929,19 @@ body,html{
     padding: 0px;
     overflow: hidden;
 }
-.enterate-card-img img{
+.blog-sura-card-img{
+    height: 185px;
+}
+.enterate-card-img img,
+.blog-sura-card-img img{
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
     margin: 0px;
 }
-.enterate-card-content{
+.enterate-card-content,
+.blog-sura-card-content{
     position: relative;
     width: 100%;
     height: auto;
@@ -1942,7 +1955,8 @@ body,html{
     justify-content: flex-start;
 }
 
-.enterate-card-date{
+.enterate-card-date,
+.blog-sura-card-date{
     position: relative;
     width: 100%;
     margin: 0px;
@@ -1959,13 +1973,15 @@ body,html{
     justify-content: flex-start;
     margin-bottom: 15px;
 }
-.enterate-card-date i{
+.enterate-card-date i,
+.blog-sura-card-date i{
     columns: #8189A9;
     font-size: 12px;
     margin-right: 10px;
 }
 
-.enterate-card-content > h3{
+.enterate-card-content > h3,
+.blog-sura-card-content > h3{
     display: block;
     margin: 0px;
     width: 100%;
@@ -1982,7 +1998,8 @@ body,html{
     text-align: left;
     margin-bottom: 12px;
 }
-.enterate-card-content > p{
+.enterate-card-content > p,
+.blog-sura-card-content > p{
     display: block;
     margin: 0px;
     width: 100%;
@@ -1997,7 +2014,8 @@ body,html{
     text-align: left;
     margin-bottom: 25px;
 }
-.enterate-card-link{
+.enterate-card-link,
+.blog-sura-card-link{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2007,7 +2025,7 @@ body,html{
 
     width: auto;
     height: 25px;
-    border-radius: 12px;
+    border-radius: 15px;
     border: rgba(0,51,160,0) solid 2px;
     background-color: rgba(0,0,0,0);
 
@@ -2021,13 +2039,94 @@ body,html{
     transition: border 0.2s;
     -webkit-transition: border 0.2s;
 }
-.enterate-card-link:hover{
+.enterate-card-link:hover,
+.blog-sura-card-link:hover{
     border: rgba(0,51,160,1) solid 2px;
     cursor: pointer;
 }
 
-.enterate-card-link i{
+.enterate-card-link i,
+.blog-sura-card-link i{
     margin-left: 10px;
+}
+
+
+/**************BLOG SURA****************/
+.blog-sura{
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 30px 0px;
+    background-color: #ECF0F1;
+    display: block;
+}
+
+.blog-sura-container{
+    position: relative;
+    width: 1200px;
+    display: block;
+    margin: 0px auto;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.blog-sura-title{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 30px;
+}
+.blog-sura-title::after{
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #00AEC7;
+    top: 100%;
+    left: 50%;
+    left: calc(50% - 27.5px);
+    left: -moz-calc(50% - 27.5px);
+}
+.blog-sura-title h1{
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 5px;
+    font-family: 'Barlow-Bold';
+    font-size: 28px;
+    color: #0033A0;
+    font-weight: normal;
+    line-height: normal;
+    text-align: center;
+}
+
+.blog-sura-row{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.blog-sura-card{
+    position: relative;
+    width: 50%;
+    width: calc(50% - 15px);
+    width: -moz-calc(50% - 15px);
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2);
 }
 
 .novedades-col{
