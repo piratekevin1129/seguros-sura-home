@@ -1805,7 +1805,7 @@ body,html{
 }
 
 /*******Noticias 2********/
-#noticias2-container{
+.noticias2-container{
     position: relative;
     width: 100%;
     height: auto;
