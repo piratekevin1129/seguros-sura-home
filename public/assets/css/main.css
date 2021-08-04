@@ -2114,7 +2114,7 @@ body,html{
     justify-content: center;
     margin: 0px;
     padding: 0px 15px;
-    text-decoration: none;
+    text-decoration: none !important;
 
     width: auto;
     height: 25px;
@@ -2124,7 +2124,7 @@ body,html{
 
     font-family: 'FSJoey-Bold';
     font-size: 16px;
-    color: #0033A0;
+    color: #0033A0 !important;
     font-weight: normal;
     line-height: normal;
     text-align: right;
@@ -2606,14 +2606,15 @@ body,html{
     width: auto;
     align-items: center;
     justify-content: center;
-    text-decoration: none;
+    text-decoration: none !important;
 
     font-family: 'Barlow-Bold';
     font-size: 16px;
-    color: #FFFFFF;
+    color: #FFFFFF !important;
     text-align: left;
     font-weight: normal;
     line-height: normal;
+    cursor: pointer;
 }
 .beneficios-noticia-link i{
     margin-left: 10px;
