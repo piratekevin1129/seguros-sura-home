@@ -168,6 +168,17 @@ function clickBuscador(){
     event.preventDefault()
 }
 
+function clickMenuPaises(){
+    $('#nav-pais-select-menu').attr('class','nav-pais-select-menu-on')
+}
+function outMenuPaises(){
+    $('#nav-pais-select-menu').attr('class','nav-pais-select-menu-off')
+}
+function selectPais(pais){
+    $('nav-pais-selected').html('<div class="colombia"></div>'+pais+' <span><i class="fas fa-caret-down"></i></span>')
+    $('#nav-pais-select-menu').attr('class','nav-pais-select-menu-off')
+}
+
 $(document).ready(function() {
     setSlideshow({wrapper:'slideshow-wrapper',wrap:'slideshow-wrap'})
     setSlideshow({wrapper:'capacidades-parati-slider-wrap',wrap:'capacidades-parati-row'})

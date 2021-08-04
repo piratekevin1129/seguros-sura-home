@@ -53,8 +53,21 @@
                     <div class="header-nav-1">
                         <div class="nav-1-link">Preguntas frecuentes</div>
                         <div class="nav-1-link">Escríbenos</div>
-                        <div class="nav-1-link">
-                            <div class="colombia"></div>Colombia <span><i class="fas fa-caret-down"></i></span>
+                        <div id="nav-pais-select">
+                            <div id="nav-pais-selected" onclick="clickMenuPaises()">
+                                <div class="colombia"></div>Colombia <span><i class="fas fa-caret-down"></i></span>
+                            </div>
+                            <div id="nav-pais-select-menu" onmouseleave="outMenuPaises()" class="nav-pais-select-menu-off">
+                                <div class="nav-pais-select-item nav-pais-select-item-selected" onclick="selectPais('Colombia')"><span></span><p>Colombia</p></div>
+                                <div class="nav-pais-select-item" onclick="selectPais('Argentina')"><span></span><p>Argentina</p></div>
+                                <div class="nav-pais-select-item" onclick="selectPais('Brasil')"><span></span><p>Brasil</p></div>
+                                <div class="nav-pais-select-item" onclick="selectPais('Chile')"><span></span><p>Chile</p></div>
+                                <div class="nav-pais-select-item" onclick="selectPais('El Salvador')"><span></span><p>El Salvador</p></div>
+                                <div class="nav-pais-select-item" onclick="selectPais('México')"><span></span><p>México</p></div>
+                                <div class="nav-pais-select-item" onclick="selectPais('Panamá')"><span></span><p>Panamá</p></div>
+                                <div class="nav-pais-select-item" onclick="selectPais('R. Dominicana')"><span></span><p>República Dominicana</p></div>
+                                <div class="nav-pais-select-item" onclick="selectPais('Uruguay')"><span></span><p>Uruguay</p></div>
+                            </div>
                         </div>
                         <button id="iniciar-sesion-btn">INICIAR SESIÓN</button>
                         <button id="buscador-btn" class="buscador-btn-lupa" onclick="clickBuscador()" status="closed">
