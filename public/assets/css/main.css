@@ -88,6 +88,7 @@ body,html{
     width: 100%;
     width: calc(100% + 30px);
     width: -moz-calc(100% + 30px);
+    min-width: 200px;
     height: auto;
     margin: 0px;
     padding: 15px 0px;
@@ -134,7 +135,8 @@ body,html{
     background-color: #00AEC7;
     cursor: pointer;
 }
-.nav-pais-select-item p{
+.nav-pais-select-item > p,
+#nav-pais-selected > p{
     display: block;
     margin: 0px;
     padding: 0px;
@@ -149,7 +151,14 @@ body,html{
     transition: color 0.2s;
     -webkit-transition: color 0.2s;
 }
-.nav-pais-select-item:hover p,.nav-pais-select-item-selected p{
+.nav-pais-select-item > img,
+#nav-pais-selected > img{
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+.nav-pais-select-item:hover > p,.nav-pais-select-item-selected > p{
     color: #FFFFFF;
 }
 
@@ -168,52 +177,12 @@ body,html{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Barlow-Bold';
-    font-size: 14px;
-    color: #0033A0;
-    font-weight: normal;
-    line-height: normal;
 }
 
-.colombia{
-    position: relative;
-    margin: 0px;
-    padding: 0px;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #fdd216;
-    margin-right: 5px;
-    overflow: hidden;
-}
-.colombia::after,.colombia::before{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 25%;
-    margin: 0px;
-    padding: 0px;
-    left: 0px;
-}
-.colombia::after{
-    background-color: #0b3e8e;
-    top: 50%;
-}
-.colombia::before{
-    background-color: #cf1126;
-    bottom: 0%;
-}
-
-#nav-pais-selected > span{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 20px;
-    height: 20px;
-}
-#nav-pais-selected > span i{
+#nav-pais-selected > i{
     font-size: 14px;
     color: #0033A0;
+    margin-left: 7px;
 }
 #iniciar-sesion-btn{
     outline: none;
@@ -716,8 +685,8 @@ body,html{
     margin: 0px;
     padding: 0px;
     width: 100%;
-    height: auto;
-    max-height: 400px;
+    height: 425px;
+    /*max-height: 400px;*/
     background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));
     background: -webkit-linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));
     background: -o-linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));

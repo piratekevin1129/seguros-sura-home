@@ -175,7 +175,7 @@ function outMenuPaises(){
     $('#nav-pais-select-menu').attr('class','nav-pais-select-menu-off')
 }
 function selectPais(pais){
-    $('#nav-pais-selected').html('<div class="colombia"></div>'+pais+' <span><i class="fas fa-caret-down"></i></span>')
+    $('#nav-pais-selected').html(String(pais.innerHTML+'<i class="fas fa-caret-down"></i>'))
     $('#nav-pais-select-menu').attr('class','nav-pais-select-menu-off')
 }
 
