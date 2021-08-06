@@ -13,6 +13,7 @@
     <script src="https://kit.fontawesome.com/a6f44a68f2.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="public/assets/css/main.css" type="text/css" />
+    <link rel="stylesheet" href="public/assets/css/responsive.css" type="text/css" />
     <link rel="stylesheet" href="public/assets/css/fonts-real.css" type="text/css" />
     <title>Persona</title>
 </head>
@@ -51,8 +52,8 @@
                 <div class="header-col-logo">
                     <img src="public/assets/img/logo-sura.svg" />
                     <div class="header-nav-1">
-                        <div class="nav-1-link">Preguntas frecuentes</div>
-                        <div class="nav-1-link">Escríbenos</div>
+                        <div class="nav-1-link"><a>Preguntas frecuentes</a></div>
+                        <div class="nav-1-link"><a>Escríbenos</a></div>
                         <div id="nav-pais-select">
                             <div id="nav-pais-selected" onclick="clickMenuPaises()">
                                 <img src="public/assets/img/paises/colombia.svg" /><p>Colombia</p><i class="fas fa-caret-down"></i>
@@ -69,9 +70,24 @@
                                 <div class="nav-pais-select-item" onclick="selectPais(this)"><img src="public/assets/img/paises/uruguay.svg" /><p>Uruguay</p></div>
                             </div>
                         </div>
-                        <button id="iniciar-sesion-btn">INICIAR SESIÓN</button>
+                        <div id="iniciar-sesion-cont">
+                            <button id="iniciar-sesion-btn" class="iniciar-sesion-btn-off" status="closed" onclick="clickIniciarSesion(event,this)"><span>INICIAR SESIÓN</span> <i class="fas fa-caret-down"></i></button>
+                            <div id="iniciar-sesion-options" class="iniciar-sesion-options-off">
+                                <p class="iniciar-sesion-option"><a>Sucursal virtual <span>Personas</span></a></p>
+                                <p class="iniciar-sesion-option"><a>Sucursal virtual <span>Empresas</span></a></p>
+                                <p class="iniciar-sesion-option"><a>Proveedores</a></p>
+                                <p class="iniciar-sesion-option"><a>Asesores</a></p>
+                                <p class="iniciar-sesion-option"><a>Solicitar clave</a></p>
+                            </div>
+                        </div>
+                        
                         <button id="buscador-btn" class="buscador-btn-lupa" onclick="clickBuscador()" status="closed">
                             <i class="fas fa-search"></i>
+                            <i class="fas fa-times"></i>
+                        </button>
+
+                        <button id="menu-hamburguesa" class="menu-hamburguesa-closed" status="closed" onclick="clickMenuHamburguesa()">
+                            <i class="fas fa-bars"></i>
                             <i class="fas fa-times"></i>
                         </button>
                     </div>
@@ -88,66 +104,120 @@
                 <div class="header-col-title">
                     <span>SEGUROS</span>
                     <div class="header-nav-2">
-                        <p class="nav-2-link nav-2-link-active" onmouseover="outMenuSeguros()">INICIO</p>
-                        <p class="nav-2-link" onmouseover="overMenuSeguros()">NUESTROS PRODUCTOS</p>
-                        <p class="nav-2-link" onmouseover="outMenuSeguros()">ASISTENCIA EN SINIESTROS</p>
-                        <p class="nav-2-link" onmouseover="outMenuSeguros()">OTROS SERVICIOS</p>
+                        <p class="nav-2-link">INICIO</p>
+                        <p class="nav-2-link" onmouseover="overMenuSeguros('seguros-sura-menu-azul-nuestrosproductos')" onclick="overMenuSeguros('seguros-sura-menu-azul-nuestrosproductos')" onmouseout="outMenuSeguros()">NUESTROS PRODUCTOS</p>
+                        <p class="nav-2-link">ASISTENCIA EN SINIESTROS</p>
+                        <p class="nav-2-link">OTROS SERVICIOS</p>
                     </div>
                 </div>
             </header>
-            <div id="seguros-sura-menu" class="seguros-sura-menu-off" onmouseleave="outMenuSeguros()">
+            <div id="seguros-sura-menu" class="seguros-sura-menu-off"><!--onmouseover="overMenuSeguros()" onmouseleave="outMenuSeguros()"-->
                 <div class="seguros-sura-menu-content">
-                    <div class="seguros-sura-menu-col">
-                        <h5>Muévete</h5>
-                        <ul>
-                            <li>Seguro Obligatorio (SOAT)</li>
-                            <li>Seguros voluntarios</li>
-                            <li>Centros de servicio</li>
-                            <li>Plan muévete libre</li>
-                            <li>Seguro de viajes</li>
-                            <li>Seguro para Embarcaciones de Recreo</li>
-                            <li>Movilidad segura</li>
-                        </ul>
+                    <!--esto estará visible solo en responsive-->
+                    <div class="seguros-sura-menu-blanco">
+                        <div class="seguros-sura-menu-blanco-item"><p>Preguntas frecuentes</p></div>
+                        <div class="seguros-sura-menu-blanco-item"><p>Escríbenos</p></div>
+                        <div id="nav-pais-select2" class="nav-pais-select2-collapsed">
+                            <div id="nav-pais-selected2" onclick="clickAcordeon(this)"><img src="public/assets/img/paises/colombia.svg" /><p>Colombia</p></div>
+                            <div id="nav-pais-select2-menu">
+                                <div onclick="selectPais(this)"><img src="public/assets/img/paises/colombia.svg" /><p>Colombia</p></div>
+                                <div onclick="selectPais(this)"><img src="public/assets/img/paises/argentina.svg" /><p>Argentina</p></div>
+                                <div onclick="selectPais(this)"><img src="public/assets/img/paises/brasil.svg" /><p>Brasil</p></div>
+                                <div onclick="selectPais(this)"><img src="public/assets/img/paises/chile.svg" /><p>Chile</p></div>
+                                <div onclick="selectPais(this)"><img src="public/assets/img/paises/el-salvador.svg" /><p>El Salvador</p></div>
+                                <div onclick="selectPais(this)"><img src="public/assets/img/paises/mexico.svg" /><p>México</p></div>
+                                <div onclick="selectPais(this)"><img src="public/assets/img/paises/panama.svg" /><p>Panamá</p></div>
+                                <div onclick="selectPais(this)"><img src="public/assets/img/paises/republica-dominicana.svg" /><p>República Dominicana</p></div>
+                                <div onclick="selectPais(this)"><img src="public/assets/img/paises/uruguay.svg" /><p>Uruguay</p></div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="seguros-sura-menu-col">
-                        <h5>Se saludable</h5>
-                        <ul>
-                            <li>Seguro voluntario de salud</li>
-                            <li>Sedes salud SURA</li>
-                            <li>Directorio médico</li>
-                            <li>Servicios para tu bienestar</li>
-                            <li>Servicios en línea</li>
-                            <li>Plataforma de Bienestar</li>
-                        </ul>
-                    </div>
-                    <div class="seguros-sura-menu-col">
-                        <h5>Decide</h5>
-                        <ul>
-                            <li>Seguro de vida</li>
-                            <li>Seguro de exequias</li>
-                            <li>Seguro Accidentes personales</li>
-                            <li>Fondo de Ahorro</li>
-                            <li>Seguro de educación</li>
-                            <li>Seguro de pensión</li>
-                            <li>Seguro de renta vitalicia</li>
-                            <li>Plan elige</li>
-                            <li>Responsabilidad Civil familiar</li>
-                        </ul>
-                    </div>
-                    <div class="seguros-sura-menu-col">
-                        <h5>Habita</h5>
-                        <ul>
-                            <li>Seguro de hogar</li>
-                            <li>Seguro de arrendamiento</li>
-                            <li>Plan de inversión protegida</li>
-                        </ul>
-                    </div>
-                    <div class="seguros-sura-menu-col">
-                        <h5>Conéctate</h5>
-                        <ul>
-                            <li>Protección digital</li>
-                            <li>Centro de protección Digital</li>
-                        </ul>
+                    <div class="seguros-sura-menu-azul">
+                        <div class="seguros-sura-menu-azul-wraper seguros-sura-menu-azul-wraper-collapsed" id="seguros-sura-menu-azul-inicio">
+                            <div class="seguros-sura-menu-azul-title">INICIO</div>
+                        </div>
+                        <div class="seguros-sura-menu-azul-wraper seguros-sura-menu-azul-wraper-active seguros-sura-menu-azul-wraper-collapsed" id="seguros-sura-menu-azul-nuestrosproductos">
+                            <div class="seguros-sura-menu-azul-title" onclick="clickAcordeon(this)">NUESTROS PRODUCTOS</div>
+                            <div class="seguros-sura-menu-azul-box">
+                                <div class="seguros-sura-menu-col seguros-sura-menu-col-collapsed">
+                                    <h5 onclick="clickAcordeon2(this,'seguros-sura-menu-azul-nuestrosproductos')">Muévete</h5>
+                                    <ul>
+                                        <li>Seguro Obligatorio (SOAT)</li>
+                                        <li>Seguros voluntarios</li>
+                                        <li>Centros de servicio</li>
+                                        <li>Plan muévete libre</li>
+                                        <li>Seguro de viajes</li>
+                                        <li>Seguro para Embarcaciones de Recreo</li>
+                                        <li>Movilidad segura</li>
+                                    </ul>
+                                </div>
+                                <div class="seguros-sura-menu-col seguros-sura-menu-col-collapsed">
+                                    <h5 onclick="clickAcordeon2(this,'seguros-sura-menu-azul-nuestrosproductos')">Se saludable</h5>
+                                    <ul>
+                                        <li>Seguro voluntario de salud</li>
+                                        <li>Sedes salud SURA</li>
+                                        <li>Directorio médico</li>
+                                        <li>Servicios para tu bienestar</li>
+                                        <li>Servicios en línea</li>
+                                        <li>Plataforma de Bienestar</li>
+                                    </ul>
+                                </div>
+                                <div class="seguros-sura-menu-col seguros-sura-menu-col-collapsed">
+                                    <h5 onclick="clickAcordeon2(this,'seguros-sura-menu-azul-nuestrosproductos')">Decide</h5>
+                                    <ul>
+                                        <li>Seguro de vida</li>
+                                        <li>Seguro de exequias</li>
+                                        <li>Seguro Accidentes personales</li>
+                                        <li>Fondo de Ahorro</li>
+                                        <li>Seguro de educación</li>
+                                        <li>Seguro de pensión</li>
+                                        <li>Seguro de renta vitalicia</li>
+                                        <li>Plan elige</li>
+                                        <li>Responsabilidad Civil familiar</li>
+                                    </ul>
+                                </div>
+                                <div class="seguros-sura-menu-col seguros-sura-menu-col-collapsed">
+                                    <h5 onclick="clickAcordeon2(this,'seguros-sura-menu-azul-nuestrosproductos')">Habita</h5>
+                                    <ul>
+                                        <li>Seguro de hogar</li>
+                                        <li>Seguro de arrendamiento</li>
+                                        <li>Plan de inversión protegida</li>
+                                    </ul>
+                                </div>
+                                <div class="seguros-sura-menu-col seguros-sura-menu-col-collapsed">
+                                    <h5 onclick="clickAcordeon2(this,'seguros-sura-menu-azul-nuestrosproductos')">Conéctate</h5>
+                                    <ul>
+                                        <li>Protección digital</li>
+                                        <li>Centro de protección Digital</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="seguros-sura-menu-azul-wraper seguros-sura-menu-azul-wraper-collapsed" id="seguros-sura-menu-azul-asistenciasiniestros">
+                            <div class="seguros-sura-menu-azul-title">ASISTENCIA EN SINIESTROS</div>
+                        </div>
+                        <div class="seguros-sura-menu-azul-wraper seguros-sura-menu-azul-wraper-collapsed" id="seguros-sura-menu-azul-otrosservicios">
+                            <div class="seguros-sura-menu-azul-title" onclick="clickAcordeon(this)">OTROS SERVICIOS</div>
+                            <div class="seguros-sura-menu-azul-box">
+                                <div class="seguros-sura-menu-col seguros-sura-menu-col-collapsed">
+                                    <h5 onclick="clickAcordeon2(this,'seguros-sura-menu-azul-otrosservicios')">Muévete</h5>
+                                    <ul>
+                                        <li>Seguro Obligatorio (SOAT)</li>
+                                        <li>Seguros voluntarios</li>
+                                        <li>Centros de servicio</li>
+                                        <li>Plan muévete libre</li>
+                                    </ul>
+                                </div>
+                                <div class="seguros-sura-menu-col seguros-sura-menu-col-collapsed">
+                                    <h5 onclick="clickAcordeon2(this,'seguros-sura-menu-azul-otrosservicios')">Se saludable</h5>
+                                    <ul>
+                                        <li>Seguro voluntario de salud</li>
+                                        <li>Sedes salud SURA</li>
+                                        <li>Directorio médico</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -400,6 +470,8 @@
                             </div>
                         </div>
                     </div>
+                    
+                    <button class="blog-sura-ir-btn">IR AL BLOG</button>
                 </div>
             </div>
 
@@ -600,7 +672,6 @@
             </div>
         </div>
 
-        <br />
         <br />
 
         <footer id="footer-seguros">
