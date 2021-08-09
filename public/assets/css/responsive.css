@@ -1383,6 +1383,7 @@
     .capacidades-parati-text{
         padding: 0px 10px;
         margin-bottom: 20px;
+        font-size: 14px;
     }
 
     #capacidades-parati-slider{
@@ -1746,7 +1747,7 @@
     }
     .visita-col{
         margin: 0px !important;
-        margin-bottom: 20px !important;
+        margin-bottom: 40px !important;
     }
     .visita-icon{
         width: 70px;
@@ -1919,6 +1920,9 @@
     }
     
 
+    .enterate-card-row{
+        width: 300px;
+    }
     .novedad-box{
         width: 100%;
     }
