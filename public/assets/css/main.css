@@ -1152,6 +1152,7 @@ body,html{
     width: auto;
     height: auto;
     border-right: 1px solid #FFFFFF;
+    box-sizing: border-box;
 }
 .opciones-un-clic-nav .nav-3-link:last-child{
     border-right: none;
@@ -1179,11 +1180,6 @@ body,html{
 .nav-3-link span i{
     color: #FFFFFF;
     font-size: 15px;
-}
-
-.nav-3-link:hover p{
-    cursor: pointer;
-    text-decoration: underline;
 }
 
 /********************INFORMATE COVID**********************/
@@ -1241,6 +1237,14 @@ body,html{
     left: 0px;
 }
 
+.informate-covid-noticias-scroll{
+    position: relative;
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
 .informate-covid-noticias{
     position: relative;
     width: auto;
@@ -1329,6 +1333,7 @@ body,html{
 .informate-covid-noticia-content p{
     font-family: 'Barlow-Regular';
     font-size: 16px;
+    margin-bottom: 10px;
 }
 .informate-covid-noticia-link{
     display: flex;
@@ -1446,6 +1451,7 @@ body,html{
     font-weight: normal;
     line-height: normal;
     text-align: left;
+    box-sizing: border-box;
 }
 
 .cotiza-seguro-select{
@@ -2136,13 +2142,20 @@ body,html{
     width: -moz-calc(100% / 2);*/
     margin: 0px;
     padding: 0px;
+    display: block;
+
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+}
+.enterate-card-row{
+    position: relative;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-
-    transition: opacity 0.5s;
-    -webkit-transition: opacity 0.5s;
 }
 .enterate-card-img,
 .blog-sura-card-img{
@@ -2543,6 +2556,10 @@ body,html{
     text-align: left;
     background-color: #ECF0F1;
 }
+.novedad-text-tag:hover{
+    background-color: #d2dcdf;
+    cursor: pointer;
+}
 
 .novedad-leer-btn{
     outline: none;
@@ -2576,6 +2593,12 @@ body,html{
     background-color: #0033A0;
     color: #FFFFFF;
     cursor: pointer;
+}
+.novedad-leer-btn i{
+    display: none;
+}
+.novedad-leer-btn span{
+    display: initial;
 }
 
 #novedad-ver-todas-btn{
@@ -2677,6 +2700,14 @@ body,html{
 }
 
 .beneficios-noticias{
+    position: relative;
+    width: auto;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    box-sizing: border-box;
+}
+.beneficios-noticias-scroll{
     position: relative;
     width: 75%;
     margin: 0px;
@@ -3215,7 +3246,7 @@ body,html{
     display: block;
     box-sizing: border-box;
 }
-.footer1,.footer2,.footer3,.footer4{
+.footer1,.footer2,.footer4{
     position: relative;
     display: flex;
     flex-direction: row;
@@ -3232,7 +3263,13 @@ body,html{
     align-items: stretch;
 }
 .footer3{
+    position: relative;
+    display: block;
+    margin: 0px;
     padding: 20px 0px;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: #e6e7ed solid 1px;
 }
 .footer4{
     padding: 20px 0px;
@@ -3257,9 +3294,11 @@ body,html{
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    flex-wrap: wrap;
     box-sizing: border-box;
 }
 .footer2-col > h6{
+    position: relative;
     display: block;
     margin: 0px;
     padding: 0px;
@@ -3271,6 +3310,7 @@ body,html{
     line-height: normal;
     text-align: left;
     margin-bottom: 10px;
+    box-sizing: border-box;
 }
 .footer2-col > ul{
     margin: 0px;
@@ -3293,9 +3333,25 @@ body,html{
 .footer2-col > ul > li span{
     font-family: 'Barlow-Bold';
 }
-            
 
-.footer3-nav{
+.footer3-col-collapsed{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 0px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0px;
+    overflow: hidden;
+
+    transition: max-height 0.2s;
+    -webkit-transition: max-height 0.2s;
+}
+
+.footer3-nav,.footer3-title{
     position: relative;
     display: flex;
     margin: 0px;
@@ -3308,6 +3364,14 @@ body,html{
     font-weight: normal;
     line-height: normal;
     text-align: left;
+}
+.footer3-title{
+    width: 100%;
+    height: 30px;
+    justify-content: left;
+    align-items: center;
+    display: none;
+    cursor: pointer;
 }
 
 .footer-copyright{
@@ -3342,7 +3406,7 @@ body,html{
     color: #53565A;
     font-size: 16px;
 }
-.footer-redes p:first-child{
+.footer-redes p:first-child,.footer-redes p:last-child{
     display: block;
     font-family: 'FSJoey-Bold';
     font-size: 18px;
@@ -3350,9 +3414,13 @@ body,html{
     font-weight: normal;
     line-height: normal;
     text-align: left;
-    margin: 0px;
     padding: 0px;
+}
+.footer-redes p:first-child{
     margin-left: 0px;
+}
+.footer-redes p:last-child{
+    font-style: italic;
 }
 
 /********************MENU******************/
