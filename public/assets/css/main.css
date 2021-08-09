@@ -720,7 +720,7 @@ body,html{
 .body-texts h1{
     display: block;
     margin: 0px;
-    padding: 0px;
+    padding: 0px 20px;
 
     font-family: 'FSJoey-Bold';
     font-size: 56px;
@@ -729,11 +729,12 @@ body,html{
     font-weight: normal;
     line-height: normal !important;
     margin-bottom: 15px;
+    box-sizing: border-box;
 }
 .body-texts p{
     display: block;
     margin: 0px !important;
-    padding: 0px;
+    padding: 0px 10px;
 
     font-family: 'Barlow-Bold';
     font-size: 24px;
@@ -742,6 +743,7 @@ body,html{
     font-weight: normal;
     line-height: normal !important;
     margin-bottom: 30px !important;
+    box-sizing: border-box;
 }
  
 .body-texts-buttons{
@@ -781,9 +783,6 @@ body,html{
 
     transition: box-shadow 0.2s;
     -webkit-transition: box-shadow 0.2s;
-}
-.body-texts-button:hover{
-    box-shadow: 0px 6px 3px -3px rgba(0,0,0,0.9);
 }
 
 #persona-btn{

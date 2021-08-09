@@ -1,4 +1,10 @@
 @media (min-width: 1200px){/*1200 en adelante*/
+    /**************HOME***************/
+    .body-texts-button:hover{
+        box-shadow: 0px 6px 3px -3px rgba(0,0,0,0.9);
+    }
+
+    /***************BODY**************/
     #buscador-btn:hover{
         box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.2);
         cursor: pointer;
@@ -24,6 +30,15 @@
 }
 
 @media (min-width: 960px) and (max-width: 1199px){
+    /**************HOME***************/
+    .body-texts h1{
+        font-size: 50px;
+    }
+    .body-texts-button:hover{
+        box-shadow: 0px 6px 3px -3px rgba(0,0,0,0.9);
+    }
+
+    /***************BODY**************/
     .header-col-logo,.header-col-title,.header-col-widgets{
         width: 960px;
         padding: 0px 10px;
@@ -384,6 +399,18 @@
 }
 
 @media (min-width: 768px) and (max-width: 959px){
+    /**************HOME***************/
+     .body-texts h1{
+        font-size: 45px;
+    }
+    .body-texts p{
+        font-size: 21px;
+    }
+    .body-texts-button:hover{
+        box-shadow: 0px 6px 3px -3px rgba(0,0,0,0.9);
+    }
+
+    /***************BODY**************/
     .header-col-logo,.header-col-title,.header-col-widgets{
         width: 100%;
         padding: 0px 10px;
@@ -943,6 +970,47 @@
 }
 
 @media (max-width: 767px){
+    /**************HOME***************/
+    .body-texts h1{
+        font-size: 40px;
+    }
+    .body-texts p{
+        font-size: 18px;
+        font-family: 'Barlow-Medium';
+    }
+    .body-texts-buttons{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+    }
+    #persona-btn{
+        margin-right: initial;
+        margin-bottom: 20px;
+    }
+    .body-texts-button:active{
+        box-shadow: 0px 6px 3px -3px rgba(0,0,0,0.9);
+    }
+    
+    .body-imgs{
+        display: block;
+    }
+    #img-persona{
+        width: 100%;
+    }
+    #img-empresa{
+        display: none;
+    }
+    .body-img-over{
+        background-color: rgba(0,0,0,0.5) !important;
+    }
+    .body-img-over img{
+        transform: initial !important;
+        -webkit-transform: initial !important;
+        -o-transform: initial !important;
+    }
+    
+    /***************BODY**************/
     .header-col-logo,.header-col-title,.header-col-widgets{
         width: 100%;
         padding: 0px 10px;
@@ -1863,6 +1931,15 @@
 }
 
 @media (max-width: 519px){
+    /**************HOME***************/
+    .body-texts h1{
+        font-size: 35px;
+    }
+    .body-texts p{
+        font-size: 15px;
+    }
+
+    /***************BODY**************/
     .widgets-appearance{
         display: none !important;
     }
