@@ -887,7 +887,7 @@ body,html{
 
     font-family: 'FSJoey-Bold';
     font-size: 60px;
-    color: #FFFFFF;
+    color: #FFFFFF !important;
     text-align: left;
     font-weight: normal;
     line-height: normal;
@@ -1237,7 +1237,7 @@ body,html{
     padding-top: 10px;
     font-family: 'Barlow-Bold';
     font-size: 36px;
-    color: #FFFFFF;
+    color: #FFFFFF !important;
     text-align: left;
     font-weight: normal;
     line-height: normal;
@@ -1419,7 +1419,7 @@ body,html{
     padding-bottom: 5px;
     font-family: 'Barlow-Bold';
     font-size: 28px;
-    color: #0033A0;
+    color: #0033A0 !important;
     font-weight: normal;
     line-height: normal;
     text-align: center;
@@ -1772,7 +1772,7 @@ body,html{
     padding-bottom: 5px;
     font-family: 'Barlow-Bold';
     font-size: 28px;
-    color: #0033A0;
+    color: #0033A0 !important;
     font-weight: normal;
     line-height: normal;
     text-align: center;
@@ -2099,7 +2099,7 @@ body,html{
 
     font-family: 'Barlow-Bold';
     font-size: 28px;
-    color: #0033A0;
+    color: #0033A0 !important;
     text-align: left;
     font-weight: normal;
     line-height: normal;
@@ -2335,7 +2335,7 @@ body,html{
     padding-bottom: 5px;
     font-family: 'Barlow-Bold';
     font-size: 28px;
-    color: #0033A0;
+    color: #0033A0 !important;
     font-weight: normal;
     line-height: normal;
     text-align: center;
@@ -2446,7 +2446,7 @@ body,html{
 
     font-family: 'Barlow-Bold';
     font-size: 28px;
-    color: #0033A0;
+    color: #0033A0 !important;
     text-align: left;
     font-weight: normal;
     line-height: normal;
@@ -2676,7 +2676,7 @@ body,html{
     padding-top: 10px;
     font-family: 'Barlow-Bold';
     font-size: 36px;
-    color: #0033A0;
+    color: #0033A0 !important;
     text-align: left;
     font-weight: normal;
     line-height: normal;
@@ -2889,7 +2889,7 @@ body,html{
 
     font-family: 'Barlow-Bold';
     font-size: 28px;
-    color: #0033A0;
+    color: #0033A0 !important;
     font-weight: normal;
     line-height: normal;
     text-align: left;
@@ -3076,7 +3076,7 @@ body,html{
 
     font-family: 'Barlow-Bold';
     font-size: 28px;
-    color: #0033A0;
+    color: #0033A0 !important;
     font-weight: normal;
     line-height: normal;
     text-align: center;
@@ -3176,12 +3176,12 @@ body,html{
     margin: 0px;
     padding: 0px;
 
-    font-family: 'Barlow-Medium';
+    font-family: 'Barlow-Medium' !important;
     font-size: 18px;
-    color: #53565A;
+    color: #53565A !important;
     text-align: center;
-    font-weight: normal;
-    line-height: normal;
+    font-weight: normal !important;
+    line-height: normal !important;
     margin-bottom: 15px;
 }
 .visita-text{
@@ -3343,6 +3343,7 @@ body,html{
 .footer2-col > ul > li a{
     text-decoration: inherit !important;
     color: inherit !important;
+    font-family: inherit !important;
 }
 .footer2-col > ul > li span{
     font-family: 'Barlow-Bold';
@@ -3390,6 +3391,7 @@ body,html{
 .footer3-nav a{
     text-decoration: inherit !important;
     color: inherit !important;
+    font-family: inherit !important;
 }
 
 .footer-copyright{
@@ -3423,6 +3425,7 @@ body,html{
 .footer-redes p a{
     text-decoration: inherit !important;
     color: inherit !important;
+    font-family: inherit !important;
 }
 .footer-redes p i{
     color: #53565A;
