@@ -2856,8 +2856,6 @@ body,html{
     box-sizing: border-box;
 }
 .enlaces-interes-col1{
-    /*background-image: url(../../images/new-home/enlaces-interes-back.png);*/
-    background-image: url(../img/enlaces-interes-back.png);
     background-repeat: no-repeat;
     background-position: 0px center;
     background-color: #f0f0f0;
@@ -3542,8 +3540,6 @@ body,html{
     height: 12px;
     
     background-repeat: no-repeat;
-    /*background-image: url(../../images/new-home/menu-expand-icon-1.svg);*/
-    background-image: url(../img/menu-expand-icon-1.svg);
     background-position: center;
     background-size: contain;
 
@@ -3643,8 +3639,6 @@ body,html{
     display: none;
     
     background-repeat: no-repeat;
-    /*background-image: url(../../images/new-home/menu-expand-icon-1.svg);*/
-    background-image: url(../img/menu-expand-icon-1.svg);
     background-position: center;
     background-size: contain;
 
@@ -3734,8 +3728,6 @@ body,html{
     background-size: 20px;
     background-position: 0px center;
     background-repeat: no-repeat;
-    /*background-image: url(../../images/new-home/menu-right-icon.svg);*/
-    background-image: url(../img/menu-right-icon.svg);
     left: 0px;
     margin-bottom: 15px;
 
@@ -3830,4 +3822,24 @@ body,html{
 .buscador-container-btn:hover{
     box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.2);
     cursor: pointer;
+}
+
+/*****************IMAGES***************/
+.enlaces-interes-col1{
+    background-image: url(../../images/new-home/enlaces-interes-back.png);
+    /*background-image: url(../img/enlaces-interes-back.png);*/
+}
+#nav-pais-selected2::after{
+    background-image: url(../../images/new-home/menu-expand-icon-1.svg);
+    /*background-image: url(../img/menu-expand-icon-1.svg);*/
+}
+
+.seguros-sura-menu-azul-title::after{
+    background-image: url(../../images/new-home/menu-expand-icon-1.svg);
+    /*background-image: url(../img/menu-expand-icon-1.svg);*/
+}
+
+.seguros-sura-menu-col > ul > li{
+    background-image: url(../../images/new-home/menu-right-icon.svg);
+    /*background-image: url(../img/menu-right-icon.svg);*/
 }

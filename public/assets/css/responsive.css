@@ -1307,8 +1307,6 @@
         display: none;
         
         background-repeat: no-repeat;
-        /*background-image: url(../../images/new-home/menu-expand-icon-2.svg);*/
-        background-image: url(../img/menu-expand-icon-2.svg);
         background-position: center;
         background-size: contain;
     
@@ -1464,8 +1462,6 @@
         background-position: 100% center;
         background-position: calc(100% - 5px) center;
         background-position: -moz-calc(100% - 5px) center;
-        /*background-image: url(../../images/new-home/menu-expand-icon-1.svg);*/
-        background-image: url(../img/menu-expand-icon-1.svg);
         margin-bottom: 0px;
         border: none;
     }
@@ -2099,6 +2095,19 @@
     }
     .footer-redes p{
         margin-left: 10px;
+    }
+}
+
+/******IMAGES****/
+@media (max-width: 767px){
+    .seguros-sura-menu-col h5::after,.footer2-col > h6::after,.footer3-title::after{
+        background-image: url(../../images/new-home/menu-expand-icon-2.svg);
+        /*background-image: url(../img/menu-expand-icon-2.svg);*/
+    }
+    
+    .nav-3-link{
+        background-image: url(../../images/new-home/menu-expand-icon-1.svg);
+        /*background-image: url(../img/menu-expand-icon-1.svg);*/
     }
 }
 
