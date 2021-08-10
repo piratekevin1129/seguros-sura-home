@@ -131,7 +131,7 @@
                     </div>
                 </div>
             </header>
-            <div id="seguros-sura-menu" class="seguros-sura-menu-off"><!--onmouseover="overMenuSeguros()" onmouseleave="outMenuSeguros()"-->
+            <div id="seguros-sura-menu" class="seguros-sura-menu-off" onmouseover="overMenuSeguros()" onmouseleave="outMenuSeguros()">
                 <div class="seguros-sura-menu-content">
                     <!--esto estará visible solo en responsive-->
                     <div class="seguros-sura-menu-blanco">
@@ -152,6 +152,8 @@
                             </div>
                         </div>
                     </div>
+
+                    <!--este estará visible en responsive y en pc-->
                     <div class="seguros-sura-menu-azul">
                         <div class="seguros-sura-menu-azul-wraper seguros-sura-menu-azul-wraper-collapsed" id="seguros-sura-menu-azul-inicio">
                             <div class="seguros-sura-menu-azul-title">INICIO</div>
@@ -236,6 +238,20 @@
                                         <li>Directorio médico</li>
                                     </ul>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--este estará visible solo en responsive-->
+                    <div class="seguros-sura-menu-amarillo">
+                        <div id="seguros-sura-menu-amarillo-cont" class="seguros-sura-menu-amarillo-collapsed">
+                            <button id="iniciar-sesion-btn2" class="iniciar-sesion-btn-off" status="closed" onclick="clickIniciarSesion2(event,this)"><span>INICIAR SESIÓN</span> <i class="fas fa-caret-down"></i></button>
+                            <div id="iniciar-sesion-options2">
+                                <p class="iniciar-sesion-option2"><a>Sucursal virtual <span>Personas</span></a></p>
+                                <p class="iniciar-sesion-option2"><a>Sucursal virtual <span>Empresas</span></a></p>
+                                <p class="iniciar-sesion-option2"><a>Proveedores</a></p>
+                                <p class="iniciar-sesion-option2"><a>Asesores</a></p>
+                                <p class="iniciar-sesion-option2"><a>Solicitar clave</a></p>
                             </div>
                         </div>
                     </div>

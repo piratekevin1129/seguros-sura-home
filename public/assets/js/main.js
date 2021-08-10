@@ -201,6 +201,17 @@ function clickIniciarSesion(event,btn){
     }
     event.preventDefault()
 }
+function clickIniciarSesion2(event,btn){
+    var status = btn.getAttribute('status')
+    if(status=='closed'){
+        $('#iniciar-sesion-btn2').attr('status','opened')
+        $('#seguros-sura-menu-amarillo-cont').attr('class','seguros-sura-menu-amarillo-expanded')
+    }else{
+        $('#iniciar-sesion-btn2').attr('status','closed')
+        $('#seguros-sura-menu-amarillo-cont').attr('class','seguros-sura-menu-amarillo-collapsed')
+    }
+    event.preventDefault()
+}
 
 /************ACORDEON MENU RESPONSIVE*************/
 function clickMenuHamburguesa(){

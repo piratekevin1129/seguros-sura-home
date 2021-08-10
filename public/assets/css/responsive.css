@@ -1017,6 +1017,9 @@
     }
 
     /****WIDGET RESPONSIVE****/
+    .widgets-appearance{
+        display: none;
+    }
     .widgets-mobile{
         position: fixed;
         display: flex;
@@ -1347,6 +1350,27 @@
         -webkit-transform: rotate(0deg);
         -o-transform: rotate(0deg);
         display: block;
+    }
+
+    /********menu amarillo iniciar sesion*******/
+    .seguros-sura-menu-amarillo{
+        display: block;
+        margin-top: 25px;
+    }
+    .seguros-sura-menu-amarillo::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        width: calc(100% - 20px);
+        width: -moz-calc(100% - 20px);
+        height: 1.5px;
+        background-color: #ECF0F1;
+        margin: 0px;
+        padding: 0px;
+        top: 0px;
+        top: calc(0px - 12.5px);
+        top: -moz-calc(0px - 12.5px);
+        left: 10px;
     }
 
     /*********BUSCADOR*********/
@@ -2122,6 +2146,9 @@
 
     /***************BODY**************/
     /****WIDGET RESPONSIVE****/
+    .widgets-appearance{
+        display: none;
+    }
     .widgets-mobile{
         right: 0px;
         right: calc(0px - (150px - 30px));
