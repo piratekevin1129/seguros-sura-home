@@ -1016,18 +1016,190 @@
         padding: 0px 10px;
     }
 
+    /****WIDGET RESPONSIVE****/
+    .widgets-mobile{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        top: 50%;
+        right: 0px;
+        right: calc(0px - (160px - 35px));
+        right: -moz-calc(0px - (160px - 35px));
+        
+        width: auto;
+        height: auto;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        background-color: #53565A;
+        z-index: 4000;
+        border-radius: 10px 0px 0px 10px;
+        cursor: pointer;
+
+        transition: right 0.2s;
+        -webkit-transition: right 0.2s;
+    }
+        
+    .widget-mobile-appearance,
+    .widget-mobile-font-plus,
+    .widget-mobile-font-minus,
+    .widget-mobile-language
+    {
+        position: relative;
+        display: flex;
+        width: 160px;
+        height: 26px;
+        margin: 0px;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: flex-start;
+    }
+    .widget-mobile-appearance,
+    .widget-mobile-language{
+        margin: 15px 0px;
+    }
+    .widget-mobile-font-plus,
+    .widget-mobile-font-minus{
+        margin: 10px 0px;
+    }
+
+    .widget-mobile-appearance::after,
+    .widget-mobile-language::after{
+        position: absolute;
+        content: "";
+        height: 1px;
+        background-color: #FFFFFF;
+        top: 100%;
+        top: calc(100% - 0.5px);
+        top: -moz-calc(100% - 0.5px);
+        left: 4.5px;
+        width: 26px;
+
+        transition: width 0.2s;
+        -webkit-transition: width 0.2s;
+    }
+    .widget-mobile-appearance::after{
+        top: 100%;
+        top: calc((100% + 15px) - 0.5px);
+        top: -moz-calc((100% + 15px) - 0.5px);
+    }
+    .widget-mobile-language::after{
+        top: 0%;
+        top: calc((0% - 15px) + 0.5px);
+        top: -moz-calc((0% - 15px) + 0.5px);
+    }
+    
+    .widgets-mobile:hover{
+        right: 0px;
+    }
+    .widgets-mobile:hover > div::after{
+        width: 100%;
+        width: calc(100% - 9px);
+        width: -moz-calc(100% - 9px);
+    }
+    
+    .widget-mobile-appearance-btn{
+        position: relative;
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        background-color: #FFFFFF;
+        margin: 0px 4.5px;
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        cursor: inherit;
+    }
+    .widget-mobile-appearance-btn div{
+        position: relative;
+        width: 22px;
+        height: 22px;
+        margin: 0px;
+        padding: 0px;
+        border-radius: 50%;
+        background-color: #53565A;
+    }
+    .widget-mobile-appearance-btn div::after{
+        position: absolute;
+        content: "";
+        width: 50%;
+        width: calc(50% - 3px);
+        width: -moz-calc(50% - 3px);
+        height: 15px;
+        margin: 0px;
+        padding: 0px;
+        top: 50%;
+        top: calc(50% - (15px / 2));
+        top: -moz-calc(50% - (15px / 2));
+        box-sizing: border-box;
+        background-color: #FFFFFF;
+
+        transition: border-radius 0.2s, left 0.2s;
+        -webkit-transition: border-radius 0.2s, left 0.2s;
+    }
+    .widget-mobile-appearance-btn-actived div::after{
+        left: 3px;
+        border-radius: 50% 0px 0px 50%;
+    }
+    .widget-mobile-appearance-btn-desactived div::after{
+        left: 50%;
+        border-radius: 0px 50% 50% 0px;
+    }
+    .widget-mobile-font-plus-btn,
+    .widget-mobile-font-minus-btn,
+    .widget-mobile-language-btn{
+        position: relative;
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        background-color: #FFFFFF;
+        margin: 0px 4.5px;
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        cursor: inherit;
+
+        font-family: 'Barlow-Bold';
+        font-size: 15px;
+        color: #53565A;
+        text-align: center;
+        font-weight: normal;
+        line-height: normal;
+    }
+    .widget-mobile-font-plus-btn i,
+    .widget-mobile-font-minus-btn i{
+        font-size: 9px;
+    }
+    .widget-mobile-text{
+        display: flex;
+        margin: 0px;
+        padding: 0px 10px;
+        align-items: center;
+        justify-content: flex-start;
+        width: auto;
+        width: calc(100% - 35px);
+        width: -moz-calc(100% - 35px);
+        height: auto;
+
+        font-family: 'Barlow-Medium';
+        font-size: 15px;
+        color: #FFFFFF;
+        text-align: left;
+        font-weight: normal;
+        line-height: normal;
+        box-sizing: border-box;
+    }
+
     /****TAMAÑO DE FUENTE A HEDAER gris*****/
     .widgets-actual-text{
         padding: 0px 10px;
         font-size: 13px;
-    }
-    .widget-appearance-row{
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    .widget-appearance-row > p,
-    .widget-value{
-        margin: 0px 5px;
     }
 
     /******MAS PEQUEÑO COSAS DEL HEADER blanco******/
@@ -1135,8 +1307,8 @@
         display: none;
         
         background-repeat: no-repeat;
-        background-image: url(../../images/new-home/menu-expand-icon-2.svg);
-        /*background-image: url(../img/menu-expand-icon-2.svg);*/
+        /*background-image: url(../../images/new-home/menu-expand-icon-2.svg);*/
+        background-image: url(../img/menu-expand-icon-2.svg);
         background-position: center;
         background-size: contain;
     
@@ -1292,8 +1464,8 @@
         background-position: 100% center;
         background-position: calc(100% - 5px) center;
         background-position: -moz-calc(100% - 5px) center;
-        background-image: url(../../images/new-home/menu-expand-icon-1.svg);
-        /*background-image: url(../img/menu-expand-icon-1.svg);*/        
+        /*background-image: url(../../images/new-home/menu-expand-icon-1.svg);*/
+        background-image: url(../img/menu-expand-icon-1.svg);
         margin-bottom: 0px;
         border: none;
     }
@@ -1940,9 +2112,85 @@
     }
 
     /***************BODY**************/
-    .widgets-appearance{
-        display: none !important;
+    /****WIDGET RESPONSIVE****/
+    .widgets-mobile{
+        right: 0px;
+        right: calc(0px - (150px - 30px));
+        right: -moz-calc(0px - (150px - 30px));
     }
+    .widget-mobile-appearance-btn div{
+        width: 21px;
+        height: 21px;
+    }
+        
+    .widget-mobile-appearance,
+    .widget-mobile-font-plus,
+    .widget-mobile-font-minus,
+    .widget-mobile-language
+    {
+        width: 150px;
+        height: 25px;
+    }
+    .widget-mobile-appearance,
+    .widget-mobile-language{
+        margin: 10px 0px;
+    }
+    .widget-mobile-font-plus,
+    .widget-mobile-font-minus{
+        margin: 5px 0px;
+    }
+
+    .widget-mobile-appearance::after,
+    .widget-mobile-language::after{
+        left: 2.5px;
+        width: 25px;
+    }
+    .widget-mobile-appearance::after{
+        top: 100%;
+        top: calc((100% + 10px) - 0.5px);
+        top: -moz-calc((100% + 10px) - 0.5px);
+    }
+    .widget-mobile-language::after{
+        top: 0%;
+        top: calc((0% - 10px) + 0.5px);
+        top: -moz-calc((0% - 10px) + 0.5px);
+    }
+    
+    .widgets-mobile:active{
+        right: 0px;
+    }
+    .widgets-mobile:active > div::after{
+        width: 100%;
+        width: calc(100% - 5px);
+        width: -moz-calc(100% - 5px);
+    }
+    
+    .widget-mobile-appearance-btn{
+        width: 25px;
+        height: 25px;
+        margin: 0px 2.5px;
+    }
+    
+    .widget-mobile-font-plus-btn,
+    .widget-mobile-font-minus-btn,
+    .widget-mobile-language-btn{
+        width: 25px;
+        height: 25px;
+        margin: 0px 2.5px;
+        font-size: 14px;
+    }
+    .widget-mobile-font-plus-btn i,
+    .widget-mobile-font-minus-btn i{
+        font-size: 8px;
+    }
+    .widget-mobile-text{
+        padding: 0px 5px;
+        width: auto;
+        width: calc(100% - 30px);
+        width: -moz-calc(100% - 30px);
+        font-size: 14px;
+    }
+
 
     .header-col-widgets{
         height: 40px;

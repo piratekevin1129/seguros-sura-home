@@ -1,0 +1,3 @@
+efecto over en los botones, poner como active
+terminar lo de iniciar sesión desplegable
+terminar lo de contraste

@@ -224,7 +224,7 @@ body,html{
     font-weight: normal;
 }
 #iniciar-sesion-btn i{
-    position: relative;
+    color: #0033A0;
     font-size: 15px;
     margin-left: 7px;
     transition: transform 0.2s, -webkit-transform 0.2s, -o-transform 0.2s;
@@ -643,6 +643,9 @@ body,html{
     text-align: center;
     font-weight: normal;
     line-height: normal;
+}
+.widgets-mobile{
+    display: none;
 }
 
 /****************BODY*****************/
@@ -2700,7 +2703,7 @@ body,html{
 
 .beneficios-noticias{
     position: relative;
-    width: auto;
+    width: 75%;
     margin: 0px;
     padding: 0px;
     display: block;
@@ -2708,7 +2711,7 @@ body,html{
 }
 .beneficios-noticias-scroll{
     position: relative;
-    width: 75%;
+    width: 100%;
     margin: 0px;
     padding: 0px;
     display: flex;
@@ -2853,8 +2856,8 @@ body,html{
     box-sizing: border-box;
 }
 .enlaces-interes-col1{
-    background-image: url(../../images/new-home/enlaces-interes-back.png);
-    /*background-image: url(../img/enlaces-interes-back.png);*/
+    /*background-image: url(../../images/new-home/enlaces-interes-back.png);*/
+    background-image: url(../img/enlaces-interes-back.png);
     background-repeat: no-repeat;
     background-position: 0px center;
     background-color: #f0f0f0;
@@ -3539,8 +3542,8 @@ body,html{
     height: 12px;
     
     background-repeat: no-repeat;
-    background-image: url(../../images/new-home/menu-expand-icon-1.svg);
-    /*background-image: url(../img/menu-expand-icon-1.svg);*/
+    /*background-image: url(../../images/new-home/menu-expand-icon-1.svg);*/
+    background-image: url(../img/menu-expand-icon-1.svg);
     background-position: center;
     background-size: contain;
 
@@ -3640,8 +3643,8 @@ body,html{
     display: none;
     
     background-repeat: no-repeat;
-    background-image: url(../../images/new-home/menu-expand-icon-1.svg);
-    /*background-image: url(../img/menu-expand-icon-1.svg);*/
+    /*background-image: url(../../images/new-home/menu-expand-icon-1.svg);*/
+    background-image: url(../img/menu-expand-icon-1.svg);
     background-position: center;
     background-size: contain;
 
@@ -3731,8 +3734,8 @@ body,html{
     background-size: 20px;
     background-position: 0px center;
     background-repeat: no-repeat;
-    background-image: url(../../images/new-home/menu-right-icon.svg);
-    /*background-image: url(../img/menu-right-icon.svg);*/
+    /*background-image: url(../../images/new-home/menu-right-icon.svg);*/
+    background-image: url(../img/menu-right-icon.svg);
     left: 0px;
     margin-bottom: 15px;
 
