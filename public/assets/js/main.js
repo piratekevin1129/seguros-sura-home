@@ -152,7 +152,10 @@ function overMenuSeguros(menu){
     for(var i = (menus.length-1);i>=0;i--){
         menus[i].className = 'seguros-sura-menu-azul-wraper seguros-sura-menu-azul-wraper-collapsed'
     }
-    document.getElementById(menu).classList.add('seguros-sura-menu-azul-wraper-active')
+    //'seguros-sura-menu-azul-nuestrosproductos'
+    if(menu!=null&&menu!=undefined){
+        document.getElementById(menu).className = 'seguros-sura-menu-azul-wraper seguros-sura-menu-azul-wraper-active seguros-sura-menu-azul-wraper-collapsed'
+    }
     $('#seguros-sura-menu').attr('class', 'seguros-sura-menu-on')
 }
 

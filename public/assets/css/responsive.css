@@ -27,6 +27,19 @@
         cursor: pointer;
         text-decoration: underline;
     }
+    .informate-covid-noticia-link:hover{
+        cursor: pointer;
+        border: rgba(0,51,160,1) solid 1px;
+    }
+    .capacidades-parati-card-link:hover{
+        border: rgba(0,51,160,1) solid 1px;
+        cursor: pointer;
+    }
+    .enterate-card-link:hover,
+    .blog-sura-card-link:hover{
+        border: rgba(0,51,160,1) solid 1px;
+        cursor: pointer;
+    }
 }
 
 @media (min-width: 960px) and (max-width: 1199px){
@@ -158,6 +171,10 @@
     .informate-covid-noticia-link{
         font-size: 15px;
     }
+    .informate-covid-noticia-link:hover{
+        cursor: pointer;
+        border: rgba(0,51,160,1) solid 1px;
+    }
 
     /*********COTIZA TU SEGURO EN LINEA*********/
     .cotiza-seguro-title h1{
@@ -212,6 +229,10 @@
     .capacidades-parati-card-text p{
         font-size: 15px;
     }
+    .capacidades-parati-card-link:hover{
+        border: rgba(0,51,160,1) solid 1px;
+        cursor: pointer;
+    }
 
     /*****BLOG SURA******/
     .blog-sura-container{
@@ -245,6 +266,11 @@
     .enterate-card-link,
     .blog-sura-card-link{
         font-size: 15px;
+    }
+    .enterate-card-link:hover,
+    .blog-sura-card-link:hover{
+        border: rgba(0,51,160,1) solid 1px;
+        cursor: pointer;
     }
 
     /*************ENTERATE************/
@@ -636,6 +662,10 @@
     .informate-covid-noticia-link{
         font-size: 15px;
     }
+    .informate-covid-noticia-link:hover{
+        cursor: pointer;
+        border: rgba(0,51,160,1) solid 1px;
+    }
 
     /*********COTIZA TU SEGURO EN LINEA*********/
     .cotiza-seguro-title h1{
@@ -703,6 +733,10 @@
     .capacidades-parati-card-text p{
         font-size: 15px;
     }
+    .capacidades-parati-card-link:hover{
+        border: rgba(0,51,160,1) solid 1px;
+        cursor: pointer;
+    }
 
     /*****BLOG SURA******/
     .blog-sura-container{
@@ -740,6 +774,11 @@
     }
     .blog-sura-ir-btn{
         height: 40px;
+    }
+    .enterate-card-link:hover,
+    .blog-sura-card-link:hover{
+        border: rgba(0,51,160,1) solid 1px;
+        cursor: pointer;
     }
 
     /*************ENTERATE************/
@@ -1567,6 +1606,10 @@
     .informate-covid-noticia-link{
         font-size: 15px;
     }
+    .informate-covid-noticia-link:active{
+        cursor: pointer;
+        border: rgba(0,51,160,1) solid 1px;
+    }
 
     /*********COTIZA TU SEGURO EN LINEA*********/
     .cotiza-seguro-title h1{
@@ -1696,6 +1739,10 @@
     #capacidades-parati-paginator{
         visibility: hidden;
     }
+    .capacidades-parati-card-link:active{
+        border: rgba(0,51,160,1) solid 1px;
+        cursor: pointer;
+    }
 
     /*****BLOG SURA******/
     .blog-sura-container{
@@ -1742,6 +1789,11 @@
     }
     .blog-sura-ir-btn{
         height: 35px;
+    }
+    .enterate-card-link:active,
+    .blog-sura-card-link:active{
+        border: rgba(0,51,160,1) solid 1px;
+        cursor: pointer;
     }
 
     /*************ENTERATE************/
