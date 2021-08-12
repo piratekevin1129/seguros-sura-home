@@ -2127,11 +2127,6 @@
         align-items: center;
         cursor: pointer;
     }
-    .footer2-col > h6::after{
-        content: "";
-        position: absolute;
-        width: 1;
-    }
     .footer2-col > ul{
         display: block;
         width: 100%;
