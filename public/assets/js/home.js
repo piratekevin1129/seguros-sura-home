@@ -154,5 +154,4 @@ $(document).ready(function() {
         setSlideshow({wrapper:'enterate-wrap',wrap:'enterate-card'})
     }
     
-    
 });
