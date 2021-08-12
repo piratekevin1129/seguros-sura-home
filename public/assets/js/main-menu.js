@@ -142,3 +142,8 @@ function clickAcordeon2(title,contenedor){
         //padre.style.height = String(parseInt(alto_menu)+parseInt(alto_title))+'px'
     }
 }
+
+//window.onscroll = function(){
+    //check alto header
+    //var alto_header = document.getElementById('')
+//}
