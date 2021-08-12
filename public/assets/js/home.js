@@ -144,7 +144,15 @@ function prevSlideshow3(){
 
 //////////////////SETEAR SLIDESHOWS DEL HOME-PERSONAS///////////////
 $(document).ready(function() {
-    setSlideshow({wrapper:'slideshow-wrapper',wrap:'slideshow-wrap'})
-    setSlideshow({wrapper:'capacidades-parati-slider-wrap',wrap:'capacidades-parati-row'})
-    setSlideshow({wrapper:'enterate-wrap',wrap:'enterate-card'})
+    if(document.getElementById('slideshow-wrapper')!=null){
+        setSlideshow({wrapper:'slideshow-wrapper',wrap:'slideshow-wrap'})
+    }
+    if(document.getElementById('capacidades-parati-slider-wrap')!=null){
+        setSlideshow({wrapper:'capacidades-parati-slider-wrap',wrap:'capacidades-parati-row'})
+    }
+    if(document.getElementById('enterate-wrap')!=null){
+        setSlideshow({wrapper:'enterate-wrap',wrap:'enterate-card'})
+    }
+    
+    
 });
