@@ -955,6 +955,11 @@
     transition: left 0.2s, opacity 0.2s;
     -webkit-transition: left 0.2s, opacity 0.2s;
 }
+.seguros-sura-menu-col > ul > li a{
+    text-decoration: none !important;
+    color: inherit !important;
+    font-family: inherit !important;
+}
 
 /**************parte amarilla***********/
 .seguros-sura-menu-amarillo{

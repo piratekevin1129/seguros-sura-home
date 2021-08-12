@@ -1,1 +1,2 @@
-terminar lo de contraste
+links de header y footer
+menú fijado
