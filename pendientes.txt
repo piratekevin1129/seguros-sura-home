@@ -1,2 +1,4 @@
-links de header y footer
-menú fijado
+slider automático
+cuadrar paginador, volverlo mas automatico desde el js
+poner funcional tamaño de letra
+desplegable de ingles

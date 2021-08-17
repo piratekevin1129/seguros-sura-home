@@ -47,11 +47,12 @@ function outMenuPaises(){
     $('#nav-pais-select-menu').attr('class','nav-pais-select-menu-off')
 }
 function selectPais(pais){
-    $('#nav-pais-selected').html(String(pais.innerHTML+'<i class="fas fa-caret-down"></i>'))
+    /*$('#nav-pais-selected').html(String(pais.innerHTML+'<i class="fas fa-caret-down"></i>'))
     $('#nav-pais-select-menu').attr('class','nav-pais-select-menu-off')
 
     $('#nav-pais-selected2').html(String(pais.innerHTML))
-    clickAcordeon(document.getElementById('nav-pais-selected2'))
+    clickAcordeon(document.getElementById('nav-pais-selected2'))*/
+    location.href = pais
 }
 
 /////////////MENU INICIAR SESION///////////

@@ -34,37 +34,37 @@ function setSlideshow(data){
     $("#"+data.wrapper+" ."+data.wrap).attr('style','width:calc(100% / '+pages.length+'); width:-moz-calc(100% / '+pages.length+')');
 }
 
-function nextSlideshow(){
-    var actual_page = $('#slideshow-wrapper').attr('page')
-    var total_pages = document.getElementById('slideshow-wrapper').getElementsByClassName('slideshow-wrap').length
+function nextSlideshow(wrapper,wrap,paginator,active){
+    var actual_page = $('#'+wrapper).attr('page')
+    var total_pages = document.getElementById(wrapper).getElementsByClassName(wrap).length
 
     if(actual_page<(total_pages-1)){
-        document.getElementById('slideshow-wrapper').style.left = '-'+(parseInt(actual_page)+1)+'00%'
-        $('#slideshow-wrapper').attr('page',(parseInt(actual_page)+1))
+        document.getElementById(wrapper).style.left = '-'+(parseInt(actual_page)+1)+'00%'
+        $('#'+wrapper).attr('page',(parseInt(actual_page)+1))
     }
 
     //pages
-    var pages = document.getElementById('slideshow-paginator').getElementsByTagName('div')
+    var pages = document.getElementById(paginator).getElementsByTagName('div')
     for(var i = 0;i<pages.length;i++){
-        pages[i].classList.remove('slideshow-page-active')
+        pages[i].classList.remove(active)
     }
-    pages[parseInt(actual_page)+1].classList.add('slideshow-page-active')
+    pages[parseInt(actual_page)+1].classList.add(active)
     event.preventDefault()
 }
-function prevSlideshow(){
-    var actual_page = $('#slideshow-wrapper').attr('page')
+function prevSlideshow(wrapper,wrap,paginator,active){
+    var actual_page = $('#'+wrapper).attr('page')
 
     if(actual_page>0){
-        $('#slideshow-wrapper').attr('page',(parseInt(actual_page)-1))
-        document.getElementById('slideshow-wrapper').style.left = '-'+(parseInt(actual_page)-1)+'00%'
+        document.getElementById(wrapper).style.left = '-'+(parseInt(actual_page)-1)+'00%'
+        $('#'+wrapper).attr('page',(parseInt(actual_page)-1))
     }
 
     //pages
-    var pages = document.getElementById('slideshow-paginator').getElementsByTagName('div')
+    var pages = document.getElementById(paginator).getElementsByTagName('div')
     for(var i = 0;i<pages.length;i++){
-        pages[i].classList.remove('slideshow-page-active')
+        pages[i].classList.remove(active)
     }
-    pages[parseInt(actual_page)-1].classList.add('slideshow-page-active')
+    pages[parseInt(actual_page)-1].classList.add(active)
     event.preventDefault()
     event.preventDefault()
 }
@@ -145,7 +145,7 @@ function prevSlideshow3(){
 //////////////////SETEAR SLIDESHOWS DEL HOME-PERSONAS///////////////
 $(document).ready(function() {
     if(document.getElementById('slideshow-wrapper')!=null){
-        setSlideshow({wrapper:'slideshow-wrapper',wrap:'slideshow-wrap'})
+        setSlideshow({wrapper:'slideshow-wrapper',wrap:'slideshow-wrap',paginator:'slideshow-paginator',active:'slideshow-page-active'})
     }
     if(document.getElementById('capacidades-parati-slider-wrap')!=null){
         setSlideshow({wrapper:'capacidades-parati-slider-wrap',wrap:'capacidades-parati-row'})
@@ -153,5 +153,4 @@ $(document).ready(function() {
     if(document.getElementById('enterate-wrap')!=null){
         setSlideshow({wrapper:'enterate-wrap',wrap:'enterate-card'})
     }
-    
 });
