@@ -1237,6 +1237,11 @@
         line-height: normal;
         box-sizing: border-box;
     }
+    .widget-mobile-text a{
+        color: inherit !important;
+        font-family: inherit !important;
+        text-decoration: none !important;
+    }
 
     /****TAMAÑO DE FUENTE A HEDAER gris*****/
     .widgets-actual-text{
