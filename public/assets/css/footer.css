@@ -52,6 +52,7 @@
 }
 .footer4{
     padding: 20px 0px;
+    border-bottom: none;
 }
 
 .footer1-logoseguros{
@@ -188,8 +189,8 @@
     display: flex;   
     align-items: center;
     justify-content: center;
-    margin: 0px;
-    margin-left: 20px;
+    margin: 0px !important;
+    margin-left: 20px !important;
     padding: 0px;
 }
 .footer-redes p a{

@@ -8,7 +8,6 @@
 }
 .header-menu-fixed{
     position: sticky;
-    position: -webkit-sticky;
     top: 0px;
     left: 0px;
     z-index: 3000;

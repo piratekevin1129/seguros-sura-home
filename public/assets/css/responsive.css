@@ -2170,7 +2170,7 @@
         padding: 15px 20px;
     }
     .footer-redes p{
-        margin-left: 10px;
+        margin-left: 10px !important;
     }
 }
 
