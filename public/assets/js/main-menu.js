@@ -56,19 +56,7 @@ function selectPais(pais){
 }
 
 /////////////MENU INICIAR SESION///////////
-function clickIniciarSesion(event,btn){
-    var status = btn.getAttribute('status')
-    if(status=='closed'){
-        $('#iniciar-sesion-btn').attr('class','iniciar-sesion-btn-on')
-        $('#iniciar-sesion-btn').attr('status','opened')
-        $('#iniciar-sesion-options').attr('class','iniciar-sesion-options-on')
-    }else{
-        $('#iniciar-sesion-btn').attr('class','iniciar-sesion-btn-off')
-        $('#iniciar-sesion-btn').attr('status','closed')
-        $('#iniciar-sesion-options').attr('class','iniciar-sesion-options-off')
-    }
-    event.preventDefault()
-}
+
 function clickIniciarSesion2(event,btn){
     var status = btn.getAttribute('status')
     if(status=='closed'){

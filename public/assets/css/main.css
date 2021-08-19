@@ -8,7 +8,7 @@
 body,html{
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 #seguros-sura-home input::-webkit-outer-spin-button,
 #seguros-sura-home input::-webkit-inner-spin-button {
@@ -156,6 +156,8 @@ body,html{
 
 #slideshow-prev-btn,
 #slideshow-next-btn{
+    outline: none !important;
+    outline-width: 0 !important;
     position: absolute;
     display: block;
     width: 16px;
