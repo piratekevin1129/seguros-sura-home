@@ -1,4 +1,4 @@
-.header{
+.header-new-home{
     position: relative;
     width: 100%;
     height: auto;
@@ -12,7 +12,7 @@
     left: 0px;
     z-index: 3000;
 }
-.header button{
+.header-new-home button{
     min-width: initial !important;
 }
 .header-1,.header-2,.header-0{
