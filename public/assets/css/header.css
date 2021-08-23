@@ -699,24 +699,34 @@
     transition: opacity 0.2s, visibility 0.2s;
     -webkit-transition: opacity 0.2s, visibility 0.2s;
 }
-.widget-idioma-cont a{
+.widget-idioma-cont > div{
     position: relative;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
-    height: auto;
+    height: 34px;
     background-color: #53565A;
     box-sizing: border-box;
-    padding: 5px 10px;
+    padding: 0px;
     margin: 0px;
-
+}
+.widget-idioma-cont > div:hover{
+    background-color: #46494c;
+}
+.widget-idioma-cont > div a{
+    margin: 0px;
+    display: block;
+    padding: 0px 8px;
+    box-sizing: border-box;
     font-family: 'Barlow-Medium';
     font-size: 13px;
     color: #FFFFFF !important;
     font-weight: normal;
     line-height: normal;
-    text-align: center;
-    cursor: pointer;
-}
+    text-align: left;
+    text-decoration: none !important;
+} 
 #widget-idioma-btn:focus .widget-idioma-cont{
     opacity: 1;
     visibility: visible;

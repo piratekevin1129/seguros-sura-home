@@ -34,7 +34,7 @@
     <script src="public/assets/js/vendor/bootstrap.bundle.min.js"></script>
 
 
-    <title>Persona</title>
+    <title>INDEX</title>
 </head>
 <body>
     <div id="seguros-sura-home">
@@ -43,214 +43,252 @@
 
         <!--CONTENT-->
         <div class="body-container">
-            <div class="ext-tabs-container-fluid" id="ext-tabs1">
-              <div id="ext-tabs-titles">
-                <div id="ext-tabs-title-1" class="ext-tab-title ext-tab-title-active" data="1" onclick="clickTabExt(this,1)"><p>ARL</p></div>
-                <div id="ext-tabs-title-2" class="ext-tab-title" data="2" onclick="clickTabExt(this,1)"><p>EPS</p></div>
-                <div id="ext-tabs-title-3" class="ext-tab-title" data="3" onclick="clickTabExt(this,1)"><p>SEGUROS</p></div>
-              </div>
-              <br />
-              <br />
-              <div id="ext-tabs-container">
-                <!--ARL-->
-                <div id="ext-tabs-content-1" class="ext-tabs-content ext-tabs-content-active">
-                  <h1 class="ext-tabs-content-title">ARL SURA</h1>
-                  <p class="ext-tabs-content-text">Est quis nulla laborum officia ad nisi ex nostrud culpa Lorem excepteur aliquip dolor aliqua irure ex. Nulla ut duis ipsum nisi elit fugiat commodo sunt reprehenderit laborum veniam eu veniam. Eiusmod minim exercitation fugiat irure ex labore incididunt do fugiat commodo aliquip sit id deserunt reprehenderit aliquip nostrud.</p>
-                  <br />
-                  <div class="ext-tabs-content-col">
-                    <div class="ext-tabs-content-card">
-                      <div class="ext-tabs-content-card-img">
-                        <img src="public/assets/img/english/extranjero-2.png" />
-                      </div>
-                      <div class="ext-tabs-content-card-text">
-                        <p>¿Cómo crear tu usuario y clave?, además, beneficios de tenerla</p>
-                        <a class="ext-tabs-content-card-link" href="#">VER <i class="fas fa-arrow-right"></i></a>
-                      </div>
+          <div class="header-new-home">
+            <header class="header-container">
+                <!--Header gris personas/empresas-->
+                <div class="header-0">
+                    <div class="header-col-widgets">
+                        <div class="widgets-texts">
+                            <a href="/paginas/personas.aspx"><p class="widgets-actual-text widgets-actual-text-active">PERSONAS</p></a>
+                            <a href="/paginas/empresas.aspx"><p class="widgets-actual-text">EMPRESAS</p></a>
+                        </div>
+                        <div class="widgets-appearance">
+                            <!--<div class="widget-appearance-row">
+                                <span><i class="fas fa-info-circle"></i></span>
+                                <p>Alto contraste</p>
+                                <div class="switch-button switch-button-on"><div></div></div>
+                            </div>-->
+        
+                            <div class="widget-appearance-row">
+                                <span><i class="fas fa-info-circle"></i></span>
+                                <p>Tamaño de letra</p>
+                                <button class="widget-button" id="minus-btn"><i class="fas fa-minus-circle"></i></button>
+                                <div class="widget-value" id="size-value">A</div>
+                                <button class="widget-button" id="plus-btn"><i class="fas fa-plus-circle"></i></button>
+                            </div>
+        
+                            <div class="widget-appearance-row">
+                                <button id="widget-idioma-btn" onclick="preventDefaultBtn()">
+                                    <p>Español</p>
+                                    <div class="widget-select"><i class="fas fa-caret-down"></i></div>
+                                    <div class="widget-idioma-cont">
+                                        <div>
+                                            <a href="https://lab.segurossura.com.co/paginas/english-tutorials.aspx">English</a>
+                                            <div class="widget-select"><i class="fas fa-caret-right"></i></div>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="widgets-mobile">
+                            <!--<div class="widget-mobile-appearance">
+                                <div class="widget-mobile-appearance-btn widget-mobile-appearance-btn-actived">
+                                    <div></div>
+                                </div>
+                                <p class="widget-mobile-text">Contraste</p>
+                            </div>-->
+                            <div class="widget-mobile-font-plus">
+                                <button class="widget-mobile-font-plus-btn">A <i class="fas fa-plus"></i></button>
+                                <p class="widget-mobile-text">Aumentar letra</p>
+                            </div>
+                            <div class="widget-mobile-font-minus">
+                                <button class="widget-mobile-font-minus-btn">A <i class="fas fa-minus"></i></button>
+                                <p class="widget-mobile-text">Disminuir letra</p>
+                            </div>
+                            <div class="widget-mobile-language">
+                                <span class="widget-mobile-language-btn">ES</span>
+                                <p class="widget-mobile-text">Español</p>
+                            </div>
+                            <div class="widget-mobile-language">
+                                <span class="widget-mobile-language-btn">EN</span>
+                                <p class="widget-mobile-text"><a href="https://lab.segurossura.com.co/paginas/english-tutorials.aspx">English</a></p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="ext-tabs-content-card">
-                      <div class="ext-tabs-content-card-img">
-                        <img src="public/assets/img/english/extranjero-2.png" />
-                      </div>
-                      <div class="ext-tabs-content-card-text">
-                        <p>¿Cómo crear tu usuario y clave?, además, beneficios de tenerla</p>
-                        <a class="ext-tabs-content-card-link" href="#">VER <i class="fas fa-arrow-right"></i></a>
-                      </div>
-                    </div>
-                    <div class="ext-tabs-content-card">
-                      <div class="ext-tabs-content-card-img">
-                        <img src="public/assets/img/english/extranjero-2.png" />
-                      </div>
-                      <div class="ext-tabs-content-card-text">
-                        <p>¿Cómo crear tu usuario y clave?, además, beneficios de tenerla</p>
-                        <a class="ext-tabs-content-card-link" href="#">VER <i class="fas fa-arrow-right"></i></a>
-                      </div>
-                    </div>
-
-                    <div class="ext-tabs-content-card">
-                      <div class="ext-tabs-content-card-img">
-                        <img src="public/assets/img/english/extranjero-2.png" />
-                      </div>
-                      <div class="ext-tabs-content-card-text">
-                        <p>¿Cómo crear tu usuario y clave?, además, beneficios de tenerla</p>
-                        <a class="ext-tabs-content-card-link" href="#">VER <i class="fas fa-arrow-right"></i></a>
-                      </div>
-                    </div>
-                    <div class="ext-tabs-content-card">
-                      <div class="ext-tabs-content-card-img">
-                        <img src="public/assets/img/english/extranjero-2.png" />
-                      </div>
-                      <div class="ext-tabs-content-card-text">
-                        <p>¿Cómo crear tu usuario y clave?, además, beneficios de tenerla</p>
-                        <a class="ext-tabs-content-card-link" href="#">VER <i class="fas fa-arrow-right"></i></a>
-                      </div>
-                    </div>
-                    <div class="ext-tabs-content-card">
-                      <div class="ext-tabs-content-card-img">
-                        <img src="public/assets/img/english/extranjero-2.png" />
-                      </div>
-                      <div class="ext-tabs-content-card-text">
-                        <p>¿Cómo crear tu usuario y clave?, además, beneficios de tenerla</p>
-                        <a class="ext-tabs-content-card-link" href="#">VER <i class="fas fa-arrow-right"></i></a>
-                      </div>
-                    </div>
-                  </div>
-                  <br />
-                  <a href="#"><button class="ext-tabs-redirect-btn">IR A ARLSURA.COM</button></a>
                 </div>
-
-                <!--EPS-->
-                <div id="ext-tabs-content-2" class="ext-tabs-content">
-                  <h1 class="ext-tabs-content-title">EPS SURA</h1>
-                  <p class="ext-tabs-content-text">Est quis nulla laborum officia ad nisi ex nostrud culpa Lorem excepteur aliquip dolor aliqua irure ex. Nulla ut duis ipsum nisi elit fugiat commodo sunt reprehenderit laborum veniam eu veniam. Eiusmod minim exercitation fugiat irure ex labore incididunt do fugiat commodo aliquip sit id deserunt reprehenderit aliquip nostrud.</p>
-                  <br />
-                  <div class="ext-tabs-content-col">
-                    <div class="ext-tabs-content-card">
-                      <div class="ext-tabs-content-card-img">
-                        <img src="public/assets/img/english/extranjero-3.png" />
-                      </div>
-                      <div class="ext-tabs-content-card-text">
-                        <p>¿Cómo crear tu usuario y clave?, además, beneficios de tenerla</p>
-                        <a class="ext-tabs-content-card-link" href="#">VER <i class="fas fa-arrow-right"></i></a>
-                      </div>
+        
+                <!--Header blanco Paises, iniciar sesion-->
+                <div class="header-1">
+                    <div class="header-col-logo">
+                        <img src="/images/new-home/logo-sura.svg" />
+                        <div class="header-nav-1">
+                            <div class="nav-1-link"><a href="#">Preguntas frecuentes</a></div>
+                            <div class="nav-1-link"><a href="/paginas/escribenos.aspx">Escríbenos</a></div>
+                            <div id="nav-pais-select">
+                                <div id="nav-pais-selected" onclick="clickMenuPaises()">
+                                    <img src="/images/new-home/paises/colombia.svg" /><p>Colombia</p><i class="fas fa-caret-down"></i>
+                                </div>
+                                <div id="nav-pais-select-menu" onmouseleave="outMenuPaises()" class="nav-pais-select-menu-off">
+                                    <div class="nav-pais-select-item nav-pais-select-item-selected" onclick="selectPais('https://www.segurossura.com.co/Paginas/default.aspx')"><img src="/images/new-home/paises/colombia.svg" /><p>Colombia</p></div>
+                                    <div class="nav-pais-select-item" onclick="selectPais('http://www.segurossura.com.ar/?utm_source=segurossura-colombia&utm_medium=menu-desplegable&utm_campaign=sura-america-latina&utm_term=sura-latinoamerica')"><img src="/images/new-home/paises/argentina.svg" /><p>Argentina</p></div>
+                                    <div class="nav-pais-select-item" onclick="selectPais('http://www.segurossura.com.br/?utm_source=segurossura-colombia&utm_medium=menu-desplegable&utm_campaign=sura-america-latina&utm_term=sura-latinoamerica')"><img src="/images/new-home/paises/brasil.svg" /><p>Brasil</p></div>
+                                    <div class="nav-pais-select-item" onclick="selectPais('https://www.segurossura.cl/?utm_source=segurossura-colombia&utm_medium=menu-desplegable&utm_campaign=sura-america-latina&utm_term=sura-latinoamerica')"><img src="/images/new-home/paises/chile.svg" /><p>Chile</p></div>
+                                    <div class="nav-pais-select-item" onclick="selectPais('https://www.asesuisa.com/?utm_source=segurossura-colombia&utm_medium=menu-desplegable&utm_campaign=sura-america-latina&utm_term=sura-latinoamerica')"><img src="/images/new-home/paises/el-salvador.svg" /><p>El Salvador</p></div>
+                                    <div class="nav-pais-select-item" onclick="selectPais('https://www.suramexico.com/?utm_source=segurossura-colombia&utm_medium=menu-desplegable&utm_campaign=sura-america-latina&utm_term=sura-latinoamerica')"><img src="/images/new-home/paises/mexico.svg" /><p>México</p></div>
+                                    <div class="nav-pais-select-item" onclick="selectPais('http://www.sura.com.pa/?utm_source=segurossura-colombia&utm_medium=menu-desplegable&utm_campaign=sura-america-latina&utm_term=sura-latinoamerica')"><img src="/images/new-home/paises/panama.svg" /><p>Panamá</p></div>
+                                    <div class="nav-pais-select-item" onclick="selectPais('http://www.sura.pe/wps/portal/newsura/inicio?utm_source=segurossura-colombia&utm_medium=menu-desplegable&utm_campaign=sura-america-latina&utm_term=sura-latinoamerica')"><img src="/images/new-home/paises/republica-dominicana.svg" /><p>República Dominicana</p></div>
+                                    <div class="nav-pais-select-item" onclick="selectPais('http://www.sura.com.do/?utm_source=segurossura-colombia&utm_medium=menu-desplegable&utm_campaign=sura-america-latina&utm_term=sura-latinoamerica')"><img src="/images/new-home/paises/uruguay.svg" /><p>Uruguay</p></div>
+                                </div>
+                            </div>
+                            <button id="iniciar-sesion-cont" onclick="preventDefaultBtn()">
+                                <div id="iniciar-sesion-btn">
+                                    <span>INICIAR SESIÓN</span><i class="fas fa-caret-down"></i>
+                                </div>
+                                <div id="iniciar-sesion-options">
+                                    <p class="iniciar-sesion-option"><a href="https://clientelab.segurossura.com.co/asistentevirtual/" target="_blank">Sucursal virtual <span>Personas</span></a></p>
+                                    <p class="iniciar-sesion-option"><a href="https://login.suramericana.com/SSAutenticacion/faces/autenticacion/paginaAutenticacion.jspx?cdApp=SURACOM&cookies=false&ReturnUrl=%2f_layouts%2fAuthenticate.aspx%3fSource%3d%252f&Source=%2f" target="_blank">Sucursal virtual <span>Empresas</span></a></p>
+                                    <p class="iniciar-sesion-option"><a href="https://proveedor.sura.com/Paginas/Publicas/Home.aspx" target="_blank">Proveedores</a></p>
+                                    <p class="iniciar-sesion-option"><a href="https://loginlab.sura.com/sso/servicelogin.aspx?continueTo=https%3A%2F%2Fportalasesoreslab.sura.com.co%2F&service=portaluasesores" target="_blank">Asesores</a></p>
+                                    <p class="iniciar-sesion-option"><a href="/paginas/registro-de-usuarios.aspx" target="_blank">Solicitar clave</a></p>
+                                </div>
+                            </button>
+                            
+                            <button id="buscador-btn" class="buscador-btn-lupa" onclick="clickBuscador()" status="closed">
+                                <i class="fas fa-search"></i>
+                                <i class="fas fa-times"></i>
+                            </button>
+        
+                            <button id="menu-hamburguesa" class="menu-hamburguesa-closed" status="closed" onclick="clickMenuHamburguesa()">
+                                <i class="fas fa-bars"></i>
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
                     </div>
-                    <div class="ext-tabs-content-card">
-                      <div class="ext-tabs-content-card-img">
-                        <img src="public/assets/img/english/extranjero-3.png" />
-                      </div>
-                      <div class="ext-tabs-content-card-text">
-                        <p>¿Cómo crear tu usuario y clave?, además, beneficios de tenerla</p>
-                        <a class="ext-tabs-content-card-link" href="#">VER <i class="fas fa-arrow-right"></i></a>
-                      </div>
-                    </div>
-                    <div class="ext-tabs-content-card">
-                      <div class="ext-tabs-content-card-img">
-                        <img src="public/assets/img/english/extranjero-3.png" />
-                      </div>
-                      <div class="ext-tabs-content-card-text">
-                        <p>¿Cómo crear tu usuario y clave?, además, beneficios de tenerla</p>
-                        <a class="ext-tabs-content-card-link" href="#">VER <i class="fas fa-arrow-right"></i></a>
-                      </div>
-                    </div>
-
-                    <div class="ext-tabs-content-card">
-                      <div class="ext-tabs-content-card-img">
-                        <img src="public/assets/img/english/extranjero-3.png" />
-                      </div>
-                      <div class="ext-tabs-content-card-text">
-                        <p>¿Cómo crear tu usuario y clave?, además, beneficios de tenerla</p>
-                        <a class="ext-tabs-content-card-link" href="#">VER <i class="fas fa-arrow-right"></i></a>
-                      </div>
-                    </div>
-                    <div class="ext-tabs-content-card">
-                      <div class="ext-tabs-content-card-img">
-                        <img src="public/assets/img/english/extranjero-3.png" />
-                      </div>
-                      <div class="ext-tabs-content-card-text">
-                        <p>¿Cómo crear tu usuario y clave?, además, beneficios de tenerla</p>
-                        <a class="ext-tabs-content-card-link" href="#">VER <i class="fas fa-arrow-right"></i></a>
-                      </div>
-                    </div>
-                    <div class="ext-tabs-content-card">
-                      <div class="ext-tabs-content-card-img">
-                        <img src="public/assets/img/english/extranjero-3.png" />
-                      </div>
-                      <div class="ext-tabs-content-card-text">
-                        <p>¿Cómo crear tu usuario y clave?, además, beneficios de tenerla</p>
-                        <a class="ext-tabs-content-card-link" href="#">VER <i class="fas fa-arrow-right"></i></a>
-                      </div>
-                    </div>
-                  </div>
-                  <br />
-                  <a href="#"><button class="ext-tabs-redirect-btn">IR A EPSSURA.COM</button></a>
                 </div>
-
-                <!--SEGUROS-->
-                <div id="ext-tabs-content-3" class="ext-tabs-content">
-                  <h1 class="ext-tabs-content-title">SEGUROS</h1>
-                  <p class="ext-tabs-content-text">Est quis nulla laborum officia ad nisi ex nostrud culpa Lorem excepteur aliquip dolor aliqua irure ex. Nulla ut duis ipsum nisi elit fugiat commodo sunt reprehenderit laborum veniam eu veniam. Eiusmod minim exercitation fugiat irure ex labore incididunt do fugiat commodo aliquip sit id deserunt reprehenderit aliquip nostrud.</p>
-                  <br />
-                  <div class="ext-tabs-content-col">
-                    <div class="ext-tabs-content-card">
-                      <div class="ext-tabs-content-card-img">
-                        <img src="public/assets/img/english/imagen-3.png" />
-                      </div>
-                      <div class="ext-tabs-content-card-text">
-                        <p>¿Cómo crear tu usuario y clave?, además, beneficios de tenerla</p>
-                        <a class="ext-tabs-content-card-link" href="#">VER <i class="fas fa-arrow-right"></i></a>
-                      </div>
+        
+                <!--Contenedor para el buscador-->
+                <div id="buscador-container" class="buscador-container-off">
+                    <h3 class="buscador-container-title">Buscador</h3>
+                    <div class="buscador-container-form">
+                        <input type="text" class="buscador-container-input" autocomplete="off" placeholder="Escribe aqui lo que estas buscando" />
+                        <button class="buscador-container-btn"><i class="fas fa-search"></i></button>
                     </div>
-                    <div class="ext-tabs-content-card">
-                      <div class="ext-tabs-content-card-img">
-                        <img src="public/assets/img/english/imagen-3.png" />
-                      </div>
-                      <div class="ext-tabs-content-card-text">
-                        <p>¿Cómo crear tu usuario y clave?, además, beneficios de tenerla</p>
-                        <a class="ext-tabs-content-card-link" href="#">VER <i class="fas fa-arrow-right"></i></a>
-                      </div>
-                    </div>
-                    <div class="ext-tabs-content-card">
-                      <div class="ext-tabs-content-card-img">
-                        <img src="public/assets/img/english/imagen-3.png" />
-                      </div>
-                      <div class="ext-tabs-content-card-text">
-                        <p>¿Cómo crear tu usuario y clave?, además, beneficios de tenerla</p>
-                        <a class="ext-tabs-content-card-link" href="#">VER <i class="fas fa-arrow-right"></i></a>
-                      </div>
-                    </div>
-
-                    <div class="ext-tabs-content-card">
-                      <div class="ext-tabs-content-card-img">
-                        <img src="public/assets/img/english/imagen-3.png" />
-                      </div>
-                      <div class="ext-tabs-content-card-text">
-                        <p>¿Cómo crear tu usuario y clave?, además, beneficios de tenerla</p>
-                        <a class="ext-tabs-content-card-link" href="#">VER <i class="fas fa-arrow-right"></i></a>
-                      </div>
-                    </div>
-                    <div class="ext-tabs-content-card">
-                      <div class="ext-tabs-content-card-img">
-                        <img src="public/assets/img/english/imagen-3.png" />
-                      </div>
-                      <div class="ext-tabs-content-card-text">
-                        <p>¿Cómo crear tu usuario y clave?, además, beneficios de tenerla</p>
-                        <a class="ext-tabs-content-card-link" href="#">VER <i class="fas fa-arrow-right"></i></a>
-                      </div>
-                    </div>
-                    <div class="ext-tabs-content-card">
-                      <div class="ext-tabs-content-card-img">
-                        <img src="public/assets/img/english/imagen-3.png" />
-                      </div>
-                      <div class="ext-tabs-content-card-text">
-                        <p>¿Cómo crear tu usuario y clave?, además, beneficios de tenerla</p>
-                        <a class="ext-tabs-content-card-link" href="#">VER <i class="fas fa-arrow-right"></i></a>
-                      </div>
-                    </div>
-                  </div>
-                  <br />
-                  <a href="#"><button class="ext-tabs-redirect-btn">IR A SEGUROSSURA.COM</button></a>
                 </div>
-              </div>
-            </div>
+        
+                <!--Header azul, botonera que abre el submenu-->
+                <div class="header-2">
+                    <div class="header-col-title">
+                        <span>SEGUROS</span>
+                        <div class="header-nav-2">
+                            <p class="nav-2-link"><a href="/paginas/home.aspx">INICIO</a></p>
+                            <p class="nav-2-link" onmouseover="overMenuSeguros('seguros-sura-menu-azul-nuestrosproductos')" onclick="overMenuSeguros('seguros-sura-menu-azul-nuestrosproductos')" onmouseout="outMenuSeguros()">NUESTROS PRODUCTOS</p>
+                            <p class="nav-2-link"><a href="/Paginas/siniestros/asistencia-de-siniestros.aspx">ASISTENCIA EN SINIESTROS</a></p>
+                            <p class="nav-2-link"><a href="#">CANALES DE VENTA</a></p>
+                        </div>
+                    </div>
+                </div>
+        
+                <!--Contenedor para el submenú-->
+                <div id="seguros-sura-menu" class="seguros-sura-menu-off" onmouseover="overMenuSeguros('seguros-sura-menu-azul-nuestrosproductos')" onmouseleave="outMenuSeguros()">
+                    <div class="seguros-sura-menu-content">
+                        <!--esto estará visible solo en responsive-->
+                        <div class="seguros-sura-menu-blanco">
+                            <div class="seguros-sura-menu-blanco-item"><p>Preguntas frecuentes</p></div>
+                            <div class="seguros-sura-menu-blanco-item"><p>Escríbenos</p></div>
+                            <div id="nav-pais-select2" class="nav-pais-select2-collapsed">
+                                <div id="nav-pais-selected2" onclick="clickAcordeon(this)"><img src="/images/new-home/paises/colombia.svg" /><p>Colombia</p></div>
+                                <div id="nav-pais-select2-menu">
+                                    <div onclick="selectPais('https://www.segurossura.com.co/Paginas/default.aspx')"><img src="/images/new-home/paises/colombia.svg" /><p>Colombia</p></div>
+                                    <div onclick="selectPais('http://www.segurossura.com.ar/?utm_source=segurossura-colombia&utm_medium=menu-desplegable&utm_campaign=sura-america-latina&utm_term=sura-latinoamerica')"><img src="/images/new-home/paises/argentina.svg" /><p>Argentina</p></div>
+                                    <div onclick="selectPais('http://www.segurossura.com.br/?utm_source=segurossura-colombia&utm_medium=menu-desplegable&utm_campaign=sura-america-latina&utm_term=sura-latinoamerica')"><img src="/images/new-home/paises/brasil.svg" /><p>Brasil</p></div>
+                                    <div onclick="selectPais('https://www.segurossura.cl/?utm_source=segurossura-colombia&utm_medium=menu-desplegable&utm_campaign=sura-america-latina&utm_term=sura-latinoamerica')"><img src="/images/new-home/paises/chile.svg" /><p>Chile</p></div>
+                                    <div onclick="selectPais('https://www.asesuisa.com/?utm_source=segurossura-colombia&utm_medium=menu-desplegable&utm_campaign=sura-america-latina&utm_term=sura-latinoamerica')"><img src="/images/new-home/paises/el-salvador.svg" /><p>El Salvador</p></div>
+                                    <div onclick="selectPais('https://www.suramexico.com/?utm_source=segurossura-colombia&utm_medium=menu-desplegable&utm_campaign=sura-america-latina&utm_term=sura-latinoamerica')"><img src="/images/new-home/paises/mexico.svg" /><p>México</p></div>
+                                    <div onclick="selectPais('http://www.sura.com.pa/?utm_source=segurossura-colombia&utm_medium=menu-desplegable&utm_campaign=sura-america-latina&utm_term=sura-latinoamerica')"><img src="/images/new-home/paises/panama.svg" /><p>Panamá</p></div>
+                                    <div onclick="selectPais('http://www.sura.pe/wps/portal/newsura/inicio?utm_source=segurossura-colombia&utm_medium=menu-desplegable&utm_campaign=sura-america-latina&utm_term=sura-latinoamerica')"><img src="/images/new-home/paises/republica-dominicana.svg" /><p>República Dominicana</p></div>
+                                    <div onclick="selectPais('http://www.sura.com.do/?utm_source=segurossura-colombia&utm_medium=menu-desplegable&utm_campaign=sura-america-latina&utm_term=sura-latinoamerica')"><img src="/images/new-home/paises/uruguay.svg" /><p>Uruguay</p></div>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!--este estará visible en responsive y en pc-->
+                        <div class="seguros-sura-menu-azul">
+                            <div class="seguros-sura-menu-azul-wraper seguros-sura-menu-azul-wraper-collapsed" id="seguros-sura-menu-azul-inicio">
+                                <div class="seguros-sura-menu-azul-title"><a href="#">INICIO</a></div>
+                            </div>
+                            <div class="seguros-sura-menu-azul-wraper seguros-sura-menu-azul-wraper-active seguros-sura-menu-azul-wraper-collapsed" id="seguros-sura-menu-azul-nuestrosproductos">
+                                <div class="seguros-sura-menu-azul-title" onclick="clickAcordeon(this)">NUESTROS PRODUCTOS</div>
+                                <div class="seguros-sura-menu-azul-box">
+                                    <div class="seguros-sura-menu-col seguros-sura-menu-col-collapsed">
+                                        <h5 onclick="clickAcordeon2(this,'seguros-sura-menu-azul-nuestrosproductos')">Muévete</h5>
+                                        <ul>
+                                            <li><a href="/paginas/movilidad/soat.aspx">Seguro Obligatorio (SOAT)</a></li>
+                                            <li><a href="#">Seguros voluntarios</a></li>
+                                            <li><a href="#">Centros de servicio</a></li>
+                                            <li><a href="#">Plan muévete libre</a></li>
+                                            <li><a href="https://www.segurossura.com.co/paginas/otros-seguros/seguro-viaje.aspx">Seguro de viajes</a></li>
+                                            <li><a href="/paginas/otros-seguros/embarcaciones-recreo.aspx">Seguro para Embarcaciones de Recreo</a></li>
+                                            <li><a href="#">Movilidad segura</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="seguros-sura-menu-col seguros-sura-menu-col-collapsed">
+                                        <h5 onclick="clickAcordeon2(this,'seguros-sura-menu-azul-nuestrosproductos')">Se saludable</h5>
+                                        <ul>
+                                            <li><a href="#">Seguro voluntario de salud</a></li>
+                                            <li><a href="#">Sedes salud SURA</a></li>
+                                            <li><a href="#">Directorio médico</a></li>
+                                            <li><a href="#">Servicios para tu bienestar</a></li>
+                                            <li><a href="#">Servicios en línea</a></li>
+                                            <li><a href="#">Plataforma de Bienestar</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="seguros-sura-menu-col seguros-sura-menu-col-collapsed">
+                                        <h5 onclick="clickAcordeon2(this,'seguros-sura-menu-azul-nuestrosproductos')">Decide</h5>
+                                        <ul>
+                                            <li><a href="/paginas/vida/inicio.aspx">Seguro de vida</a></li>
+                                            <li><a href="/paginas/exequias/inicio.aspx">Seguro de exequias</a></li>
+                                            <li><a href="/paginas/vida/accidentes.aspx">Seguro Accidentes personales</a></li>
+                                            <li><a href="https://www.sura.com/soluciones-personas/plan-fondo-de-ahorros.aspx">Fondo de Ahorro</a></li>
+                                            <li><a href="/paginas/futuro/educacion.aspx">Seguro de educación</a></li>
+                                            <li><a href="/paginas/futuro/pension.aspx">Seguro de pensión</a></li>
+                                            <li><a href="/paginas/futuro/renta-vitalicia.aspx">Seguro de renta vitalicia</a></li>
+                                            <li><a href="#">Plan elige</a></li>
+                                            <li><a href="/paginas/otros-seguros/rc-familiar.aspx">Responsabilidad Civil familiar</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="seguros-sura-menu-col seguros-sura-menu-col-collapsed">
+                                        <h5 onclick="clickAcordeon2(this,'seguros-sura-menu-azul-nuestrosproductos')">Habita</h5>
+                                        <ul>
+                                            <li><a href="/paginas/hogar/inicio.aspx">Seguro de hogar</a></li>
+                                            <li><a href="/paginas/hogar/arrendamiento.aspx">Seguro de arrendamiento</li>
+                                            <li><a href="/paginas/hogar/plan-inversion-protegida.aspx">Plan de inversión protegida</li>
+                                        </ul>
+                                    </div>
+                                    <div class="seguros-sura-menu-col seguros-sura-menu-col-collapsed">
+                                        <h5 onclick="clickAcordeon2(this,'seguros-sura-menu-azul-nuestrosproductos')">Conéctate</h5>
+                                        <ul>
+                                            <li><a href="#">Protección digital</li>
+                                            <li><a href="#">Centro de protección Digital</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="seguros-sura-menu-azul-wraper seguros-sura-menu-azul-wraper-collapsed" id="seguros-sura-menu-azul-asistenciasiniestros">
+                                <div class="seguros-sura-menu-azul-title"><a href="/Paginas/siniestros/asistencia-de-siniestros.aspx">ASISTENCIA EN SINIESTROS</a></div>
+                            </div>
+                            <div class="seguros-sura-menu-azul-wraper seguros-sura-menu-azul-wraper-collapsed" id="seguros-sura-menu-azul-asistenciasiniestros">
+                                <div class="seguros-sura-menu-azul-title"><a href="#">CANALES DE VENTA</a></div>
+                            </div>
+                            
+                        </div>
+        
+                        <!--este estará visible solo en responsive-->
+                        <div class="seguros-sura-menu-amarillo">
+                            <div id="seguros-sura-menu-amarillo-cont" class="seguros-sura-menu-amarillo-collapsed">
+                                <button id="iniciar-sesion-btn2" class="iniciar-sesion-btn-off" status="closed" onclick="clickIniciarSesion2(event,this)"><span>INICIAR SESIÓN</span> <i class="fas fa-caret-down"></i></button>
+                                <div id="iniciar-sesion-options2">
+                                    <p class="iniciar-sesion-option2"><a>Sucursal virtual <span>Personas</span></a></p>
+                                    <p class="iniciar-sesion-option2"><a>Sucursal virtual <span>Empresas</span></a></p>
+                                    <p class="iniciar-sesion-option2"><a>Proveedores</a></p>
+                                    <p class="iniciar-sesion-option2"><a>Asesores</a></p>
+                                    <p class="iniciar-sesion-option2"><a>Solicitar clave</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+          </div>
         </div>
         <!--FIN CONTENT-->
 
