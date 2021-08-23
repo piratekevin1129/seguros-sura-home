@@ -12,6 +12,9 @@
     left: 0px;
     z-index: 3000;
 }
+.fixed-header{
+    position: sticky !important;
+}
 .header-new-home button{
     min-width: initial !important;
 }
