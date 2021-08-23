@@ -132,7 +132,12 @@ function clickAcordeon2(title,contenedor){
     }
 }
 
+function preventDefaultBtn(){
+    event.preventDefault()
+}
+
 //window.onscroll = function(){
     //check alto header
     //var alto_header = document.getElementById('')
 //}
+

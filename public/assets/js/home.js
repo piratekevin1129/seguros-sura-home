@@ -111,40 +111,20 @@ function clickSlideshow(wrapper,wrap,paginator,active,p){
     pages[actual_page].classList.add(active)
 }
 
-///////////////////SLIDESHOW ENTERATE//////////////////
-function nextSlideshow3(){
-    var actual_page = $('#enterate-wrap').attr('page')
-    var total_pages = document.getElementById('enterate-wrap').getElementsByClassName('enterate-card').length
 
-    if(actual_page<(total_pages-1)){
-        document.getElementById('enterate-wrap').style.left = '-'+(parseInt(actual_page)+1)+'00%'
-        $('#enterate-wrap').attr('page',(parseInt(actual_page)+1))
+/////////////TABS EXTRANJEROS//////////////
+function clickTabExt(btn,tab){
+    var aria = btn.getAttribute('data')
+    var titles = document.getElementById('ext-tabs'+tab).getElementsByClassName('ext-tab-title')
+    for(var i = 0;i<titles.length;i++){
+        titles[i].classList.remove('ext-tab-title-active')
     }
-
-    //pages
-    var pages = document.getElementById('enterate-pages').getElementsByTagName('div')
-    for(var i = 0;i<pages.length;i++){
-        pages[i].classList.remove('enterate-page-active')
+    var contents = document.getElementById('ext-tabs'+tab).getElementsByClassName('ext-tabs-content')
+    for(var i = 0;i<contents.length;i++){
+        contents[i].classList.remove('ext-tabs-content-active')
     }
-    pages[parseInt(actual_page)+1].classList.add('enterate-page-active')
-
-    event.preventDefault()
-}
-function prevSlideshow3(){
-    var actual_page = $('#enterate-wrap').attr('page')
-
-    if(actual_page>0){
-        $('#enterate-wrap').attr('page',(parseInt(actual_page)-1))
-        document.getElementById('enterate-wrap').style.left = '-'+(parseInt(actual_page)-1)+'00%'
-    }
-
-    //pages
-    var pages = document.getElementById('enterate-pages').getElementsByTagName('div')
-    for(var i = 0;i<pages.length;i++){
-        pages[i].classList.remove('enterate-page-active')
-    }
-    pages[parseInt(actual_page)-1].classList.add('enterate-page-active')
-    event.preventDefault()
+    document.getElementById('ext-tabs-title-'+aria).classList.add('ext-tab-title-active')
+    document.getElementById('ext-tabs-content-'+aria).classList.add('ext-tabs-content-active')
 }
 
 
