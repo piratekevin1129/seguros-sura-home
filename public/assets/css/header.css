@@ -632,10 +632,11 @@
     margin: 0px;
     padding: 0px;
     border: none;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0,0,0,0) !important;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    min-width: initial !important;
 }
 .widget-button i,.widget-select i{
     color: #FFFFFF;

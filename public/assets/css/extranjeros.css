@@ -90,7 +90,7 @@
 }
 
 .ext-tabs-content{
-    position: absolute;
+    position: relative;
     width: 100%;
     margin: 0px;
     padding: 0px;
