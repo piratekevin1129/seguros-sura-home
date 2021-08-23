@@ -6,12 +6,6 @@
     padding: 0px;
     box-sizing: border-box;
 }
-.header-menu-fixed{
-    position: sticky;
-    top: 0px;
-    left: 0px;
-    z-index: 3000;
-}
 .fixed-header{
     position: sticky !important;
 }
