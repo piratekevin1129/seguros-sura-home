@@ -133,7 +133,7 @@ function clickAcordeon2(title,contenedor){
 }
 
 function preventDefaultBtn(){
-    event.preventDefault()
+    return false
 }
 
 //window.onscroll = function(){
