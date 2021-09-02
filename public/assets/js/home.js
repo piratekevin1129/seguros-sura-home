@@ -25,25 +25,34 @@ function clickCotizaSeguro(event,btn){
 ///////////////////SLIDESHOW PRINCIPAL//////////////////
 function setSlideshow(data){
     //var pages = document.getElementById(data.wrapper).getElementsByClassName(data.wrap)
+    var active = data.page+'-active'
     var pages = $("#"+data.wrapper+" ."+data.wrap)
     document.getElementById(data.wrapper).style.width = 'calc(100% * '+pages.length+')'
     document.getElementById(data.wrapper).style.width = '-moz-calc(100% * '+pages.length+')'
     document.getElementById(data.wrapper).style.left = '0%'
 
-    document.getElementById(data.prev).setAttribute('onclick',"prevSlideshow("+"'"+data.wrapper+"','"+data.wrap+"','"+data.paginator+"','"+data.active+"',event)")
-    document.getElementById(data.next).setAttribute('onclick',"nextSlideshow("+"'"+data.wrapper+"','"+data.wrap+"','"+data.paginator+"','"+data.active+"',event)")
+    document.getElementById(data.prev).setAttribute('onclick',"prevSlideshow("+"'"+data.wrapper+"','"+data.wrap+"','"+data.paginator+"','"+active+"',event)")
+    document.getElementById(data.next).setAttribute('onclick',"nextSlideshow("+"'"+data.wrapper+"','"+data.wrap+"','"+data.paginator+"','"+active+"',event)")
 
     $('#'+data.wrapper).attr('page','0')
     $("#"+data.wrapper+" ."+data.wrap).attr('style','width:calc(100% / '+pages.length+'); width:-moz-calc(100% / '+pages.length+')');
 
-    var paginas = document.getElementById(data.paginator).getElementsByTagName('div')
-    for(var i = 0;i<paginas.length;i++){
-        paginas[i].setAttribute('onclick',"clickSlideshow("+"'"+data.wrapper+"','"+data.wrap+"','"+data.paginator+"','"+data.active+"',"+i+")")        
+    //agregar paginas al paginador
+    document.getElementById(data.paginator).innerHTML = ''
+    for(var i = 0;i<pages.length;i++){
+        var pag = document.createElement('div')
+        if(i==0){
+            pag.className = data.page+' '+active
+        }else{
+            pag.className = data.page
+        }
+        pag.setAttribute('onclick',"clickSlideshow("+"'"+data.wrapper+"','"+data.wrap+"','"+data.paginator+"','"+active+"',"+i+")")
+        document.getElementById(data.paginator).appendChild(pag)
     }
 
     if(data.time!=null&&data.time!=undefined){
         data.animation = setInterval(function(){
-            nextSlideshow(data.wrapper,data.wrap,data.paginator,data.active)
+            nextSlideshow(data.wrapper,data.wrap,data.paginator,active)
         },data.time)
     }
 }
@@ -135,7 +144,7 @@ $(document).ready(function() {
             wrapper:'slideshow-wrapper',
             wrap:'slideshow-wrap',
             paginator:'slideshow-paginator',
-            active:'slideshow-page-active',
+            page:'slideshow-page',
             prev:'slideshow-prev-btn',
             next:'slideshow-next-btn',
             animation:null,
@@ -147,7 +156,7 @@ $(document).ready(function() {
             wrapper:'capacidades-parati-slider-wrap',
             wrap:'capacidades-parati-row',
             paginator:'capacidades-parati-pages',
-            active:'capacidades-parati-page-active',
+            page:'capacidades-parati-page',
             prev:'capacidades-parati-paginator-prev',
             next:'capacidades-parati-paginator-next',
             animation:null,
@@ -159,7 +168,7 @@ $(document).ready(function() {
             wrapper:'enterate-wrap',
             wrap:'enterate-card',
             paginator:'enterate-pages',
-            active:'enterate-page-active',
+            page:'enterate-page',
             prev:'enterate-paginator-prev',
             next:'enterate-paginator-next',
             animation:null,
