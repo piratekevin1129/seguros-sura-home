@@ -136,6 +136,22 @@ function clickTabExt(btn,tab){
     document.getElementById('ext-tabs-content-'+aria).classList.add('ext-tabs-content-active')
 }
 
+////////////TABS ENLACES INTERES//////////////
+function clickEnlaceInteres(t){
+    //limpiar clase active
+    var listas = document.getElementById('enlaces-interes-lista').getElementsByTagName('p')
+    for(var i = 0;i<listas.length;i++){
+        listas[i].classList.remove('enlaces-interes-list-active')
+    }
+    //ocultar boards
+    var boards = document.getElementById('enlaces-interes-col2').getElementsByClassName('enlaces-interes-row2')
+    for(var j = 0;j<boards.length;j++){
+        boards[j].classList.remove('enlaces-interes-row-active')
+    }
+    listas[t-1].classList.add('enlaces-interes-list-active')
+    boards[t-1].classList.add('enlaces-interes-row-active')
+}
+
 
 //////////////////SETEAR SLIDESHOWS DEL HOME-PERSONAS///////////////
 $(document).ready(function() {

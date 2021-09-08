@@ -1102,6 +1102,19 @@ body,html{
     top: 10px;
     left: 10px;
 }
+.capacidades-parati-card-img .capacidad-derecha{
+    left: initial;
+    right: 10px;
+}
+.capacidades-parati-card-img .capacidad-blanco{
+    color: #FFFFFF;
+}
+.capacidades-parati-card-img .capacidad-centro{
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
 .capacidades-parati-card-content{
     position: relative;
     width: 100%;
@@ -2084,7 +2097,7 @@ body,html{
     min-height: 305px;
 }
 
-.enlaces-interes-col1,.enlaces-interes-col2{
+.enlaces-interes-col1,#enlaces-interes-col2{
     position: relative;
     width: 50%;
     margin: 0px;
@@ -2098,7 +2111,7 @@ body,html{
     align-items: center;
     justify-content: flex-end;
 }
-.enlaces-interes-col2{
+#enlaces-interes-col2{
     background-color: #00AEC7;
     display: flex;
     align-items: center;
@@ -2192,13 +2205,15 @@ body,html{
     transition: background-color 0.2s;
     -webkit-transition: background-color 0.2s;
 }
-.enlaces-interes-list p:hover{
+.enlaces-interes-list p:hover,
+.enlaces-interes-list-active{
     cursor: pointer;
-    color: #FFFFFF;
-    background-color: rgba(0,174,199,1);
+    color: #FFFFFF !important;
+    background-color: rgba(0,174,199,1) !important;
 }
-.enlaces-interes-list p:hover::after{
-    background-color: #FFFFFF;
+.enlaces-interes-list p:hover::after,
+.enlaces-interes-list-active::after{
+    background-color: #FFFFFF !important;
 }
 
 .enlaces-interes-list p:first-child{
@@ -2223,10 +2238,13 @@ body,html{
 
 .enlaces-interes-row2{
     position: relative;
-    display: block;
+    display: none;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+}
+.enlaces-interes-row-active{
+    display: block !important;
 }
 .enlaces-interes-row2 > a{
     text-decoration: none !important;

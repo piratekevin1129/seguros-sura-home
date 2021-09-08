@@ -221,6 +221,10 @@
         top: 7.5px;
         left: 7.5px;
     }
+    .capacidades-parati-card-img .capacidad-derecha{
+        left: initial;
+        right: 7.5px;
+    }
     .capacidades-parati-card-content{
         height: calc(100% - 200px);
         height: -moz-calc(100% - 200px);
@@ -370,7 +374,7 @@
         left: calc(10px - 3px);
         left: -moz-calc(10px - 3px);
     }
-    .enlaces-interes-col2{
+    #enlaces-interes-col2{
         padding: 0px 30px;
     }
     .enlaces-interes-row2 p{
@@ -725,6 +729,10 @@
         top: 5px;
         left: 5px;
     }
+    .capacidades-parati-card-img .capacidad-derecha{
+        left: initial;
+        right: 5px;
+    }
     .capacidades-parati-card-content{
         height: calc(100% - 200px);
         height: -moz-calc(100% - 200px);
@@ -931,7 +939,7 @@
         left: calc(10px - 3px);
         left: -moz-calc(10px - 3px);
     }
-    .enlaces-interes-col2{
+    #enlaces-interes-col2{
         padding: 0px 30px;
     }
     .enlaces-interes-row2 p{
@@ -1733,6 +1741,10 @@
         top: 5px;
         left: 5px;
     }
+    .capacidades-parati-card-img .capacidad-derecha{
+        left: initial;
+        right: 5px;
+    }
     .capacidades-parati-card-content{
         height: calc(100% - 200px);
         height: -moz-calc(100% - 200px);
@@ -2032,7 +2044,7 @@
         left: calc(10px - 3px);
         left: -moz-calc(10px - 3px);
     }
-    .enlaces-interes-col2{
+    #enlaces-interes-col2{
         padding: 0px 20px;
     }
     .enlaces-interes-row2 p{
@@ -2364,14 +2376,14 @@
         justify-content: flex-start;
         align-items: flex-start;
     }
-    .enlaces-interes-col1,.enlaces-interes-col2{
+    .enlaces-interes-col1,#enlaces-interes-col2{
         width: 100%;
     }
     .enlaces-interes-col1{
         justify-content: center;
         padding: 20px 0px;
     }
-    .enlaces-interes-col2{
+    #enlaces-interes-col2{
         justify-content: center;
         padding: 20px;
     }
