@@ -122,6 +122,7 @@ function clickSlideshow(wrapper,wrap,paginator,active,p){
 
 
 /////////////TABS EXTRANJEROS//////////////
+var global_tab_ext = 'arl'
 function clickTabExt(btn,tab){
     var aria = btn.getAttribute('data')
     var titles = document.getElementById('ext-tabs'+tab).getElementsByClassName('ext-tab-title')
@@ -134,6 +135,13 @@ function clickTabExt(btn,tab){
     }
     document.getElementById('ext-tabs-title-'+aria).classList.add('ext-tab-title-active')
     document.getElementById('ext-tabs-content-'+aria).classList.add('ext-tabs-content-active')
+    if(data=='1'){
+        document.getElementById('espanol_link').setAttribute('href','https://www.arlsura.com/')
+    }else if(data=='2'){
+        document.getElementById('espanol_link').setAttribute('href','https://www.epssura.com/')
+    }else if(data=='3'){
+        document.getElementById('espanol_link').setAttribute('href','https://lab.segurossura.com.co/paginas/personas.aspx')
+    }
 }
 
 ////////////TABS ENLACES INTERES//////////////

@@ -219,3 +219,6 @@
 .footer-redes p:last-child{
     font-style: italic;
 }
+.dummy-chat-content-oculto{
+    display: none !important;
+}
