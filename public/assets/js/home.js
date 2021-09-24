@@ -135,11 +135,11 @@ function clickTabExt(btn,tab){
     }
     document.getElementById('ext-tabs-title-'+aria).classList.add('ext-tab-title-active')
     document.getElementById('ext-tabs-content-'+aria).classList.add('ext-tabs-content-active')
-    if(data=='1'){
+    if(aria=='1'){
         document.getElementById('espanol_link').setAttribute('href','https://www.arlsura.com/')
-    }else if(data=='2'){
+    }else if(aria=='2'){
         document.getElementById('espanol_link').setAttribute('href','https://www.epssura.com/')
-    }else if(data=='3'){
+    }else if(aria=='3'){
         document.getElementById('espanol_link').setAttribute('href','https://lab.segurossura.com.co/paginas/personas.aspx')
     }
 }
