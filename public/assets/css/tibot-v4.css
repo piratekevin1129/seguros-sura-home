@@ -29,3 +29,5 @@
 
 .inbenta-bot__launcher { display: none;}
 .inbenta-bot__chat { margin-bottom: -10px;}
+.chatbot-pratech-floating{display: none !important;}
+.chatbot-pratech-form-bubble-label{width: auto !important; max-width: initial !important;font-weight: normal !important; margin-bottom: 0px !important;}
