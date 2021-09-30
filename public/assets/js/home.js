@@ -9,7 +9,21 @@ function unfocusSelect(select,clase){
     divparent.className = clase+'-select'
 }
 
-function clickCotizaSeguro(event,btn){
+function clickCotizaSeguro(select){
+    var valor = select.value
+    document.getElementById('cotiza-seguro-link').setAttribute('href',valor)
+
+    var btn = document.getElementById('cotiza-seguro-btn')
+    if(valor=="#"){
+        btn.className = 'cotiza-seguro-btn-locked'
+        btn.locked = true
+    }else{
+        btn.className = ''
+        btn.locked = false
+    }
+}
+
+/*function clickCotizaSeguro(event,btn){
     var status = $(btn).attr('status')
     if(status=='collapsed'){
         $('#cotiza-seguro-wrap').attr('class', 'cotiza-seguro-expanded')
@@ -19,7 +33,7 @@ function clickCotizaSeguro(event,btn){
         $('#cotiza-seguro-btn').attr('status', 'collapsed')
     }
     event.preventDefault()
-}
+}*/
 
 
 ///////////////////SLIDESHOW PRINCIPAL//////////////////

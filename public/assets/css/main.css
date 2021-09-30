@@ -616,6 +616,12 @@ body,html{
 }
 
 /**********cotiza tu seguro en linea************/
+#cotiza-seguro-link{
+    text-decoration: none !important;
+    font-family: inherit;
+    color: inherit;
+    font-size: inherit;
+}
 .cotiza-seguro-container{
     position: relative;
     width: 100%;
@@ -795,7 +801,13 @@ body,html{
     color: #FFFFFF;
     cursor: pointer;
 }
-                    
+.cotiza-seguro-btn-locked{
+    background-color: #ECF0F1 !important;
+    border: none !important;
+    color: #53565A !important;
+    cursor: not-allowed !important;
+}
+
 .cotiza-seguro-row2{
     position: relative;
     margin: 0px;
@@ -1649,6 +1661,11 @@ body,html{
     background-color: #0033A0;
     color: #FFFFFF;
     cursor: pointer;
+}
+.blog-sura-ir-btn a{
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
 }
 
 .novedades-col{

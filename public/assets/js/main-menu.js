@@ -132,6 +132,24 @@ function clickAcordeon2(title,contenedor){
     }
 }
 
+function clickIniciarSesion(btn){
+    preventDefaultBtn()
+    
+    var status = btn.getAttribute('status')
+    if(status=='off'){
+        btn.className = 'iniciar-sesion-cont-on'
+        btn.setAttribute('status','on')
+    }else{
+        btn.className = ''
+        btn.setAttribute('status','off')
+    }
+}
+function blurIniciarSesion(){
+    var btn = document.getElementById('iniciar-sesion-cont')
+    btn.className = ''
+    btn.setAttribute('status','off')
+}
+
 function preventDefaultBtn(){
     return false
 }
@@ -141,3 +159,6 @@ function preventDefaultBtn(){
     //var alto_header = document.getElementById('')
 //}
 
+/*setTimeout(function(){
+    document.getElementById('iniciar-sesion-cont').focus()
+},1000)*/
