@@ -8,6 +8,7 @@
                     <a href="/paginas/empresas.aspx"><p class="widgets-actual-text">EMPRESAS</p></a>
                 </div>
                 <div class="widgets-appearance">
+
                     <div class="widget-appearance-row">
                         <button type="button" id="widget-idioma-btn" onclick="preventDefaultBtn()">
                             <p>Español</p>
@@ -39,7 +40,7 @@
             <div class="header-col-logo">
                 <img src="/images/new-home/logo-sura.svg" />
                 <div class="header-nav-1">
-                    <div class="nav-1-link"><a href="#">Preguntas frecuentes</a></div>
+                    <div class="nav-1-link"><a href="https://www.segurossura.com.co/paginas/preguntas-frecuentes.aspx">Preguntas frecuentes</a></div>
                     <div class="nav-1-link"><a href="/paginas/escribenos.aspx">Escríbenos</a></div>
                     <div id="nav-pais-select">
                         <div id="nav-pais-selected" onclick="clickMenuPaises()">
@@ -58,7 +59,7 @@
                         </div>
                     </div>
                     <button type="button" id="iniciar-sesion-cont" onclick="clickIniciarSesion(this)" onblur="blurIniciarSesion()" status="off">
-                        <div id="iniciar-sesion-btn">
+                        <div id="iniciar-sesion-btn"> 
                             <span>INICIAR SESIÓN</span><i class="fas fa-caret-down"></i>
                         </div>
                         <div id="iniciar-sesion-options">
@@ -69,7 +70,7 @@
                             <p class="iniciar-sesion-option"><a href="/paginas/registro-de-usuarios.aspx" target="_blank">Solicitar clave</a></p>
                         </div>
                     </button>
-                    
+
                     <button id="menu-hamburguesa" class="menu-hamburguesa-closed" status="closed" onclick="clickMenuHamburguesa()">
                         <i class="fas fa-bars"></i>
                         <i class="fas fa-times"></i>
@@ -84,9 +85,9 @@
                 <span>SEGUROS</span>
                 <div class="header-nav-2">
                     <p class="nav-2-link"><a href="/paginas/home.aspx">INICIO</a></p>
-                    <p class="nav-2-link" onmouseover="overMenuSeguros('seguros-sura-menu-azul-nuestrosproductos')" onclick="overMenuSeguros('seguros-sura-menu-azul-nuestrosproductos')" onmouseout="outMenuSeguros()">NUESTROS PRODUCTOS</p>
-                    <p class="nav-2-link"><a href="/Paginas/siniestros/asistencia-de-siniestros.aspx">ASISTENCIA EN SINIESTROS</a></p>
-                    <p class="nav-2-link"><a href="#">CANALES DE VENTA</a></p>
+                    <p class="nav-2-link" onmouseover="overMenuSeguros('seguros-sura-menu-azul-nuestrosproductos')" onclick="overMenuSeguros('seguros-sura-menu-azul-nuestrosproductos')" onmouseout="outMenuSeguros()">¿CÓMO TE PROTEGEMOS?</p>
+                    <p class="nav-2-link" <a href="https://www.segurossura.com.co/paginas/canales-de-venta.aspx">¿CÓMO TE GESTIONAMOS?</a></p>
+                    <p class="nav-2-link"><a href="https://www.segurossura.com.co/paginas/canales-de-venta.aspx">OTROS SERVICIOS</a></p>
                 </div>
             </div>
         </div>
@@ -117,70 +118,123 @@
                 <!--este estará visible en responsive y en pc-->
                 <div class="seguros-sura-menu-azul">
                     <div class="seguros-sura-menu-azul-wraper seguros-sura-menu-azul-wraper-collapsed" id="seguros-sura-menu-azul-inicio">
-                        <div class="seguros-sura-menu-azul-title"><a href="#">INICIO</a></div>
+                        <div class="seguros-sura-menu-azul-title"><a href="https://lab.segurossura.com.co/paginas/personas.aspx">INICIO</a></div>
                     </div>
                     <div class="seguros-sura-menu-azul-wraper seguros-sura-menu-azul-wraper-active seguros-sura-menu-azul-wraper-collapsed" id="seguros-sura-menu-azul-nuestrosproductos">
-                        <div class="seguros-sura-menu-azul-title" onclick="clickAcordeon(this)">NUESTROS PRODUCTOS</div>
+                        <div class="seguros-sura-menu-azul-title" onclick="clickAcordeon(this)">¿CÓMO TE PROTEGEMOS?</div>
                         <div class="seguros-sura-menu-azul-box">
                             <div class="seguros-sura-menu-col seguros-sura-menu-col-collapsed">
-                                <h5 onclick="clickAcordeon2(this,'seguros-sura-menu-azul-nuestrosproductos')">Muévete</h5>
+                                <h5 onclick="clickAcordeon2(this,'seguros-sura-menu-azul-nuestrosproductos')">Gestión Financiera</h5>
                                 <ul>
-                                    <li><a href="/paginas/movilidad/soat.aspx">Seguro Obligatorio (SOAT)</a></li>
-                                    <li><a href="#">Seguros voluntarios</a></li>
-                                    <li><a href="#">Centros de servicio</a></li>
-                                    <li><a href="#">Plan muévete libre</a></li>
-                                    <li><a href="https://www.segurossura.com.co/paginas/otros-seguros/seguro-viaje.aspx">Seguro de viajes</a></li>
-                                    <li><a href="/paginas/otros-seguros/embarcaciones-recreo.aspx">Seguro para Embarcaciones de Recreo</a></li>
-                                    <li><a href="#">Movilidad segura</a></li>
+                                    <li><a href="https://www.segurossura.com.co/Paginas/empresas/fraude/infidelidad-riesgos-financieros.aspx">Infidelidad y Riesgos Financieros</a></li>                                                                       
+                                </ul>
+                            </div>
+							<div class="seguros-sura-menu-col seguros-sura-menu-col-collapsed">
+                                <h5 onclick="clickAcordeon2(this,'seguros-sura-menu-azul-nuestrosproductos')">Legal</h5>
+                                <ul>
+                                    <li><a href="https://www.segurossura.com.co/paginas/empresas/responsabilidad-civil/proteccion-legal.aspx">Protección Legal</a></li>
+									<li><a href="https://www.segurossura.com.co/paginas/empresas/responsabilidad-civil/sostenibilidad-legal.aspx">Sostenibilidad Legal</a></li>
+                                    <li><a href="https://www.segurossura.com.co/Paginas/empresas/responsabilidad-civil/derivada-de-cumplimiento.aspx">Derivada de Cumplimiento</a></li>
+                                    <li><a href="https://www.segurossura.com.co/Paginas/empresas/cumplimiento/disposiciones-legales.aspx">Disposiciones Legales</a></li>									              
+									<li><a href="https://www.segurossura.com.co/Paginas/empresas/cumplimiento/servicios-publicos-domiciliarios.aspx">Empresas de Servicios Públicos Domiciliarios</a></li>
+									<li><a href="https://www.segurossura.com.co/Paginas/empresas/cumplimiento/favor-entidades-estatales.aspx">Entidades Estatales</a></li>
+									<li><a href="https://www.segurossura.com.co/paginas/empresas/cumplimiento/entidades-publicas-regimen-privado.aspx">Entidades Públicas</a></li>
+									<li><a href="https://www.segurossura.com.co/Paginas/empresas/cumplimiento/grandes-beneficiarios.aspx">Grandes Beneficiarios</a></li>
+                                    <li><a href="https://www.segurossura.com.co/Paginas/empresas/cumplimiento/favor-particulares.aspx">Particulares</a></li>
+                                    <li><a href="https://www.segurossura.com.co/Paginas/empresas/cumplimiento/caucion-judicial.aspx">Caución Judicial</a></li>                                    							 
                                 </ul>
                             </div>
                             <div class="seguros-sura-menu-col seguros-sura-menu-col-collapsed">
-                                <h5 onclick="clickAcordeon2(this,'seguros-sura-menu-azul-nuestrosproductos')">Se saludable</h5>
+                                <h5 onclick="clickAcordeon2(this,'seguros-sura-menu-azul-nuestrosproductos')">Mercado</h5>
                                 <ul>
-                                    <li><a href="#">Seguro voluntario de salud</a></li>
-                                    <li><a href="#">Sedes salud SURA</a></li>
-                                    <li><a href="#">Directorio médico</a></li>
-                                    <li><a href="#">Servicios para tu bienestar</a></li>
-                                    <li><a href="#">Servicios en línea</a></li>
-                                    <li><a href="#">Plataforma de Bienestar</a></li>
+                                    <li><a href="https://www.segurossura.com.co/paginas/empresas/agricola/acuicola.aspx">Agro - Acúicola</a></li>
+                                    <li><a href="https://www.segurossura.com.co/paginas/empresas/agricola/avicola.aspx">Agro - Avícola</a></li> 
+									<li><a href="https://www.segurossura.com.co/paginas/empresas/agricola/bovino-bufalino.aspx">Agro - Bovino y bufalino</a></li>
+                                    <li><a href="https://www.segurossura.com.co/Paginas/empresas/agricola/cosecha.aspx">Agro - Cosecha</a></li>
+									 <li><a href="https://www.segurossura.com.co/paginas/empresas/agricola/forestal.aspx">Agro - Forestal</a></li>
+									<li><a href="https://www.segurossura.com.co/Paginas/empresas/agricola/planta.aspx">Agro - Planta </a></li>
+									<li><a href="https://www.segurossura.com.co/Paginas/empresas/agricola/planta.aspx">Activos Intangibles</a></li>
+                                </ul>
+                            </div>
+							<div class="seguros-sura-menu-col seguros-sura-menu-col-collapsed">
+                                <h5 onclick="clickAcordeon2(this,'seguros-sura-menu-azul-nuestrosproductos')">Modelo Operativo</h5>
+                                <ul>
+                                    <li><a href="https://www.segurossura.com.co/paginas/empresas/agricola/acuicola.aspx"><strong>Cadena de abastecimiento</strong></a></li>
+                                    <li><a href="https://www.segurossura.com.co/paginas/empresas/agricola/avicola.aspx"><strong>Logistica y maritimos</strong></a></li> 
+									<li><a href="https://www.segurossura.com.co/Paginas/empresas/transporte/agentes-carga.aspx">Agentes de carga</a></li>
+                                    <li><a href="https://www.segurossura.com.co/Paginas/empresas/transporte/carga-proyectos.aspx">Carga de proyectos</a></li>
+									 <li><a href="https://www.segurossura.com.co/Paginas/empresas/transporte/embarcaciones-comerciales.aspx">Embarcaciones comerciales</a></li>
+									<li><a href="https://www.segurossura.com.co/Paginas/empresas/transporte/embarcaciones-recreo.aspx">Embarcaciones de recreo </a></li>
+									<li><a href="https://www.segurossura.com.co/Paginas/empresas/bienes-y-patrimonio/multirriesgo-corporativo.aspx">Multiriesgo corporativo</a></li>
+									<li><a href="https://www.segurossura.com.co/Paginas/empresas/bienes-y-patrimonio/equipo-electronico.aspx">Equipo electronico</a></li>
+                                    <li><a href="https://www.segurossura.com.co/Paginas/empresas/bienes-y-patrimonio/incendio.aspx">Incendio</a></li> 
+									<li><a href="https://www.segurossura.com.co/Paginas/empresas/bienes-y-patrimonio/multirriesgo-copropiedades.aspx">Multiriesgo copropiedades</a></li>
+                                    <li><a href="https://www.segurossura.com.co/Paginas/empresas/bienes-y-patrimonio/rotura-de-maquinaria.aspx">Rotura de maquinaria</a></li>
+									 <li><a href="https://www.segurossura.com.co/Paginas/empresas/bienes-y-patrimonio/sustraccion-establecimientos.aspx">Sustracción de establecimiento</a></li>
+									<li><a href="https://www.segurossura.com.co/Paginas/empresas/bienes-y-patrimonio/plan-empresario-sura.aspx">Plan Eempresario SURA </a></li>
+									<li><a href="https://www.segurossura.com.co/paginas/movilidad/soat.aspx">SOAT</a></li>
+									<li><a href="https://www.segurossura.com.co/Paginas/empresas/ingenieria/montaje.aspx">Montaje</a></li>
+                                    <li><a href="https://www.segurossura.com.co/Paginas/empresas/transporte/vehiculos-utilitarios-pesados.aspx">Utilitarios y pesados</a></li> 
+									<li><a href="https://www.segurossura.com.co/paginas/empresas/agricola/bovino-bufalino.aspx"><strong>Ingeniería</strong></a></li>
+                                    <li><a href="https://www.segurossura.com.co/paginas/empresas/ingenieria/energia-eolica.aspx">Energía eólica</a></li>
+									 <li><a href="https://www.segurossura.com.co/Paginas/empresas/ingenieria/energia-solar.aspx">Energía solar</a></li>
+									<li><a href="https://www.segurossura.com.co/Paginas/empresas/ingenieria/construccion.aspx">Construcción</a></li>
+									<li><a href="https://www.segurossura.com.co/paginas/empresas/ingenieria/maquinaria-y-equipo-de-contratistas.aspx">Maquinaría y equipo contratista</a></li>
+									<li><a href="https://www.segurossura.com.co/Paginas/empresas/ingenieria/obras-civiles-terminadas.aspx">Obras civiles terminadas</a></li>
+                                    <li><a href="https://www.segurossura.com.co/paginas/empresas/cumplimiento/arrendamiento.aspx">Arrendamiento</a></li> 
+									<li><a href="https://www.segurossura.com.co/paginas/empresas/cumplimiento/contratistas-proveedores.aspx">Contratistas y proveedores</a></li>
+                                    <li><a href="https://www.segurossura.com.co/Paginas/empresas/cumplimiento/eficiencia-energetica.aspx">Eficiencia energética</a></li>
+								</ul>
+                            </div> 
+							<div class="seguros-sura-menu-col seguros-sura-menu-col-collapsed">
+                                <h5 onclick="clickAcordeon2(this,'seguros-sura-menu-azul-nuestrosproductos')">Modelo Operativo</h5>
+                                <ul>
+									<li><a href="https://www.segurossura.com.co/Paginas/empresas/responsabilidad-civil/danos-terceros.aspx">RC por daños a terceros</a></li>
+									<li><a href="https://www.segurossura.com.co/paginas/empresas/responsabilidad-civil/clinicas-hospitales.aspx">RC para clinicas y hospitales</a></li>
+									<li><a href="https://www.segurossura.com.co/Paginas/empresas/responsabilidad-civil/talleres.aspx">RC talleres</a></li>
+									<li><a href="https://www.segurossura.com.co/Paginas/empresas/responsabilidad-civil/parqueaderos.aspx">RC parqueaderos</a></li> 
+									<li><a href="https://www.segurossura.com.co/paginas/empresas/responsabilidad-civil/responsabilidad-del-empleador.aspx">RC empleador</a></li>
+                                    <li><a href="https://www.segurossura.com.co/paginas/empresas/responsabilidad-civil/directivos-y-administradores.aspx">RC directores y administradores</a></li>
+									 <li><a href="https://www.segurossura.com.co/Paginas/empresas/responsabilidad-civil/derivada-de-cumplimiento.aspx">RC derivada de cumplimiento</a></li>
+									<li><a href="https://www.segurossura.com.co/Paginas/empresas/responsabilidad-civil/responsabilida-civil-ambiental.aspx">RC ambiental</a></li>
+                                    <li><a href="https://www.segurossura.com.co/paginas/empresas/ingenieria/vivienda-segura-sura.aspx">Vivienda segura</a></li> 
+									<li><a href="https://www.segurossura.com.co/paginas/empresas/bienes-y-patrimonio/plan-empresa-protegida.aspx">Todo riesgo empresarial</a></li>
+                                    <li><a href="https://www.segurossura.com.co/Paginas/empresas/transporte/terrestres-carga.aspx">Transporte terrestre de carga</a></li>
+									 <li><a href="https://www.segurossura.com.co/paginas/empresas/transporte/transporte-mercancias-automatico.aspx">Transporte de mercancías automático</a></li>
+									<li><a href="https://www.segurossura.com.co/paginas/empresas/transporte/transporte-mercancias-especifico.aspx">Transporte de mercancias específico </a></li>
+									<li><a href="https://www.segurossura.com.co/Paginas/empresas/transporte/transporte-valores.aspx">Transporte de valores</a></li>
+                                </ul>
+                            </div> 
+                            <div class="seguros-sura-menu-col seguros-sura-menu-col-collapsed">
+                                <h5 onclick="clickAcordeon2(this,'seguros-sura-menu-azul-nuestrosproductos')">Talento Humano</h5>
+                                <ul>
+                                    <li><a href="https://www.segurossura.com.co/Paginas/empresas/empleados/seguro-colectivo-salud.aspx">Salud colectiva</a></li>
+                                    <li><a href="https://www.segurossura.com.co/Paginas/empresas/empleados/seguro-colectivo-hogar.aspx">Hogar colectiva</li>
+									<li><a href="https://www.segurossura.com.co/Paginas/empresas/empleados/seguro-colectivo-vida.aspx">Vida grupo</li>
+                                    <li><a href="https://www.segurossura.com.co/Paginas/empresas/empleados/seguro-colectivo-autos.aspx">Autos colectivo</li>
+									<li><a href="https://www.segurossura.com.co/Paginas/empresas/fraude/fraude-empleado.aspx"></a>Fraude de empleados</li>                                    
+									<li><a href="https://www.segurossura.com.co/Paginas/empresas/empleados/seguro-educacion.aspx">Educación</li>
+                                    <li><a href="https://www.segurossura.com.co/Paginas/empresas/empleados/seguro-pension.aspx">Pensión</li>
+									<li><a href="https://www.segurossura.com.co/Paginas/empresas/empleados/invalidez-y-sobrevivencia.aspx">Previsional de Invalidez y Sobrevivencia</li>
+                                    <li><a href="https://www.segurossura.com.co/Paginas/empresas/empleados/seguro-renta.aspx">Renta</li>
+									<li><a href="https://www.segurossura.com.co/Paginas/empresas/empleados/seguro-renta.aspx">Mascotas</li>
+									<li><a href="https://www.suraenlinea.com/arrendamiento-digital/sura"><strong>RC familiar</strong></li>
                                 </ul>
                             </div>
                             <div class="seguros-sura-menu-col seguros-sura-menu-col-collapsed">
-                                <h5 onclick="clickAcordeon2(this,'seguros-sura-menu-azul-nuestrosproductos')">Decide</h5>
+                                <h5 onclick="clickAcordeon2(this,'seguros-sura-menu-azul-nuestrosproductos')">Tecnología y Transformación Digital</h5>
                                 <ul>
-                                    <li><a href="/paginas/vida/inicio.aspx">Seguro de vida</a></li>
-                                    <li><a href="/paginas/exequias/inicio.aspx">Seguro de exequias</a></li>
-                                    <li><a href="/paginas/vida/accidentes.aspx">Seguro Accidentes personales</a></li>
-                                    <li><a href="https://www.sura.com/soluciones-personas/plan-fondo-de-ahorros.aspx">Fondo de Ahorro</a></li>
-                                    <li><a href="/paginas/futuro/educacion.aspx">Seguro de educación</a></li>
-                                    <li><a href="/paginas/futuro/pension.aspx">Seguro de pensión</a></li>
-                                    <li><a href="/paginas/futuro/renta-vitalicia.aspx">Seguro de renta vitalicia</a></li>
-                                    <li><a href="#">Plan elige</a></li>
-                                    <li><a href="/paginas/otros-seguros/rc-familiar.aspx">Responsabilidad Civil familiar</a></li>
-                                </ul>
-                            </div>
-                            <div class="seguros-sura-menu-col seguros-sura-menu-col-collapsed">
-                                <h5 onclick="clickAcordeon2(this,'seguros-sura-menu-azul-nuestrosproductos')">Habita</h5>
-                                <ul>
-                                    <li><a href="/paginas/hogar/inicio.aspx">Seguro de hogar</a></li>
-                                    <li><a href="/paginas/hogar/arrendamiento.aspx">Seguro de arrendamiento</li>
-                                    <li><a href="/paginas/hogar/plan-inversion-protegida.aspx">Plan de inversión protegida</li>
-                                </ul>
-                            </div>
-                            <div class="seguros-sura-menu-col seguros-sura-menu-col-collapsed">
-                                <h5 onclick="clickAcordeon2(this,'seguros-sura-menu-azul-nuestrosproductos')">Conéctate</h5>
-                                <ul>
-                                    <li><a href="#">Protección digital</li>
-                                    <li><a href="#">Centro de protección Digital</li>
+                                    <li><a href="https://www.segurossura.com.co/Paginas/empresas/responsabilidad-civil/proteccion-digital.aspx">Seguro de Protección Digital</li>
+                                    
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="seguros-sura-menu-azul-wraper seguros-sura-menu-azul-wraper-collapsed" id="seguros-sura-menu-azul-asistenciasiniestros">
-                        <div class="seguros-sura-menu-azul-title"><a href="/Paginas/siniestros/asistencia-de-siniestros.aspx">ASISTENCIA EN SINIESTROS</a></div>
+                        <div class="seguros-sura-menu-azul-title"><a href="/Paginas/siniestros/asistencia-de-siniestros.aspx">¿CÓMO TE GESTIONAMOS?</a></div>
                     </div>
                     <div class="seguros-sura-menu-azul-wraper seguros-sura-menu-azul-wraper-collapsed" id="seguros-sura-menu-azul-asistenciasiniestros">
-                        <div class="seguros-sura-menu-azul-title"><a href="#">CANALES DE VENTA</a></div>
+                        <div class="seguros-sura-menu-azul-title"><a href="https://www.segurossura.com.co/paginas/canales-de-venta.aspx">CANALES DE VENTA</a></div>
                     </div>
                     
                 </div>
@@ -202,3 +256,6 @@
         </div>
     </header>
 </div>
+
+
+

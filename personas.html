@@ -93,17 +93,20 @@
                 <p class="cotiza-seguro-label">Quiero cotizar un seguro de:</p>
                 <div class="cotiza-seguro-select">
                     <span>Selecciona</span>
-                    <select onfocus="focusSelect(this,'cotiza-seguro')" onblur="unfocusSelect(this,'cotiza-seguro')">
-                        <option>Selecciona</option>
-                        <option>opcion 1</option>
-                        <option>opcion 2</option>
-                        <option>opcion 3</option>
+                    <select autocomplete="off" onfocus="focusSelect(this,'cotiza-seguro')" onblur="unfocusSelect(this,'cotiza-seguro')" onchange="clickCotizaSeguro(this)">
+                        <option value="#" selected>Selecciona</option>
+                        <option value="https://www.suraenlinea.com/soat/sura/seguro-obligatorio?utm_source=segurossura&utm_medium=referral&utm_term=cotizador-soat&utm_content=boton&utm_campaign=home-segurossura">SOAT</option>
+                        <option value="https://www.suraenlinea.com/movilidad/sura/seguro-de-carro?utm_source=segurossura&utm_medium=referral&utm_term=cotizador-carros&utm_content=boton&utm_campaign=home-segurossura">Autos</option>
+                        <option value="https://www.suraenlinea.com/v2/sura/viajes/cotizar?utm_source=segurossura&utm_medium=referral&utm_term=cotizador-viajes&utm_content=boton&utm_campaign=home-segurossura">Viajes</option>
+                        <option value="https://www.suraenlinea.com/arrendamiento-digital/sura?utm_source=segurossura&utm_medium=referral&utm_term=cotizador-arrendamiento&utm_content=boton&utm_campaign=home-segurossura">Arrendamiento Digital</option>
                     </select>
                 </div>
-                <button id="cotiza-seguro-btn" status="collapsed" onclick="clickCotizaSeguro(event,this)">
-                    <span>¡Cotizalo aqui!</span>
-                    <span>Ocultar</span>
-                </button>
+                <a id="cotiza-seguro-link" href="#" target="_blank">
+                    <button locked="locked" id="cotiza-seguro-btn" class="cotiza-seguro-btn-locked" status="collapsed">
+                        <span>¡Cotizalo aqui!</span>
+                        <span>Ocultar</span>
+                    </button>
+                </a>
             </div>
 
             <div class="cotiza-seguro-row2">
