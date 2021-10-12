@@ -90,12 +90,13 @@
 					<p class="nav-2-link" onmouseover="overMenuSeguros('seguros-sura-menu-azul-nuestrosproductos')" onclick="overMenuSeguros('seguros-sura-menu-azul-nuestrosproductos')" onmouseout="outMenuSeguros()">NUESTROS PRODUCTOS</p>
 					<p class="nav-2-link"><a href="/Paginas/siniestros/asistencia-de-siniestros.aspx">ASISTENCIA EN SINIESTROS</a></p>
 					<p class="nav-2-link"><a href="https://www.segurossura.com.co/paginas/canales-de-venta.aspx">CANALES DE VENTA</a></p>
+					<p class="nav-2-link" onmouseover="overMenuSeguros('seguros-sura-menu-azul-cositas')" onclick="overMenuSeguros('seguros-sura-menu-azul-cositas')" onmouseout="outMenuSeguros()">COSITAS</p>
 				</div>
 			</div>
 		</div>
 
 		<!--Contenedor para el submenú-->
-		<div id="seguros-sura-menu" class="seguros-sura-menu-off" onmouseover="overMenuSeguros('seguros-sura-menu-azul-nuestrosproductos')" onmouseleave="outMenuSeguros()">
+		<div id="seguros-sura-menu" class="seguros-sura-menu-off" onmouseover="overMenuSeguros()" onmouseleave="outMenuSeguros()">
 			<div class="seguros-sura-menu-content">
 				<!--esto estará visible solo en responsive-->
 				<div class="seguros-sura-menu-blanco">
@@ -147,7 +148,7 @@
 									<li><a href="https://www.segurossura.com.co/paginas/futuro/renta-diaria.aspx">Póliza Plan Renta Diaria</a></li>                                                                      
 								</ul>
 							</div>
-						<div class="seguros-sura-menu-col seguros-sura-menu-col-collapsed">
+							<div class="seguros-sura-menu-col seguros-sura-menu-col-collapsed">
 								<h5 onclick="clickAcordeon2(this,'seguros-sura-menu-azul-nuestrosproductos')">Decide</h5>
 								<ul>
 									<li><a href="https://www.sura.com/soluciones-personas/plan-fondo-de-ahorros.aspx">Fondo de Ahorros</a></li>
@@ -167,16 +168,15 @@
 								<h5 onclick="clickAcordeon2(this,'seguros-sura-menu-azul-nuestrosproductos')">Habita</h5>
 								<ul>
 									<li><a href="/paginas/hogar/inicio.aspx">Seguro de Hogar</a></li>
-									<li><a href="/paginas/hogar/arrendamiento.aspx">Seguro de Arrendamiento</li>
-									<li><a href="https://www.suraenlinea.com/arrendamiento-digital/sura">Seguro de Arrendamiento Digital</li>
-									<li><a href="/paginas/hogar/plan-inversion-protegida.aspx">Plan de Inversión Protegida</li>
+									<li><a href="/paginas/hogar/arrendamiento.aspx">Seguro de Arrendamiento</a></li>
+									<li><a href="https://www.suraenlinea.com/arrendamiento-digital/sura">Seguro de Arrendamiento Digital</a></li>
+									<li><a href="/paginas/hogar/plan-inversion-protegida.aspx">Plan de Inversión Protegida</a></li>
 								</ul>
 							</div>
 							<div class="seguros-sura-menu-col seguros-sura-menu-col-collapsed">
 								<h5 onclick="clickAcordeon2(this,'seguros-sura-menu-azul-nuestrosproductos')">Conéctate</h5>
 								<ul>
-									<li><a href="/paginas/otros-seguros/seguro-proteccion-digital.aspx">Seguro de Protección Digital</li>
-									
+									<li><a href="/paginas/otros-seguros/seguro-proteccion-digital.aspx">Seguro de Protección Digital</a></li>
 								</ul>
 							</div>
 						</div>
@@ -187,7 +187,46 @@
 					<div class="seguros-sura-menu-azul-wraper seguros-sura-menu-azul-wraper-collapsed" id="seguros-sura-menu-azul-asistenciasiniestros">
 						<div class="seguros-sura-menu-azul-title"><a href="https://www.segurossura.com.co/paginas/canales-de-venta.aspx">CANALES DE VENTA</a></div>
 					</div>
-					
+					<div class="seguros-sura-menu-azul-wraper seguros-sura-menu-azul-wraper-active seguros-sura-menu-azul-wraper-collapsed" id="seguros-sura-menu-azul-cositas">
+						<div class="seguros-sura-menu-azul-title" onclick="clickAcordeon(this)">COSITAS</div>
+						<div class="seguros-sura-menu-azul-box">
+							<div class="seguros-sura-menu-col seguros-sura-menu-col-collapsed">
+								<h5 onclick="clickAcordeon2(this,'seguros-sura-menu-azul-cositas')">Uno</h5>
+								<ul>
+									<li><a href="">Opcion 1</a></li>
+									<li><a href="">Opcion 2</a></li>
+								</ul>
+							</div>
+							<div class="seguros-sura-menu-col seguros-sura-menu-col-collapsed">
+								<h5 onclick="clickAcordeon2(this,'seguros-sura-menu-azul-cositas')">Dos</h5>
+								<ul>
+									<li><a href="">Opcion 1</a></li>
+									<li><a href="">Opcion 2</a></li>
+								</ul>
+							</div>
+							<div class="seguros-sura-menu-col seguros-sura-menu-col-collapsed">
+								<h5 onclick="clickAcordeon2(this,'seguros-sura-menu-azul-cositas')">Tres</h5>
+								<ul>
+									<li><a href="">Opcion 1</a></li>
+									<li><a href="">Opcion 2</a></li>
+								</ul>
+							</div>
+							<div class="seguros-sura-menu-col seguros-sura-menu-col-collapsed">
+								<h5 onclick="clickAcordeon2(this,'seguros-sura-menu-azul-cositas')">Cuatro</h5>
+								<ul>
+									<li><a href="">Opcion 1</a></li>
+									<li><a href="">Opcion 2</a></li>
+								</ul>
+							</div>
+							<div class="seguros-sura-menu-col seguros-sura-menu-col-collapsed">
+								<h5 onclick="clickAcordeon2(this,'seguros-sura-menu-azul-cositas')">Cinco</h5>
+								<ul>
+									<li><a href="">Opcion 1</a></li>
+									<li><a href="">Opcion 2</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
 				</div>
 
 				<!--este estará visible solo en responsive-->

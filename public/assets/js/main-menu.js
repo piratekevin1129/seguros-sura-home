@@ -7,15 +7,19 @@ function outBodyBtn(btn){
 }
 
 /////////////MENU HEADER////////////
+var global_menu_seguros = null
 function overMenuSeguros(menu){
     //ocultar todos los menu
     var menus = document.getElementById('seguros-sura-menu').getElementsByClassName('seguros-sura-menu-azul-wraper')
     for(var i = (menus.length-1);i>=0;i--){
         menus[i].className = 'seguros-sura-menu-azul-wraper seguros-sura-menu-azul-wraper-collapsed'
     }
-    //'seguros-sura-menu-azul-nuestrosproductos'
     if(menu!=null&&menu!=undefined){
-        document.getElementById(menu).className = 'seguros-sura-menu-azul-wraper seguros-sura-menu-azul-wraper-active seguros-sura-menu-azul-wraper-collapsed'
+        global_menu_seguros = menu
+    }
+    //'seguros-sura-menu-azul-nuestrosproductos' || 'seguros-sura-menu-azul-nuestrosproductos'
+    if(global_menu_seguros!=null&&global_menu_seguros!=undefined){
+        document.getElementById(global_menu_seguros).className = 'seguros-sura-menu-azul-wraper seguros-sura-menu-azul-wraper-active seguros-sura-menu-azul-wraper-collapsed'
     }
     $('#seguros-sura-menu').attr('class', 'seguros-sura-menu-on')
 }

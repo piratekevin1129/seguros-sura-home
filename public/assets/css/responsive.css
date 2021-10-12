@@ -532,9 +532,9 @@
     }
     .seguros-sura-menu-col > ul > li{
         font-size: 14px;
-        padding-left: 20px;
+        padding-left: 0px;
         min-height: 18px;
-        background-size: 14px;
+        background: none !important;
         left: 0px;
         margin-bottom: 10px;
     }
