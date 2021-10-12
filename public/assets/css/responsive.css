@@ -1031,10 +1031,19 @@
         justify-content: center;
         margin: 0px;
     }
-    #persona-btn{
-        margin-right: initial;
+    .body-texts-buttons-col{
+        width: 100%;
+        justify-content: center !important;
         margin-bottom: 20px;
     }
+
+    #persona-btn{
+        margin-right: initial;
+    }
+    #empresa-btn{
+        margin-left: initial;
+    }
+
     .body-texts-button:active{
         box-shadow: 0px 6px 3px -3px rgba(0,0,0,0.9);
     }
