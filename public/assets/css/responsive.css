@@ -9,7 +9,8 @@
         box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.2);
         cursor: pointer;
     }
-    .seguros-sura-menu-col > ul > li:hover{
+    .seguros-sura-menu-col > ul > li:hover,
+    .seguros-sura-menu-col-group-wrapper > ul > li:hover{
         cursor: pointer;
         opacity: 0.7;
         left: 10px;
@@ -73,7 +74,8 @@
         left: initial;
         display: block;
     }
-    .seguros-sura-menu-col > ul > li:hover{
+    .seguros-sura-menu-col > ul > li:hover,
+    .seguros-sura-menu-col-group-wrapper > ul > li:hover{
         cursor: pointer;
         opacity: 0.7;
         left: 10px;
@@ -530,7 +532,8 @@
         width: calc(20% - 10px);
         width: -moz-calc(20% - 10px);
     }
-    .seguros-sura-menu-col > ul > li{
+    .seguros-sura-menu-col > ul > li,
+    .seguros-sura-menu-col-group-wrapper > ul > li{
         font-size: 14px;
         padding-left: 0px;
         min-height: 18px;
@@ -538,7 +541,12 @@
         left: 0px;
         margin-bottom: 10px;
     }
-    .seguros-sura-menu-col > ul > li:hover{
+    .seguros-sura-menu-col-group-wrapper > ul > li{
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    .seguros-sura-menu-col > ul > li:hover,
+    .seguros-sura-menu-col-group-wrapper > ul > li:hover{
         cursor: pointer;
         opacity: 0.7;
         left: 5px;
@@ -1381,16 +1389,21 @@
         transition: transform 0.2s, -webkit-transform 0.2s, -o-transform 0.2s;
         -webkit-transition: transform 0.2s, -webkit-transform 0.2s, -o-transform 0.2s;
     }
-    .seguros-sura-menu-col > ul{
+    .seguros-sura-menu-col > ul,
+    .seguros-sura-menu-col-group-wrapper > ul{
         padding-left: 10px;
     }
-    .seguros-sura-menu-col > ul > li{
+    .seguros-sura-menu-col > ul > li,
+    .seguros-sura-menu-col-group-wrapper > ul > li{
         font-size: 15px;
         padding: 10px 0px;
         min-height: initial;
         background-image: none;
         margin: 0px;
         cursor: pointer;
+    }
+    .seguros-sura-menu-col-group h6{
+        justify-content: flex-start;
     }
 
     .seguros-sura-menu-col-collapsed{
@@ -2193,6 +2206,40 @@
     .footer-redes p{
         margin-left: 10px !important;
     }
+
+    /*******modal********/
+
+    #modal-english-box{
+        min-width: 450px;
+        padding: 15px 30px;
+        border-radius: 6px;
+    }
+
+    #modal-english-box h1{
+        font-size: 20px;
+        margin-top: 15px;
+    }
+    
+    .modal-english-box-text{
+        margin: 10px 0px 20px 0px;
+    }
+    .modal-english-box-text p{
+        font-size: 14px;
+    }
+    
+    .modal-english-buttons{
+        justify-content: center;
+        height: 30px;
+    }
+    .modal-english-buttons button{
+        width: 46%;
+        border-radius: 15px;
+        padding: 0px;
+    
+        font-size: 15px;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
 }
 
 /******IMAGES****/
@@ -2421,5 +2468,47 @@
         margin-bottom: 20px !important;
         align-items: center;
         justify-content: center;
+    }
+
+    /*******modal********/
+
+    #modal-english-box{
+        min-width: initial;
+        max-width: initial;
+        width: 100%;
+        width: calc(100% - 30px);
+        width: -moz-calc(100% - 30px);
+        padding: 10px 20px;
+        border-radius: 5px;
+    }
+
+    #modal-english-box h1{
+        font-size: 16px;
+        margin-top: 15px;
+    }
+    
+    .modal-english-box-text{
+        margin: 10px 0px 10px 0px;
+    }
+    .modal-english-box-text p{
+        font-size: 13px;
+    }
+    
+    .modal-english-buttons{
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    .modal-english-buttons button{
+        width: 200px;
+        height: 30px;
+        border-radius: 15px;
+        padding: 0px;
+    
+        font-size: 14px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
     }
 }

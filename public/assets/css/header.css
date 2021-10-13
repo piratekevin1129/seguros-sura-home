@@ -1020,12 +1020,14 @@
     border-bottom: #53565A solid 1px;
     margin-bottom: 20px;
 }
-.seguros-sura-menu-col > ul{
+.seguros-sura-menu-col > ul,
+.seguros-sura-menu-col-group-wrapper > ul{
     margin: 0px;
     padding: 0px;
     list-style: none;
 }
-.seguros-sura-menu-col > ul > li{
+.seguros-sura-menu-col > ul > li,
+.seguros-sura-menu-col-group-wrapper > ul > li{
     position: relative;
     display: block;
     margin: 0px;
@@ -1045,15 +1047,100 @@
     background-position: 0px center;
     background-repeat: no-repeat;
     left: 0px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 
     transition: left 0.2s, opacity 0.2s;
     -webkit-transition: left 0.2s, opacity 0.2s;
 }
-.seguros-sura-menu-col > ul > li a{
+.seguros-sura-menu-col-group-wrapper > ul > li{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.seguros-sura-menu-col > ul > li span,
+.seguros-sura-menu-col-group-wrapper > ul > li span{
+    font-family: 'Barlow-Medium';
+}
+.seguros-sura-menu-col > ul > li a,
+.seguros-sura-menu-col-group-wrapper > ul > li a{
     text-decoration: none !important;
     color: inherit !important;
     font-family: inherit !important;
+}
+
+.seguros-sura-menu-col-group{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: auto;
+    border-bottom: #ECF0F1 solid 1px;
+}
+.seguros-sura-menu-col-group h6{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: auto;
+    min-height: 30px;
+
+    font-family: 'Barlow-Medium';
+    font-size: 15px;
+    color: #53565A;
+    font-weight: normal;
+    line-height: normal;
+    text-align: left;
+    cursor: pointer;
+}
+.seguros-sura-menu-col-group h6::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    left: 0px;
+    bottom: 0px;
+    background-color: #46494c;
+}
+.seguros-sura-menu-col-group h6 i{
+    margin-left: 5px;
+    font-size: 18px;
+    display: block;
+    position: relative;
+}
+
+.seguros-sura-menu-col-group-wrapper{
+    position: relative;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    overflow: hidden;
+}
+.seguros-sura-menu-col-group-expanded .seguros-sura-menu-col-group-wrapper{
+    height: auto;
+}
+.seguros-sura-menu-col-group-expanded h6 i{
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+}
+.seguros-sura-menu-col-group-expanded h6::after{
+    display: block;
+}
+
+.seguros-sura-menu-col-group-collapsed .seguros-sura-menu-col-group-wrapper{
+    height: 0px;
+}
+.seguros-sura-menu-col-group-collapsed h6 i{
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+}
+.seguros-sura-menu-col-group-collapsed h6::after{
+    display: none;
 }
 
 /**************parte amarilla***********/
@@ -1256,6 +1343,151 @@
     cursor: pointer;
 }
 
+/**************MODAL ENGLISH*****************/
+#modal-english{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5000;
+}
+
+#modal-english-box{
+    position: absolute;
+    width: auto;
+    height: auto;
+    min-width: 490px;
+    max-width: 100%;
+    max-width: calc(100% - 30px);
+    max-width: -moz-calc(100% - 30px);
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 20px 40px;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+
+    transition: opacity 0.25s, transform 0.25s, -moz-transform 0.25s, -webkit-transform 0.25s, -o-transform 0.25s;
+    -webkit-transition: opacity 0.25s, transform 0.25s, -moz-transform 0.25s, -webkit-transform 0.25s, -o-transform 0.25s;
+}
+
+#modal-english-box h1{
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+
+    font-family: 'Barlow-Bold';
+    font-size: 22px;
+    color: #53565A;
+    font-weight: normal;
+    line-height: normal;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.modal-english-box-text{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 10px 0px 30px 0px;
+    padding: 0px;
+}
+.modal-english-box-text p{
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+
+    font-family: 'Barlow-Regular';
+    font-size: 14px;
+    color: #53565A;
+    font-weight: normal;
+    line-height: normal;
+    text-align: left;
+}
+.modal-english-box-text p span{
+    font-family: 'Barlow-Bold';
+}
+
+.modal-english-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    width: 100%;
+    height: 35px;
+    margin: 0px;
+    padding: 0px;
+}
+.modal-english-buttons button{
+    outline: none;
+    outline-width: 0;
+    width: auto;
+    height: 100%;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    box-sizing: border-box;
+    border-radius: 17px;
+    padding: 0px 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Barlow-Bold';
+    font-size: 16px;
+    color: #0033A0;
+    font-weight: normal;
+    line-height: normal;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 20px;
+
+    transition: background-color 0.3s;
+    -webkit-transition: background-color 0.3s;
+}
+.modal-english-buttons button a{
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+}
+.modal-english-buttons button:hover{
+    background-color: #0033A01A;
+    cursor: pointer;
+}
+
+.modal-english-off{
+    visibility: hidden;
+    background-color: rgba(0,0,0,0);
+
+    transition: visibility 0.25s, background-color 0.25s;
+    -webkit-transition: visibility 0.25s, background-color 0.25s;
+}
+.modal-english-on{
+    visibility: visible;
+    background-color: #53565A6F;
+
+    transition: visibility 0s, background-color 0.25s;
+    -webkit-transition: visibility 0s, background-color 0.25s;
+}
+
+.modal-english-off #modal-english-box{
+    opacity: 0;
+    transform: scale(0.7) translateY(-50px);
+    -webkit-transform: scale(0.7) translateY(-50px);
+    -o-transform: scale(0.7) translateY(-50px);
+}
+.modal-english-on #modal-english-box{
+    opacity: 1;
+    transform: none;
+    -webkit-transform: none;
+    -o-transform: none;
+}
+
 /******IMAGES****/
 #nav-pais-selected2::after{
     background-image: url(../../images/new-home/menu-expand-icon-1.svg);
@@ -1267,7 +1499,8 @@
     /*background-image: url(../img/menu-expand-icon-1.svg);*/
 }
 
-.seguros-sura-menu-col > ul > li{
-    /*background-image: url(../../images/new-home/menu-right-icon.svg);*/
-    background-image: url(../img/menu-right-icon.svg);
+.seguros-sura-menu-col > ul > li,
+.seguros-sura-menu-col-group-wrapper > ul > li{
+    background-image: url(../../images/new-home/menu-right-icon.svg);
+    /*background-image: url(../img/menu-right-icon.svg);*/
 }

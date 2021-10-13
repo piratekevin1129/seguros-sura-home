@@ -9,6 +9,7 @@ function outBodyBtn(btn){
 /////////////MENU HEADER////////////
 var global_menu_seguros = null
 function overMenuSeguros(menu){
+    console.log("este")
     //ocultar todos los menu
     var menus = document.getElementById('seguros-sura-menu').getElementsByClassName('seguros-sura-menu-azul-wraper')
     for(var i = (menus.length-1);i>=0;i--){
@@ -136,6 +137,29 @@ function clickAcordeon2(title,contenedor){
     }
 }
 
+var global_acordeon_group = null
+function clickAcordeon3(title){
+    if(global_acordeon_group!=null){
+        global_acordeon_group.className = 'seguros-sura-menu-col-group seguros-sura-menu-col-group-collapsed'
+    }
+
+    var group = title.parentNode
+    var clase_padre = group.className
+
+    if(global_acordeon_group==group){
+        global_acordeon_group = null
+    }else{
+        if(clase_padre.indexOf('expanded')==-1){
+            //esta collapsed
+            group.className = 'seguros-sura-menu-col-group seguros-sura-menu-col-group-expanded'
+        }else{
+            group.className = 'seguros-sura-menu-col-group seguros-sura-menu-col-group-collapsed'
+        }
+        global_acordeon_group = group
+    }
+}
+
+
 function clickIniciarSesion(btn){
     preventDefaultBtn()
     
@@ -156,6 +180,13 @@ function blurIniciarSesion(){
 
 function preventDefaultBtn(){
     return false
+}
+
+function setModalEnglish(){
+    $('#modal-english').attr('class', 'modal-english-on')
+}
+function unsetModalEnglish(){
+    $('#modal-english').attr('class', 'modal-english-off')
 }
 
 //window.onscroll = function(){
