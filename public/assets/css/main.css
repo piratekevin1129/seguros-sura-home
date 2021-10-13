@@ -1196,7 +1196,8 @@ body,html{
 }
 
 #capacidades-parati-paginator,
-#enterate-paginator{
+#enterate-paginator,
+#beneficios-noticias-paginator{
     position: relative;
     width: 100%;
     height: auto;
@@ -1212,7 +1213,9 @@ body,html{
 #capacidades-parati-paginator-prev,
 #capacidades-parati-paginator-next,
 #enterate-paginator-prev,
-#enterate-paginator-next
+#enterate-paginator-next,
+#beneficios-noticias-paginator-prev,
+#beneficios-noticias-paginator-next
 {
     outline: none;
     outline-width: 0;
@@ -1228,10 +1231,18 @@ body,html{
     border: none;
     background-color: rgba(0,0,0,0);
 }
+#beneficios-noticias-paginator-prev{
+    margin-right: 5px;
+}
+#beneficios-noticias-paginator-next{
+    margin-left: 5px;
+}
 #capacidades-parati-paginator-prev i,
 #capacidades-parati-paginator-next i,
 #enterate-paginator-prev i,
-#enterate-paginator-next i{
+#enterate-paginator-next i,
+#beneficios-noticias-paginator-prev i,
+#beneficios-noticias-paginator-next i{
     color: #00AEC7;
     font-size: 14px;
 
@@ -1241,7 +1252,9 @@ body,html{
 #capacidades-parati-paginator-prev:hover i,
 #capacidades-parati-paginator-next:hover i,
 #enterate-paginator-prev:hover i,
-#enterate-paginator-next:hover i{
+#enterate-paginator-next:hover i,
+#beneficios-noticias-paginator-prev:hover i,
+#beneficios-noticias-paginator-next:hover i{
     color: #0033A0;
 }
 #capacidades-parati-pages,
@@ -1973,30 +1986,42 @@ body,html{
     padding: 0px;
     display: block;
     box-sizing: border-box;
+    overflow: hidden;
 }
-.beneficios-noticias-scroll{
+#beneficios-noticias-scroll{
     position: relative;
-    width: 100%;
+    width: auto;
+    width: calc((220px + 15px) * 5);
+    width: -moz-calc((220px + 15px) * 5);
     margin: 0px;
     padding: 0px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
     align-items: stretch;
+
+    transition: left 1s;
+    -webkit-transition: left 1s;
+}
+.beneficios-noticias-scroll-start{
+    left: 0px;
+}
+.beneficios-noticias-scroll-end{
+    left: 100%;
+    left: calc(100% - ((220px + 15px) * 5));
+    left: -moz-calc(100% - ((220px + 15px) * 5));
 }
 
 .beneficios-noticia{
     position: relative;
-    width: 33.33%;
-    width: calc(33.33% - 30px);
-    width: -moz-calc(33.33% - 30px);
+    width: 220px;
     height: auto;
     margin: 0px;
     padding: 0px;
     display: block;
     box-sizing: border-box;
     
-    margin-left: 30px;
+    margin-left: 15px;
 
     box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.1);
     transition: box-shadow 0.2s;

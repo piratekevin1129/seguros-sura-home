@@ -134,6 +134,18 @@ function clickSlideshow(wrapper,wrap,paginator,active,p){
     pages[actual_page].classList.add(active)
 }
 
+function prevSlider(event){
+    $('#beneficios-noticias-scroll').attr('class','beneficios-noticias-scroll-start')
+    if(event!=null&&event!=undefined){
+        event.preventDefault()
+    }
+}
+function nextSlider(event){
+    $('#beneficios-noticias-scroll').attr('class','beneficios-noticias-scroll-end')
+    if(event!=null&&event!=undefined){
+        event.preventDefault()
+    }
+}
 
 /////////////TABS EXTRANJEROS//////////////
 var global_tab_ext = 'arl'

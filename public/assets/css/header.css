@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 .fixed-header{
-    /*position: sticky !important;*/
+    position: relative !important;
 }
 .header-new-home button{
     min-width: initial !important;
