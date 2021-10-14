@@ -1988,6 +1988,16 @@ body,html{
     box-sizing: border-box;
     overflow: hidden;
 }
+#beneficios-noticias-wrap{
+    position: relative;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: stretch;
+}
 #beneficios-noticias-scroll{
     position: relative;
     width: auto;
@@ -2014,7 +2024,6 @@ body,html{
 
 .beneficios-noticia{
     position: relative;
-    width: 220px;
     height: auto;
     margin: 0px;
     padding: 0px;
@@ -2026,6 +2035,15 @@ body,html{
     box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.1);
     transition: box-shadow 0.2s;
     -webkit-transition: box-shadow 0.2s;
+}
+
+#beneficios-noticias-scroll .beneficios-noticia{
+    width: 220px;
+}
+#beneficios-noticias-wrap .beneficios-noticia{
+    width: 33.33%;
+    width: calc(33.33% - 30px);
+    width: -moz-calc(33.33% - 30px);
 }
 
 .beneficios-noticia:hover{
