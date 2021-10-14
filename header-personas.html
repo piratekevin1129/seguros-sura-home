@@ -42,14 +42,14 @@
 			<div class="header-col-logo">
 				<img src="/images/new-home/logo-sura.svg" />
 				<div class="header-nav-1">
-					<div class="nav-1-link"><a href="https://www.segurossura.com.co/paginas/preguntas-frecuentes.aspx" target="_blank">Preguntas frecuentes</a></div>
-					<div class="nav-1-link"><a href="/paginas/escribenos.aspx" target="_blank">Escríbenos</a></div>
+					<div class="nav-1-link"><a href="/paginas/preguntas-frecuentes.aspx">Preguntas frecuentes</a></div>
+					<div class="nav-1-link"><a href="/paginas/escribenos.aspx">Escríbenos</a></div>
 					<div id="nav-pais-select">
 						<div id="nav-pais-selected" onclick="clickMenuPaises()">
 							<img src="/images/new-home/paises/colombia.svg" /><p>Colombia</p><i class="fas fa-caret-down"></i>
 						</div>
 						<div id="nav-pais-select-menu" onmouseleave="outMenuPaises()" class="nav-pais-select-menu-off">
-							<div class="nav-pais-select-item nav-pais-select-item-selected" onclick="selectPais('https://www.segurossura.com.co/Paginas/default.aspx')"><img src="/images/new-home/paises/colombia.svg" /><p>Colombia</p></div>
+							<div class="nav-pais-select-item nav-pais-select-item-selected" onclick="selectPais('/Paginas/default.aspx')"><img src="/images/new-home/paises/colombia.svg" /><p>Colombia</p></div>
 							<div class="nav-pais-select-item" onclick="selectPais('http://www.segurossura.com.ar/?utm_source=segurossura-colombia&utm_medium=menu-desplegable&utm_campaign=sura-america-latina&utm_term=sura-latinoamerica')"><img src="/images/new-home/paises/argentina.svg" /><p>Argentina</p></div>
 							<div class="nav-pais-select-item" onclick="selectPais('http://www.segurossura.com.br/?utm_source=segurossura-colombia&utm_medium=menu-desplegable&utm_campaign=sura-america-latina&utm_term=sura-latinoamerica')"><img src="/images/new-home/paises/brasil.svg" /><p>Brasil</p></div>
 							<div class="nav-pais-select-item" onclick="selectPais('https://www.segurossura.cl/?utm_source=segurossura-colombia&utm_medium=menu-desplegable&utm_campaign=sura-america-latina&utm_term=sura-latinoamerica')"><img src="/images/new-home/paises/chile.svg" /><p>Chile</p></div>
@@ -86,11 +86,11 @@
 			<div class="header-col-title">
 				<span>SEGUROS</span>
 				<div class="header-nav-2">
-					<p class="nav-2-link"><a href="/paginas/home.aspx">INICIO</a></p>
+					<p class="nav-2-link" onmouseover="outMenuSeguros()"><a href="/paginas/home.aspx">INICIO</a></p>
 					<p class="nav-2-link" onmouseover="overMenuSeguros('seguros-sura-menu-azul-nuestrosproductos')" onclick="overMenuSeguros('seguros-sura-menu-azul-nuestrosproductos')">NUESTROS PRODUCTOS</p>
-					<p class="nav-2-link"><a href="/Paginas/siniestros/asistencia-de-siniestros.aspx" target="_blank">ASISTENCIA EN SINIESTROS</a></p>
-					<p class="nav-2-link"><a href="https://www.segurossura.com.co/paginas/canales-de-venta.aspx" target="_blank">CANALES DE VENTA</a></p>
-					<p class="nav-2-link"><a href="https://www.segurossura.com.co/paginas/formas-pago/inicio.aspx" target="_blank">MEDIOS DE PAGO</a></p>
+					<p class="nav-2-link" onmouseover="outMenuSeguros()"><a href="/Paginas/siniestros/asistencia-de-siniestros.aspx">ASISTENCIA EN SINIESTROS</a></p>
+					<p class="nav-2-link" onmouseover="outMenuSeguros()"><a href="/paginas/canales-de-venta.aspx">CANALES DE VENTA</a></p>
+					<p class="nav-2-link" onmouseover="outMenuSeguros()"><a href="/paginas/formas-pago/inicio.aspx">MEDIOS DE PAGO</a></p>
 				</div>
 			</div>
 		</div>
@@ -100,12 +100,13 @@
 			<div class="seguros-sura-menu-content">
 				<!--esto estará visible solo en responsive-->
 				<div class="seguros-sura-menu-blanco">
-					<div class="seguros-sura-menu-blanco-item"><p>Preguntas frecuentes</p></div>
-					<div class="seguros-sura-menu-blanco-item"><p>Escríbenos</p></div>
+					<div class="seguros-sura-menu-blanco-item"><a href="/paginas/preguntas-frecuentes.aspx">Preguntas frecuentes</a></div>
+					<div class="seguros-sura-menu-blanco-item"><a href="/paginas/escribenos.aspx">Escríbenos</a></div>
+
 					<div id="nav-pais-select2" class="nav-pais-select2-collapsed">
 						<div id="nav-pais-selected2" onclick="clickAcordeon(this)"><img src="/images/new-home/paises/colombia.svg" /><p>Colombia</p></div>
 						<div id="nav-pais-select2-menu">
-							<div onclick="selectPais('https://www.segurossura.com.co/Paginas/default.aspx')"><img src="/images/new-home/paises/colombia.svg" /><p>Colombia</p></div>
+							<div onclick="selectPais('/Paginas/default.aspx')"><img src="/images/new-home/paises/colombia.svg" /><p>Colombia</p></div>
 							<div onclick="selectPais('http://www.segurossura.com.ar/?utm_source=segurossura-colombia&utm_medium=menu-desplegable&utm_campaign=sura-america-latina&utm_term=sura-latinoamerica')"><img src="/images/new-home/paises/argentina.svg" /><p>Argentina</p></div>
 							<div onclick="selectPais('http://www.segurossura.com.br/?utm_source=segurossura-colombia&utm_medium=menu-desplegable&utm_campaign=sura-america-latina&utm_term=sura-latinoamerica')"><img src="/images/new-home/paises/brasil.svg" /><p>Brasil</p></div>
 							<div onclick="selectPais('https://www.segurossura.cl/?utm_source=segurossura-colombia&utm_medium=menu-desplegable&utm_campaign=sura-america-latina&utm_term=sura-latinoamerica')"><img src="/images/new-home/paises/chile.svg" /><p>Chile</p></div>
@@ -129,66 +130,66 @@
 							<div class="seguros-sura-menu-col seguros-sura-menu-col-collapsed">
 								<h5 onclick="clickAcordeon2(this,'seguros-sura-menu-azul-nuestrosproductos')">Muévete</h5>
 								<ul>
-									<li><a href="https://www.segurossura.com.co/paginas/movilidad/autos/plan-carros-electricos.aspx" target="_blank">Plan Carros Eléctricos</a></li>
-									<li><a href="https://www.segurossura.com.co/paginas/movilidad/plan-muevete-libre.aspx" target="_blank">Plan Muévete Libre</a></li>
-									<li><a href="https://www.segurossura.com.co/paginas/movilidad/vehiculos-utilitarios-y-pesados.aspx" target="_blank">Plan Utilitarios y Pesados</a></li>
-									<li><a href="https://www.segurossura.com.co/paginas/movilidad/autos/inicio.aspx" target="_blank">Seguro de Autos</a></li>
-									<li><a href="https://www.segurossura.com.co/paginas/movilidad/bicicleta/inicio.aspx" target="_blank">Seguro de Bicis y Patinetas</a></li>
-									<li><a href="https://www.segurossura.com.co/paginas/movilidad/motos/inicio.aspx" target="_blank">Seguro de Motos</a></li>
-									<li><a href="https://www.segurossura.com.co/paginas/movilidad/soat.aspx" target="_blank">Seguro Obligatorio (SOAT)</a></li>
-									<li><a href="https://www.segurossura.com.co/paginas/otros-seguros/seguro-viaje.aspx" target="_blank">Seguro de Viaje</a></li>                                    
+									<li><a href="/paginas/movilidad/autos/plan-carros-electricos.aspx">Plan Carros Eléctricos</a></li>
+									<li><a href="/paginas/movilidad/plan-muevete-libre.aspx">Plan Muévete Libre</a></li>
+									<li><a href="/paginas/movilidad/vehiculos-utilitarios-y-pesados.aspx">Plan Utilitarios y Pesados</a></li>
+									<li><a href="/paginas/movilidad/autos/inicio.aspx">Seguro de Autos</a></li>
+									<li><a href="/paginas/movilidad/bicicleta/inicio.aspx">Seguro de Bicis y Patinetas</a></li>
+									<li><a href="/paginas/movilidad/motos/inicio.aspx">Seguro de Motos</a></li>
+									<li><a href="/paginas/movilidad/soat.aspx">Seguro Obligatorio (SOAT)</a></li>
+									<li><a href="/paginas/otros-seguros/seguro-viaje.aspx">Seguro de Viaje</a></li>                                    
 								</ul>
 							</div>
 							<div class="seguros-sura-menu-col seguros-sura-menu-col-collapsed">
 								<h5 onclick="clickAcordeon2(this,'seguros-sura-menu-azul-nuestrosproductos')">Sé saludable</h5>
 								<ul>
-									<li><a href="https://www.segurossura.com.co/paginas/te-aseguramos/salud.aspx" target="_blank">Póliza de Salud</a></li>
+									<li><a href="/paginas/te-aseguramos/salud.aspx">Póliza de Salud</a></li>
 									<li><a href="https://www.suraenlinea.com/salud-digital/sura" target="_blank">Salud Digital</a></li> 
-									<li><a href="https://www.segurossura.com.co/paginas/salud/enfermedades-graves.aspx" target="_blank">Póliza de Enfermedades Graves</a></li>
-									<li><a href="https://www.segurossura.com.co/paginas/futuro/renta-diaria.aspx" target="_blank">Póliza Plan Renta Diaria</a></li>                                                                      
+									<li><a href="/paginas/salud/enfermedades-graves.aspx">Póliza de Enfermedades Graves</a></li>
+									<li><a href="/paginas/futuro/renta-diaria.aspx">Póliza Plan Renta Diaria</a></li>                                                                      
 								</ul>
 							</div>
 							<div class="seguros-sura-menu-col seguros-sura-menu-col-collapsed">
 								<h5 onclick="clickAcordeon2(this,'seguros-sura-menu-azul-nuestrosproductos')">Decide</h5>
 								<ul>
 									<li><a href="https://www.sura.com/soluciones-personas/plan-fondo-de-ahorros.aspx" target="_blank">Fondo de Ahorros</a></li>
-									<li><a href="/paginas/vida/inicio.aspx" target="_blank">Mascotas</a></li>
-									<li><a href="/paginas/exequias/inicio.aspx" target="_blank">Profesionales de la Salud</a></li>
-									<li><a href="/paginas/vida/accidentes.aspx" target="_blank">Profesionales Veterinarios</a></li>									              
-									<li><a href="https://www.segurossura.com.co/paginas/vida/accidentes.aspx" target="_blank">Seguro de Accidentes</a></li>
-									<li><a href="https://www.segurossura.com.co/paginas/vida/colectivo-vida.aspx" target="_blank">Seguro Colectivo de Vida</a></li>
-									<li><a href="/paginas/futuro/educacion.aspx" target="_blank">Seguro de Educación</a></li>
-									<li><a href="https://www.segurossura.com.co/paginas/exequias/inicio.aspx" target="_blank">Seguro de Exequias</a></li>
-									<li><a href="/paginas/futuro/pension.aspx" target="_blank">Seguro de Pensión</a></li>
-									<li><a href="/paginas/futuro/renta-vitalicia.aspx" target="_blank">Seguro de Renta Vitalicia</a></li>
-									<li><a href="https://www.segurossura.com.co/paginas/vida/inicio.aspx" target="_blank">Seguro de Vida</a></li>							
+									<li><a href="/paginas/vida/inicio.aspx">Mascotas</a></li>
+									<li><a href="/paginas/exequias/inicio.aspx">Profesionales de la Salud</a></li>
+									<li><a href="/paginas/vida/accidentes.aspx">Profesionales Veterinarios</a></li>									              
+									<li><a href="/paginas/vida/accidentes.aspx">Seguro de Accidentes</a></li>
+									<li><a href="/paginas/vida/colectivo-vida.aspx">Seguro Colectivo de Vida</a></li>
+									<li><a href="/paginas/futuro/educacion.aspx">Seguro de Educación</a></li>
+									<li><a href="/paginas/exequias/inicio.aspx">Seguro de Exequias</a></li>
+									<li><a href="/paginas/futuro/pension.aspx">Seguro de Pensión</a></li>
+									<li><a href="/paginas/futuro/renta-vitalicia.aspx">Seguro de Renta Vitalicia</a></li>
+									<li><a href="/paginas/vida/inicio.aspx">Seguro de Vida</a></li>							
 								</ul>
 							</div>
 							<div class="seguros-sura-menu-col seguros-sura-menu-col-collapsed">
 								<h5 onclick="clickAcordeon2(this,'seguros-sura-menu-azul-nuestrosproductos')">Habita</h5>
 								<ul>
-									<li><a href="/paginas/hogar/inicio.aspx" target="_blank">Seguro de Hogar</a></li>
-									<li><a href="/paginas/hogar/arrendamiento.aspx" target="_blank">Seguro de Arrendamiento</a></li>
+									<li><a href="/paginas/hogar/inicio.aspx">Seguro de Hogar</a></li>
+									<li><a href="/paginas/hogar/arrendamiento.aspx">Seguro de Arrendamiento</a></li>
 									<li><a href="https://www.suraenlinea.com/arrendamiento-digital/sura" target="_blank">Seguro de Arrendamiento Digital</a></li>
-									<li><a href="/paginas/hogar/plan-inversion-protegida.aspx" target="_blank">Plan de Inversión Protegida</a></li>
+									<li><a href="/paginas/hogar/plan-inversion-protegida.aspx">Plan de Inversión Protegida</a></li>
 								</ul>
 							</div>
 							<div class="seguros-sura-menu-col seguros-sura-menu-col-collapsed">
 								<h5 onclick="clickAcordeon2(this,'seguros-sura-menu-azul-nuestrosproductos')">Conéctate</h5>
 								<ul>
-									<li><a href="/paginas/otros-seguros/seguro-proteccion-digital.aspx" target="_blank">Seguro de Protección Digital</a></li>
+									<li><a href="/paginas/otros-seguros/seguro-proteccion-digital.aspx">Seguro de Protección Digital</a></li>
 								</ul>
 							</div>
 						</div>
 					</div>
 					<div class="seguros-sura-menu-azul-wraper seguros-sura-menu-azul-wraper-collapsed" id="seguros-sura-menu-azul-asistenciasiniestros">
-						<div class="seguros-sura-menu-azul-title"><a href="/Paginas/siniestros/asistencia-de-siniestros.aspx" target="_blank">ASISTENCIA EN SINIESTROS</a></div>
+						<div class="seguros-sura-menu-azul-title"><a href="/Paginas/siniestros/asistencia-de-siniestros.aspx">ASISTENCIA EN SINIESTROS</a></div>
 					</div>
 					<div class="seguros-sura-menu-azul-wraper seguros-sura-menu-azul-wraper-collapsed" id="seguros-sura-menu-azul-asistenciasiniestros">
-						<div class="seguros-sura-menu-azul-title"><a href="https://www.segurossura.com.co/paginas/canales-de-venta.aspx" target="_blank">CANALES DE VENTA</a></div>
+						<div class="seguros-sura-menu-azul-title"><a href="/paginas/canales-de-venta.aspx">CANALES DE VENTA</a></div>
 					</div>
 					<div class="seguros-sura-menu-azul-wraper seguros-sura-menu-azul-wraper-active seguros-sura-menu-azul-wraper-collapsed" id="seguros-sura-menu-azul-cositas">
-						<div class="seguros-sura-menu-azul-title"><a href="https://www.segurossura.com.co/paginas/formas-pago/inicio.aspx" target="_blank">MEDIOS DE PAGO</a></div>
+						<div class="seguros-sura-menu-azul-title"><a href="/paginas/formas-pago/inicio.aspx">MEDIOS DE PAGO</a></div>
 						<!--box aqui-->
 					</div>
 				</div>

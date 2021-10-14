@@ -798,7 +798,7 @@
     padding: 0px;
 }
 
-.seguros-sura-menu-blanco-item > p,
+.seguros-sura-menu-blanco-item > a,
 #nav-pais-selected2 > p,
 #nav-pais-select2-menu > div > p{
     margin: 0px;
@@ -810,6 +810,12 @@
     line-height: normal;
     text-align: left;
     display: block;
+}
+.seguros-sura-menu-blanco-item > a{
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
 }
 
 #nav-pais-selected2,
