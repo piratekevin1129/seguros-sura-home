@@ -311,10 +311,9 @@ body,html{
     height: 80px;
     margin: 0px auto;
     padding: 0px;
-    display: block;
-    /*flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     box-sizing: border-box;
     margin-top: 0px;
     bottom: 0px;
@@ -332,7 +331,7 @@ body,html{
     height: auto;
     margin: 0px;
     padding: 0px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .opciones-un-click-title span{
     position: relative;
@@ -2549,6 +2548,6 @@ body,html{
 
 /*****************IMAGES***************/
 .enlaces-interes-col1{
-    background-image: url(../../images/new-home/enlaces-interes-back.png);
+    background-image: url(../../images/home-2021/enlaces-interes-back.png);
     /*background-image: url(../img/enlaces-interes-back.png);*/
 }

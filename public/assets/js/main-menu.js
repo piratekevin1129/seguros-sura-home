@@ -27,6 +27,10 @@ function overMenuSeguros(menu){
 
 function outMenuSeguros(){
     $('#seguros-sura-menu').attr('class', 'seguros-sura-menu-off')
+    $('#menu-hamburguesa').attr('status','closed')
+    $('#menu-hamburguesa').attr('class','menu-hamburguesa-closed')
+    $('#seguros-sura-menu').attr('class', 'seguros-sura-menu-off')
+    //console.log(param)
 }
 
 /////////////BUSCADOR/////////////
@@ -57,7 +61,7 @@ function selectPais(pais){
 
     $('#nav-pais-selected2').html(String(pais.innerHTML))
     clickAcordeon(document.getElementById('nav-pais-selected2'))*/
-    location.href = pais
+    //location.href = pais
 }
 
 /////////////MENU INICIAR SESION///////////

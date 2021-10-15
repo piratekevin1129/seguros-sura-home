@@ -600,6 +600,7 @@
         width: 90%;
         height: 85px;
         left: 5%;
+        display: block;
     }
     .opciones-un-click-title{
         margin-bottom: 10px;
@@ -1546,6 +1547,7 @@
         left: initial;
         bottom: initial;
         margin-bottom: 20px;
+        display: block;
     }
     .opciones-un-click-title{
         padding: 20px 0px;
@@ -2285,12 +2287,12 @@
 /******IMAGES****/
 @media (max-width: 767px){
     .seguros-sura-menu-col h5::after,.footer2-col > h6::after,.footer3-title::after{
-        background-image: url(../../images/new-home/menu-expand-icon-2.svg);
+        background-image: url(../../images/home-2021/menu-expand-icon-2.svg);
         /*background-image: url(../img/menu-expand-icon-2.svg);*/
     }
     
     .nav-3-link{
-        background-image: url(../../images/new-home/menu-expand-icon-1.svg);
+        background-image: url(../../images/home-2021/menu-expand-icon-1.svg);
         /*background-image: url(../img/menu-expand-icon-1.svg);*/
     }
 }
