@@ -1,10 +1,13 @@
-.header-new-home{
+.header-new-home,.header-new-home2{
     position: relative;
     width: 100%;
     height: auto;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+}
+.header-new-home2{/*inicio.aspx*/
+    margin-top: -22px;
 }
 .fixed-header{
     position: sticky !important;

@@ -147,6 +147,7 @@ function nextSlider(event){
     }
 }
 
+
 /////////////TABS EXTRANJEROS//////////////
 var global_tab_ext = 'arl'
 function clickTabExt(btn,tab){
@@ -166,7 +167,7 @@ function clickTabExt(btn,tab){
     }else if(aria=='2'){
         document.getElementById('espanol_link').setAttribute('href','https://www.epssura.com/')
     }else if(aria=='3'){
-        document.getElementById('espanol_link').setAttribute('href','https://lab.segurossura.com.co/paginas/personas.aspx')
+        document.getElementById('espanol_link').setAttribute('href','/paginas/personas.aspx')
     }
 }
 

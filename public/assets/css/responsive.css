@@ -2299,6 +2299,12 @@
 
 @media (max-width: 519px){
     /**************HOME***************/
+    .body-container{
+        height: 100%;
+        height: calc(100% - 90px);
+        height: -moz-calc(100% - 90px);
+        margin-bottom: -40px;
+    }
     .body-texts h1{
         font-size: 35px;
     }

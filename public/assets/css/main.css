@@ -29,6 +29,12 @@ body,html{
     padding: 0px;
     box-sizing: border-box;
 }
+.body-container{
+    height: 100%;
+    height: calc(100% - 122px);
+    height: -moz-calc(100% - 122px);
+    margin-bottom: -40px;
+}
 
 /****************BODY*****************/
 .content{
