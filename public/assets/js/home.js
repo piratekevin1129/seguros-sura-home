@@ -39,35 +39,38 @@ function clickCotizaSeguro(select){
 ///////////////////SLIDESHOW PRINCIPAL//////////////////
 function setSlideshow(data){
     //var pages = document.getElementById(data.wrapper).getElementsByClassName(data.wrap)
-    var active = data.page+'-active'
-    var pages = $("#"+data.wrapper+" ."+data.wrap)
-    document.getElementById(data.wrapper).style.width = 'calc(100% * '+pages.length+')'
-    document.getElementById(data.wrapper).style.width = '-moz-calc(100% * '+pages.length+')'
-    document.getElementById(data.wrapper).style.left = '0%'
-
-    document.getElementById(data.prev).setAttribute('onclick',"prevSlideshow("+"'"+data.wrapper+"','"+data.wrap+"','"+data.paginator+"','"+active+"',event)")
-    document.getElementById(data.next).setAttribute('onclick',"nextSlideshow("+"'"+data.wrapper+"','"+data.wrap+"','"+data.paginator+"','"+active+"',event)")
-
-    $('#'+data.wrapper).attr('page','0')
-    $("#"+data.wrapper+" ."+data.wrap).attr('style','width:calc(100% / '+pages.length+'); width:-moz-calc(100% / '+pages.length+')');
-
-    //agregar paginas al paginador
-    document.getElementById(data.paginator).innerHTML = ''
-    for(var i = 0;i<pages.length;i++){
-        var pag = document.createElement('div')
-        if(i==0){
-            pag.className = data.page+' '+active
-        }else{
-            pag.className = data.page
+    var slider = document.getElementById(data.wrapper).getAttribute('slider')
+    if(slider!='off'){
+        var active = data.page+'-active'
+        var pages = $("#"+data.wrapper+" ."+data.wrap)
+        document.getElementById(data.wrapper).style.width = 'calc(100% * '+pages.length+')'
+        document.getElementById(data.wrapper).style.width = '-moz-calc(100% * '+pages.length+')'
+        document.getElementById(data.wrapper).style.left = '0%'
+    
+        document.getElementById(data.prev).setAttribute('onclick',"prevSlideshow("+"'"+data.wrapper+"','"+data.wrap+"','"+data.paginator+"','"+active+"',event)")
+        document.getElementById(data.next).setAttribute('onclick',"nextSlideshow("+"'"+data.wrapper+"','"+data.wrap+"','"+data.paginator+"','"+active+"',event)")
+    
+        $('#'+data.wrapper).attr('page','0')
+        $("#"+data.wrapper+" ."+data.wrap).attr('style','width:calc(100% / '+pages.length+'); width:-moz-calc(100% / '+pages.length+')');
+    
+        //agregar paginas al paginador
+        document.getElementById(data.paginator).innerHTML = ''
+        for(var i = 0;i<pages.length;i++){
+            var pag = document.createElement('div')
+            if(i==0){
+                pag.className = data.page+' '+active
+            }else{
+                pag.className = data.page
+            }
+            pag.setAttribute('onclick',"clickSlideshow("+"'"+data.wrapper+"','"+data.wrap+"','"+data.paginator+"','"+active+"',"+i+")")
+            document.getElementById(data.paginator).appendChild(pag)
         }
-        pag.setAttribute('onclick',"clickSlideshow("+"'"+data.wrapper+"','"+data.wrap+"','"+data.paginator+"','"+active+"',"+i+")")
-        document.getElementById(data.paginator).appendChild(pag)
-    }
-
-    if(data.time!=null&&data.time!=undefined){
-        data.animation = setInterval(function(){
-            nextSlideshow(data.wrapper,data.wrap,data.paginator,active)
-        },data.time)
+    
+        if(data.time!=null&&data.time!=undefined){
+            data.animation = setInterval(function(){
+                nextSlideshow(data.wrapper,data.wrap,data.paginator,active)
+            },data.time)
+        }
     }
 }
 

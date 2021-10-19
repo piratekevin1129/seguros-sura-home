@@ -1182,6 +1182,10 @@
         top: calc((0% - 15px) + 0.5px);
         top: -moz-calc((0% - 15px) + 0.5px);
     }
+
+    .widgets-mobile .widget-mobile-language:first-child{
+        display: none;
+    }
     
     .widgets-mobile:hover{
         right: 0px;
@@ -2281,6 +2285,8 @@
         font-size: 15px;
         margin-left: 2%;
         margin-right: 2%;
+        background-color: #0033A01A !important;
+        cursor: pointer;
     }
 }
 
