@@ -672,7 +672,7 @@
     outline: none !important;
     outline-width: 0 !important;
 }
-#widget-idioma-btn > p{
+#widget-idioma-btn > a{
     margin: 0px 8px;
     padding: 0px;
 
@@ -682,6 +682,7 @@
     font-weight: normal;
     line-height: normal;
     text-align: left;
+    text-decoration: none;
 }
 .widget-idioma-cont{
     position: absolute;
