@@ -50,6 +50,13 @@ body,html{
     padding: 0px;
     overflow: hidden;
 }
+.slideshow-scroll{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+}
 #slideshow-wrapper{
     position: relative;
     width: 100%;

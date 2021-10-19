@@ -40,38 +40,43 @@
 <body>
     <div id="seguros-sura-home">
         <!--HEADER-->
-        <div class="header-new-home2">
-            <header class="header-container">
-                <div class="header-col-logo">
-                    <img src="/images/home-2021/logo-sura.svg" />
-                </div>
-            </header>
-            <header class="header-2">
-                <div class="header-col-title">
-                    <span>SEGUROS</span>
-                </div>
-            </header>
-        </div>
-        <div class="body-container">
-            <div class="body-imgs">
-                <div class="body-img" id="img-persona">
-                    <img src="/images/home-2021/home-personas.jpg" />
-                </div>
-                <div class="body-img" id="img-empresa">
-                    <img src="/images/home-2021/home-empresas.jpg" />
+        <div class="slideshow">
+            <div class="slideshow-scroll">
+                <div id="slideshow-wrapper">
+                    <div class="slideshow-wrap">
+                        <div class="slideshow-img">
+                            <img src="/images/home-2021/slideshow/img1.jpg" />
+                        </div>
+                        <div class="slideshow-content">
+                            <h2 class="slideshow-title">Lorem ipsum dolor sit, <br />consectetur</h2>
+                            <a class="slideshow-link">CONÓCELO AQUÍ</a>
+                        </div>
+                    </div>
+                    <div class="slideshow-wrap">
+                        <div class="slideshow-img">
+                            <img src="/images/home-2021/slideshow/img2.jpg" />
+                        </div>
+                        <div class="slideshow-content">
+                            <h2 class="slideshow-title">Lorem ipsum dolor sit, <br />consectetur</h2>
+                            <a class="slideshow-link">CONÓCELO AQUÍ</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="body-texts">
-                <h1>Te damos la bienvenida a Seguros SURA</h1>
-                <p>Cuéntanos con qué perfil quieres ingresar</p>
-                    
-                <div class="body-texts-buttons">
-                    <div class="body-texts-buttons-col">
-                        <a href="/paginas/personas.aspx" class="body-texts-button" id="persona-btn" onmouseover="overBodyBtn('persona')" onmouseout="outBodyBtn('persona')">PERSONAS</a>
-                    </div>
-                    <div class="body-texts-buttons-col">
-                        <a href="/paginas/empresas.aspx" class="body-texts-button" id="empresa-btn" onmouseover="overBodyBtn('empresa')" onmouseout="outBodyBtn('empresa')">INDPENDIENTES Y EMPRESAS</a>
-                    </div>
+            <button id="slideshow-prev-btn"></button>
+            <button id="slideshow-next-btn"></button>
+            <div class="slideshow-pagination">
+                <div id="slideshow-paginator"></div>
+            </div>
+        
+            <div class="opciones-un-click">
+                <p class="opciones-un-click-title"><span>OPCIONES A UN CLIC</span></p>
+                <div class="opciones-un-clic-nav">
+                    <div class="nav-3-link"><a href="#"><span><i class="fab fa-paypal"></i></span><p>PAGO EXPRESS</p></a></div>
+                    <div class="nav-3-link"><a href="#"><span><i class="fas fa-key"></i></span><p>SOLICITA CLAVE</p></a></div>
+                    <div class="nav-3-link"><a href="#"><span><i class="far fa-address-book"></i></span><p>DIRECTORIO MÉDICO</p></a></div>
+                    <div class="nav-3-link"><a href="#"><span><i class="far fa-hand-pointer"></i></span><p>GESTIÓN DE TUS PRODUCTOS</p></a></div>
+                    <div class="nav-3-link"><a href="#"><span><i class="fas fa-hands"></i></span><p>SERVICIOS PARA TU BIENESTAR</p></a></div>
                 </div>
             </div>
         </div>
