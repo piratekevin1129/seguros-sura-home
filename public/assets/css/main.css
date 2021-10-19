@@ -1474,6 +1474,11 @@ body,html{
     align-items: flex-end;
     justify-content: flex-start;
 }
+.blog-sura-card-content{
+    height: 100%;
+    height: calc(100% - 185px);
+    height: -moz-calc(100% - 185px);
+}
 
 .enterate-card-date,
 .blog-sura-card-date{
@@ -1624,7 +1629,7 @@ body,html{
     padding: 0px;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: stretch;
     justify-content: space-between;
     flex-wrap: wrap;
 }
