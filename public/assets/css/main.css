@@ -1450,7 +1450,7 @@ body,html{
     overflow: hidden;
 }
 .blog-sura-card-img{
-    height: 185px;
+    height: 185px !important;
 }
 .enterate-card-img img,
 .blog-sura-card-img img{
