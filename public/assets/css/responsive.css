@@ -1183,7 +1183,7 @@
         top: -moz-calc((0% - 15px) + 0.5px);
     }
 
-    .widgets-mobile .widget-mobile-language:first-child{
+    .widgets-mobile .widget-mobile-language:first-child::after{
         display: none;
     }
     
