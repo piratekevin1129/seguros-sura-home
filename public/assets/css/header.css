@@ -684,6 +684,11 @@
     text-align: left;
     text-decoration: none;
 }
+#widget-idioma-btn > p > a{
+    font-size: inherit;
+    color: inherit;
+    font-family: inherit;
+}
 .widget-idioma-cont{
     position: absolute;
     width: 100%;
