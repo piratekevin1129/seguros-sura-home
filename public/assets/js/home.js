@@ -165,13 +165,13 @@ function clickTabExt(btn,tab){
     }
     document.getElementById('ext-tabs-title-'+aria).classList.add('ext-tab-title-active')
     document.getElementById('ext-tabs-content-'+aria).classList.add('ext-tabs-content-active')
-    if(aria=='1'){
+    /*if(aria=='1'){
         document.getElementById('espanol_link').setAttribute('href','https://www.arlsura.com/')
     }else if(aria=='2'){
         document.getElementById('espanol_link').setAttribute('href','https://www.epssura.com/')
     }else if(aria=='3'){
         document.getElementById('espanol_link').setAttribute('href','/paginas/personas.aspx')
-    }
+    }*/
 }
 
 ////////////TABS ENLACES INTERES//////////////

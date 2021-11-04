@@ -1406,7 +1406,7 @@
     display: block;
     width: 100%;
     height: auto;
-    margin: 10px 0px 30px 0px;
+    margin: 10px 0px 10px 0px;
     padding: 0px;
 }
 .modal-english-box-text p{
@@ -1454,6 +1454,7 @@
     height: 100px;
     margin: 0px 8px;
     padding: 0px;
+    cursor: pointer;
 }
 .modal-english-col > img{
     display: block;
@@ -1488,6 +1489,7 @@
     height: 35px;
     margin: 0px;
     padding: 0px;
+    margin-top: 20px;
 }
 .modal-english-buttons button{
     outline: none;
