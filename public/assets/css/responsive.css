@@ -323,18 +323,42 @@
         width: 960px;
         padding: 40px 10px;
     }
+    .beneficios-title-2{
+        width: auto;
+        width: calc(100% - ((220px + 15px) * 3));
+        width: -moz-calc(100% - ((220px + 15px) * 3));
+    }
     .beneficios-title h1{
         font-size: 30px;
     }
     .beneficios-title p{
         font-size: 15px;
     }
-    
+
+    .beneficios-noticias-2{
+        width: auto;
+        width: calc((220px + 15px) * 3);
+        width: -moz-calc((220px + 15px) * 3);
+    }
     #beneficios-noticias-wrap .beneficios-noticia{
         width: 33.33%;
-        width: calc(33.33% - 20px);
-        width: -moz-calc(33.33% - 20px);
-        margin-left: 20px;
+        width: calc(33.33% - 15px);
+        width: -moz-calc(33.33% - 15px);
+        margin-left: 15px;
+    }
+
+    #beneficios-noticias-scroll{
+        width: auto;
+        width: calc((220px + 15px) * 5);
+        width: -moz-calc((220px + 15px) * 5);
+    }
+    .beneficios-noticias-scroll-start{
+        left: 0px;
+    }
+    .beneficios-noticias-scroll-end{
+        left: 100%;
+        left: calc(100% - ((220px + 15px) * 5));
+        left: -moz-calc(100% - ((220px + 15px) * 5));
     }
 
     #beneficios-noticias-scroll .beneficios-noticia{
@@ -880,6 +904,9 @@
         width: 60%;
         margin-bottom: 20px;
     }
+    .beneficios-title-2{
+        width: 60%;
+    }
     .beneficios-title h1{
         font-size: 25px;
         text-align: center;
@@ -900,6 +927,9 @@
         margin-bottom: 10px;
     }
     .beneficios-noticias{
+        width: 100%;
+    }
+    .beneficios-noticias-2{
         width: 100%;
     }
 
@@ -2004,8 +2034,11 @@
         align-items: center;
     }
     .beneficios-title{
-        width: 60%;
+        width: 75%;
         margin-bottom: 20px;
+    }
+    .beneficios-title-2{
+        width: 75%;
     }
     .beneficios-title h1{
         font-size: 21px;
@@ -2043,6 +2076,9 @@
         border-radius: 10px;
         background-color: #ECF0F1;
     }
+    .beneficios-noticias-2{
+        width: 100%;
+    }
     #beneficios-noticias-wrap{
         width: 900px;
     }
@@ -2052,6 +2088,12 @@
     }
     #beneficios-noticias-paginator{
         display: none;
+    }
+    .beneficios-noticias-scroll-start{
+        left: initial;
+    }
+    .beneficios-noticias-scroll-end{
+        left: initial;
     }
 
     #beneficios-noticias-wrap .beneficios-noticia{
@@ -2308,11 +2350,10 @@
 
 @media (max-width: 519px){
     /**************HOME***************/
-    .body-container{
+    .body-container2{
         height: 100%;
         height: calc(100% - 90px);
         height: -moz-calc(100% - 90px);
-        margin-bottom: -40px;
     }
     .body-texts h1{
         font-size: 35px;

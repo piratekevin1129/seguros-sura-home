@@ -29,11 +29,11 @@ body,html{
     padding: 0px;
     box-sizing: border-box;
 }
-.body-container{
+.body-container2{
+    position: fixed;
     height: 100%;
     height: calc(100% - 122px);
     height: -moz-calc(100% - 122px);
-    margin-bottom: -40px;
 }
 
 /****************BODY*****************/
@@ -108,6 +108,7 @@ body,html{
     margin: 0px;
     padding: 0px;
     width: 1200px;
+    max-width: 100%;
     box-sizing: border-box;
     padding: 0px 15px;
     padding-bottom: 80px;
@@ -271,6 +272,7 @@ body,html{
 .slideshow-pagination{
     position: absolute;
     width: 1200px;
+    max-width: 100%;
     margin: 0px;
     padding: 0px 15px;
     display: block;
@@ -316,11 +318,31 @@ body,html{
     width: 20px;
 }
 
+.slideshow-title-small{
+    font-size: 40px !important;
+}
+@media (min-width: 960px) and (max-width: 1199px){
+    .slideshow-title-small{
+        font-size: 35px !important;
+    }
+}
+@media (min-width: 768px) and (max-width: 959px){
+    .slideshow-title-small{
+        font-size: 25px !important;
+    }
+}
+@media (max-width: 767px){
+    .slideshow-title-small{
+        font-size: 18px !important;
+    }
+}
+
 /********BOTONERA ABAJO DEL SLIDESHOW***********/
 
 .opciones-un-click{
     position: absolute;
     width: 1200px;
+    max-width: 100%;
     height: 80px;
     margin: 0px auto;
     padding: 0px;
@@ -457,6 +479,7 @@ body,html{
 .informate-covid-row{
     position: relative;
     width: 1200px;
+    max-width: 100%;
     margin: 0px auto;
     padding: 40px 15px;
     height: auto;
@@ -1037,6 +1060,7 @@ body,html{
 #capacidades-parati-slider{
     position: relative;
     width: 1200px;
+    max-width: 100%;
     margin: 0px auto;
     padding: 0px;
     box-sizing: border-box;
@@ -1342,6 +1366,7 @@ body,html{
 .noticias2-box{
     position: relative;
     width: 1200px;
+    max-width: 100%;
     margin: 0px auto;
     box-sizing: border-box;
     padding: 0px;
@@ -1592,6 +1617,7 @@ body,html{
 .blog-sura-container{
     position: relative;
     width: 1200px;
+    max-width: 100%;
     display: block;
     margin: 0px auto;
     padding: 0px;
@@ -1943,6 +1969,7 @@ body,html{
 .beneficios-row{
     position: relative;
     width: 1200px;
+    max-width: 100%;
     margin: 0px auto;
     padding: 40px 15px;
     height: auto;
@@ -1959,6 +1986,11 @@ body,html{
     height: auto;
     margin: 0px;
     padding: 0px;
+}
+.beneficios-title-2{
+    width: auto;
+    width: calc(100% - ((260px + 15px) * 3));
+    width: -moz-calc(100% - ((260px + 15px) * 3));
 }
 .beneficios-title h1{
     position: relative;
@@ -2005,6 +2037,11 @@ body,html{
     box-sizing: border-box;
     overflow: hidden;
 }
+.beneficios-noticias-2{
+    width: auto;
+    width: calc((260px + 15px) * 3);
+    width: -moz-calc((260px + 15px) * 3);
+}
 #beneficios-noticias-wrap{
     position: relative;
     width: 100%;
@@ -2018,8 +2055,8 @@ body,html{
 #beneficios-noticias-scroll{
     position: relative;
     width: auto;
-    width: calc((220px + 15px) * 5);
-    width: -moz-calc((220px + 15px) * 5);
+    width: calc((260px + 15px) * 5);
+    width: -moz-calc((260px + 15px) * 5);
     margin: 0px;
     padding: 0px;
     display: flex;
@@ -2035,8 +2072,8 @@ body,html{
 }
 .beneficios-noticias-scroll-end{
     left: 100%;
-    left: calc(100% - ((220px + 15px) * 5));
-    left: -moz-calc(100% - ((220px + 15px) * 5));
+    left: calc(100% - ((260px + 15px) * 5));
+    left: -moz-calc(100% - ((260px + 15px) * 5));
 }
 
 .beneficios-noticia{
@@ -2056,7 +2093,8 @@ body,html{
 }
 
 #beneficios-noticias-scroll .beneficios-noticia{
-    width: 220px;
+    width: 260px;
+    margin-left: 15px;
 }
 #beneficios-noticias-wrap .beneficios-noticia{
     width: 33.33%;
