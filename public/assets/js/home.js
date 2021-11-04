@@ -165,13 +165,32 @@ function clickTabExt(btn,tab){
     }
     document.getElementById('ext-tabs-title-'+aria).classList.add('ext-tab-title-active')
     document.getElementById('ext-tabs-content-'+aria).classList.add('ext-tabs-content-active')
-    /*if(aria=='1'){
-        document.getElementById('espanol_link').setAttribute('href','https://www.arlsura.com/')
+    if(aria=='1'){
+        getE('tibot_preguntas_frecuentes').setAttribute('href','https://www.arlsura.com/index.php/preguntas-frecuentes-arl')
+        getE('tibot_whatsapp_li').setAttribute('style','height: 0px; overflow: hidden;visibility: hidden; margin-bottom: 0px;')
+        getE('tibot_whatsapp').setAttribute('href','')
+        getE('tibot_escribenos').setAttribute('href','https://www.arlsura.com/index.php/3942')
+        getE('tibot_puntos_atencion').setAttribute('href','https://www.arlsura.com/index.php/oficinas-arl-sura')
+        getE('tibot_preguntas_covid').setAttribute('href','https://www.segurossura.com.co/covid-19/paginas/personas/que-hacer-cuando.aspx')
     }else if(aria=='2'){
-        document.getElementById('espanol_link').setAttribute('href','https://www.epssura.com/')
+        getE('tibot_preguntas_frecuentes').setAttribute('href','https://epssura.com/faqs')
+        getE('tibot_whatsapp_li').removeAttribute('style')
+        getE('tibot_whatsapp').setAttribute('href','https://wa.me/573175180237?text=EPS%20SURA')
+        getE('tibot_escribenos').setAttribute('href','https://epssura.com/escribenos')
+        getE('tibot_puntos_atencion').setAttribute('href','https://epssura.com/oficinas')
+        getE('tibot_preguntas_covid').setAttribute('href','https://www.segurossura.com.co/covid-19/paginas/personas/que-hacer-cuando.aspx')
     }else if(aria=='3'){
-        document.getElementById('espanol_link').setAttribute('href','/paginas/personas.aspx')
-    }*/
+        getE('tibot_preguntas_frecuentes').setAttribute('href','https://www.segurossura.com.co/paginas/preguntas-frecuentes.aspx')
+        getE('tibot_whatsapp_li').removeAttribute('style')
+        getE('tibot_whatsapp').setAttribute('href','https://wa.me/573152757888?text=Seguros%20SURA')
+        getE('tibot_escribenos').setAttribute('href','https://www.segurossura.com.co/paginas/escribenos.aspx')
+        getE('tibot_puntos_atencion').setAttribute('href','https://www.segurossura.com.co/paginas/oficinas-y-sucursales.aspx')
+        getE('tibot_preguntas_covid').setAttribute('href','https://www.segurossura.com.co/covid-19/paginas/personas/que-hacer-cuando.aspx')
+    }
+}
+
+function getE(idname){
+    return document.getElementById(idname)
 }
 
 ////////////TABS ENLACES INTERES//////////////
