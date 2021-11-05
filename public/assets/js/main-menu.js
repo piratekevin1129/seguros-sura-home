@@ -192,6 +192,19 @@ function setModalEnglish(){
 function unsetModalEnglish(){
     $('#modal-english').attr('class', 'modal-english-off')
 }
+function setModalEnglish2(){
+    $('#modal-english2').attr('class', 'modal-english-on')
+}
+function unsetModalEnglish2(l){
+    $('#modal-english2').attr('class', 'modal-english-off')
+    if(l=='eps'){
+        location.href='https://www.epssura.com/'
+    }else if(l=='arl'){
+        location.href='https://www.arlsura.com/'
+    }else if(l=='seguros'){
+        location.href='/paginas/personas.aspx'
+    }
+}
 
 //window.onscroll = function(){
     //check alto header
