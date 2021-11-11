@@ -41,13 +41,13 @@
 
 <div class="ext-tabs-container-fluid" id="ext-tabs1">
   <div id="ext-tabs-titles">
-    <div id="ext-tabs-title-1" class="ext-tab-title ext-tab-title-active" data="1" onclick="clickTabExt(this,1)"> 
+    <div id="ext-tabs-title-1" class="ext-tab-title" data="1" onclick="clickTabExt(this,1)"> 
       <p>ARL</p> 
     </div>
     <div id="ext-tabs-title-2" class="ext-tab-title" data="2" onclick="clickTabExt(this,1)"> 
       <p>EPS</p> 
     </div>
-    <div id="ext-tabs-title-3" class="ext-tab-title" data="3" onclick="clickTabExt(this,1)"> 
+    <div id="ext-tabs-title-3" class="ext-tab-titleext-tab-title-active" data="3" onclick="clickTabExt(this,1)"> 
       <p>SEGUROS</p> 
     </div>
   </div>
@@ -57,7 +57,7 @@
   
   <div id="ext-tabs-container">
       <!--ARL-->
-      <div id="ext-tabs-content-1" class="ext-tabs-content ext-tabs-content-active">
+      <div id="ext-tabs-content-1" class="ext-tabs-content">
           <h1 class="ext-tabs-content-title">ARL SURA</h1>
           <p class="ext-tabs-content-text">Committed to your well-being and your company, ARL SURA offers you comprehensive support in all of your processes. Through our platform, you can access multiple services for you and your company. Please, check the following tutorials.</p>
           
@@ -170,7 +170,7 @@
 
 
       <!--SEGUROS-->
-      <div id="ext-tabs-content-3" class="ext-tabs-content">
+      <div id="ext-tabs-content-3" class="ext-tabs-content ext-tabs-content-active">
           <h1 class="ext-tabs-content-title">SEGUROS</h1>
           <p class="ext-tabs-content-text">The Seguros SURA website offers a great variety of options that allow you to carry out processes from the comfort of your home. Check the following tutorials!</p>
           
@@ -226,7 +226,6 @@
     <div id="footer-seguros-container">
       <div class="footer1">
           <img src="/images/home-2021/logo-sura.svg" class="footer1-logosura" />
-          <img src="/images/home-2021/logo-viva-seguros.png" class="footer1-logoseguros" />
       </div>
       <div class="footer4">
         <div class="footer-copyright">© Copyright SURA 2021</div>
@@ -246,23 +245,43 @@
 </div>
 
 <!--MODAL EXTRANJEROS-->
-<div id="modal-english2" class="modal-english-on">
+<style type="text/css">
+    .modal-english-col a{
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        cursor: pointer;
+        padding: 0px;
+        margin: 0px;
+        text-decoration: none;
+    }
+    .modal-english-col h5{
+        text-decoration: none;
+    }
+</style>
+<div id="modal-english2" class="modal-english-off">
     <div id="modal-english-box">
         <h1>Attention</h1>
         <div class="modal-english-box-text">
             <p>When you change language, you will go to a different website. <span>Which one do you want to visit?</span></p>
             <div class="modal-english-row">
-                <div class="modal-english-col" onclick="unsetModalEnglish2('eps')">
-                    <img src="public/assets/img/visita/epssura-icon.svg" />
+                <div class="modal-english-col" onclick="unsetModalEnglish2()">
+                    <img src="/images/home-2021/visita/epssura-icon.svg" />
                     <h5>EPS</h5>
+                    <a href="https://www.epssura.com/" target="_blank"></a>
                 </div>
-                <div class="modal-english-col" onclick="unsetModalEnglish2('arl')">
-                    <img src="public/assets/img/visita/arlsura-icon.svg" />
+                <div class="modal-english-col" onclick="unsetModalEnglish2()">
+                    <img src="/images/home-2021/visita/arlsura-icon.svg" />
                     <h5>ARL</h5>
+                    <a href="https://www.arlsura.com/" target="_blank"></a>
                 </div>
-                <div class="modal-english-col" onclick="unsetModalEnglish2('seguros')">
-                    <img src="public/assets/img/visita/segurossura-icon.svg" />
+                <div class="modal-english-col" onclick="unsetModalEnglish2()">
+                    <img src="/images/home-2021/visita/segurossura-icon.svg" />
                     <h5>SEGUROS</h5>
+                    <a href="/paginas/personas.aspx" target="_blank"></a>
                 </div>
             </div>
         </div>

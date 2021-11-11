@@ -152,7 +152,6 @@ function nextSlider(event){
 
 
 /////////////TABS EXTRANJEROS//////////////
-var global_tab_ext = 'arl'
 function clickTabExt(btn,tab){
     var aria = btn.getAttribute('data')
     var titles = document.getElementById('ext-tabs'+tab).getElementsByClassName('ext-tab-title')
@@ -167,7 +166,6 @@ function clickTabExt(btn,tab){
     document.getElementById('ext-tabs-content-'+aria).classList.add('ext-tabs-content-active')
     if(aria=='1'){
         getE('tibot_preguntas_frecuentes').setAttribute('href','https://www.arlsura.com/index.php/preguntas-frecuentes-arl')
-        //getE('tibot_whatsapp_li').setAttribute('style','height: 0px; overflow: hidden;visibility: hidden; margin-bottom: 0px;')
         getE('tibot_whatsapp_li').setAttribute('style','display:none;')
         getE('tibot_whatsapp').setAttribute('href','')
         getE('tibot_escribenos').setAttribute('href','https://www.arlsura.com/index.php/3942')
