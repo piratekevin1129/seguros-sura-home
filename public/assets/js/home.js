@@ -164,6 +164,10 @@ function clickTabExt(btn,tab){
     }
     document.getElementById('ext-tabs-title-'+aria).classList.add('ext-tab-title-active')
     document.getElementById('ext-tabs-content-'+aria).classList.add('ext-tabs-content-active')
+
+    var tibot_chatea_parent = getE('tibot_preguntas_frecuentes').parentNode.parentNode
+    var tibot_chatea = tibot_chatea_parent.getElementsByClassName('openchat')[0]
+    tibot_chatea.innerHTML = 'Chatea con Tibot'
     if(aria=='1'){
         getE('tibot_preguntas_frecuentes').setAttribute('href','https://www.arlsura.com/index.php/preguntas-frecuentes-arl')
         getE('tibot_whatsapp_li').setAttribute('style','display:none;')
