@@ -1492,6 +1492,9 @@
     margin: 0px;
     text-decoration: none;
 }
+.modal-english-col > br{
+    display: none;
+}
 
 .modal-english-buttons{
     display: flex;
