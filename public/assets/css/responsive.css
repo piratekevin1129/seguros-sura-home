@@ -1532,7 +1532,10 @@
         left: 0%;
     }
     .slideshow-img{
-        height: 350px;
+        height: 300px;
+    }
+    .slideshow-img-extranjeros{
+        height: auto !important;
     }
     .slideshow-title{
         font-size: 30px;
@@ -2338,19 +2341,6 @@
     }
 }
 
-/******IMAGES****/
-@media (max-width: 767px){
-    .seguros-sura-menu-col h5::after,.footer2-col > h6::after,.footer3-title::after{
-        background-image: url(../../images/home-2021/menu-expand-icon-2.svg);
-        /*background-image: url(../img/menu-expand-icon-2.svg);*/
-    }
-    
-    .nav-3-link{
-        background-image: url(../../images/home-2021/menu-expand-icon-1.svg);
-        /*background-image: url(../img/menu-expand-icon-1.svg);*/
-    }
-}
-
 @media (max-width: 519px){
     /**************HOME***************/
     .body-container2{
@@ -2477,6 +2467,12 @@
         background-position: 100% center;
         background-position: calc(100% - 20px) center;
         background-position: -moz-calc(100% - 20px) center;
+    }
+    .slideshow-img{
+        height: 250px;
+    }
+    .slideshow-img-extranjeros{
+        height: auto !important;
     }
 
     .slideshow-scroll{
@@ -2645,5 +2641,18 @@
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 10px;
+    }
+}
+
+/******IMAGES****/
+@media (max-width: 767px){
+    .seguros-sura-menu-col h5::after,.footer2-col > h6::after,.footer3-title::after{
+        background-image: url(../../images/home-2021/menu-expand-icon-2.svg);
+        /*background-image: url(../img/menu-expand-icon-2.svg);*/
+    }
+    
+    .nav-3-link{
+        background-image: url(../../images/home-2021/menu-expand-icon-1.svg);
+        /*background-image: url(../img/menu-expand-icon-1.svg);*/
     }
 }
