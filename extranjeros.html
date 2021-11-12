@@ -264,9 +264,30 @@
     .modal-english-col br{
         display: none;
     }
+    #modal-english-close{
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: rgba(0,0,0,0);
+        border: none;
+        outline: none;
+        outline-width: 0;
+        right: 20px;
+        top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #modal-english-close i{
+        font-size: 20px;
+        color: #53565A;
+    }
 </style>
 <div id="modal-english2" class="modal-english-off">
     <div id="modal-english-box">
+        <button id="modal-english-close" type="button" onclick="unsetModalEnglish2()">
+            <i class="fas fa-times"></i>
+        </button>
         <h1>Attention</h1>
         <div class="modal-english-box-text">
             <p>When you change language, you will go to a different website. <span>Which one do you want to visit?</span></p>
