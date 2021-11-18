@@ -1502,7 +1502,7 @@
     margin: 0px;
     text-decoration: none;
 }
-.modal-english-col > br{
+.modal-english-col br{
     display: none;
 }
 
@@ -1552,6 +1552,28 @@
 .modal-english-buttons button:hover{
     background-color: #0033A01A;
     cursor: pointer;
+}
+
+#modal-english-close{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    outline: none;
+    outline-width: 0;
+    right: 20px;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: initial;
+    padding: 0px;
+    margin: 0px;
+}
+#modal-english-close i{
+    font-size: 20px;
+    color: #53565A;
 }
 
 .modal-english-off{
